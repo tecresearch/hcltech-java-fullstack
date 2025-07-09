@@ -1,0 +1,26 @@
+Association Mapping
+===================
+If object of a class is associated with object of another class then there will be association between both object and between entity class of both object
+We need to map this association.This mapping could be of following four types
+1)One to one mapping
+2)One to many mapping
+3)Many to one mapping
+4)Many to many mapping
+
+
+One to one mapping
+------------------
+One instance of first entity is associated with one instance of second entity.Similarly one instance of second entity is associated with one instance of first entity
+
+One to many mapping
+-------------------
+One instance of first entity is associated with multiple instances of second entity.But one instance of second entity is associated with one instance of first entity
+
+Many to one mapping
+-------------------
+One instance of first entity is associated with one instance of second entity.But one instance of second entity is associated with multiple instances of first entity
+
+Many to many mapping
+-------------------
+One instance of first entity is associated with multiple instances of second entity.Similalry one instance of second entity is associated with multiple instances of first entity
+

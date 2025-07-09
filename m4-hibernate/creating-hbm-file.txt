@@ -1,0 +1,5 @@
+Creating HBM file
+================
+This must be an xml file
+In this file you will have to map persistent class with database table.Intsnace variables of this class will be mapped with columns of the table
+Kepp this file in src folder

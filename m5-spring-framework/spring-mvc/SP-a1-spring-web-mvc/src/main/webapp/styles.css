@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Root Container */
+#root {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    background-color: #f5f5f5; /* Light background for contrast */
+
+}
+
+.hero{
+    width: 100%;
+    height: 350px;
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #344CB7;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Navigation List */
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+/* Navbar Hover Effect */
+
+.nav-list a:hover {
+    background-color: #ffcc00;
+    color: #344CB7;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+/* Hero Section */
+/* Hero Hover Effect */
+.hero:hover {
+    transform: scale(1.02);
+}
+
+/* Categories Section */
+.categories {
+    background-color: white;
+    /*border: 1px solid dimgray;*/
+    padding: 15px 20px;
+    margin: 20px auto;
+    /*border-radius: 10px;*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+/* Category List */
+.categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Category Links */
+.categories ul a {
+    text-decoration: none;
+    color: #344CB7;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Category Hover Effect */
+.categories ul a:hover {
+    background-color: #ffcc00;
+    color: #344CB7;
+    transform: scale(1.1);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.card{
+    width: 150px;
+    height: 200px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    word-wrap: break-word;
+    border: 1px solid dimgray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 3px 4px dimgray;
+    justify-content: space-evenly;
+
+}

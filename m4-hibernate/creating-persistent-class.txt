@@ -1,0 +1,9 @@
+Creating persistent class
+=========================
+Object of this class will be saved/persisted by hibernate into database table.Persisting object means saving states of object into table as a record
+This class must be a java POJO class
+POJO stands for plain old java object
+POJO class must have
+1)Private instance variables
+2)No-argument constructor/non-parameterzied constructor
+3)Getter and setter

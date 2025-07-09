@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+ <bean  class="in.tca.beans.Address" id="addId">
+ 	
+ 	<constructor-arg name="area" value="Mokalpur Gobrahan"/>
+ 	<constructor-arg name="district" value="Varanasi"/>
+ 	<constructor-arg name="state" value="Uttar Pradesh"/>
+ 	<constructor-arg name="pin" value="221104"/>
+ </bean>
+
+<bean  class="in.tca.beans.Student" id="stdId">
+		<constructor-arg name="id" value="101"/>
+		<constructor-arg name="name" value="Brijesh Nishad"/>
+		<constructor-arg name="phone" value="9506563150"/>
+		<constructor-arg name="address" ref="addId"/>
+</bean>
+</beans>

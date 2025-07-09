@@ -1,0 +1,11 @@
+Creating repository class
+=========================
+In this class you will have to write code to perform database operation.You need to create following objects and call methods
+1)Object of SessionFactory interface
+2)Object of Session interface
+3)Object of Transaction interface
+etc
+Object of SessionFactory interface keeps information of both cfg and hbm file
+DDL operation will be performed by SessionFactory interface
+Object of Session interface will be created by openSession() method of SessionFactory interface
+Call methods of Session interface to perform CRUD operation(persisting object,deleting object,getting object,etc) 

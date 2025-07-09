@@ -1,0 +1,27 @@
+States of object
+================
+In hibernate, an object can be one of the following states thoughout its lifecycle
+1)Transient state
+2)Persistent state
+3)Detached
+
+Transient state
+===============
+An object is in a transient state if it has just been created/instantiated and it not associated with sesison object.
+It has no representation in database table and no identifier value
+
+Persistent state
+================
+An object is in a persistent state if it has been associated with session object and has representation in database table and identifie value
+It is synchronized with database table
+
+Detached state
+==============
+An object becomes detached when the session is closed.It means it is no more associated with session object but it has representation in database table and identifie value.It is not synchronized with database table
+
+
+
+
+
+
+

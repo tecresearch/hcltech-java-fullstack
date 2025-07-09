@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <!-- bean definitions here -->
+ 	<bean class="in.tca.model.Task" id="taskId1" autowire-candidate="false" >
+ 		<constructor-arg name="tid" value="1001"/>
+ 		<constructor-arg name="title" value="Spring Framework"/>
+ 		<constructor-arg name="description" value="11111Spring Framework is a java framework which enables the loose coupling application creation "/>
+ 	</bean>
+ 	
+ 	 	<bean class="in.tca.model.Task" id="taskId2" autowire-candidate="true" >
+ 		<constructor-arg name="tid" value="1001"/>
+ 		<constructor-arg name="title" value="Spring Framework"/>
+ 		<constructor-arg name="description" value="22222Spring Framework is a java framework which enables the loose coupling application creation "/>
+ 	</bean>
+ 	
+    
+    <bean class="in.tca.model.User" id="userId" autowire="constructor">
+    	<constructor-arg name="uid" value="1001"/>
+    	<constructor-arg name="name" value="Brijesh Nishad"/>
+    	<constructor-arg name="username" value="mrjacks"/>
+    	<constructor-arg name="email" value="bnlv1212@gmail.com"/>
+    	<constructor-arg name="password" value="12345"/>
+    	
+    </bean> 
+
+</beans>

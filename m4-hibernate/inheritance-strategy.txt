@@ -1,0 +1,33 @@
+Inheritance strategy
+====================
+If there is parent and child relationahip between entities then we need to set one of the following inheritance strategy
+1)Single table strategy
+2)Joined strategy
+3)Table per class strategy
+
+Single table strategy
+=====================
+Only one table will be created
+All objects will be persisted into this single table
+Discriminator column will be added to identify objects
+
+Joined strategy
+===============
+Tables will be creates for parent class as well as child class
+Common field data will be kept into parent class table and individual data will be kept into child class tables
+Primary key column of parent class table will also be added into child class tables are foreign key
+
+Table perclass strategy
+=======================
+Tables will be created for each child class
+Child class objects will be persisted into child class tables
+
+
+
+
+
+
+
+
+
+

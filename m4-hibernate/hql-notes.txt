@@ -1,0 +1,7 @@
+HQL(Hibernate query language)
+=============================
+By using this language we can write queries
+This query should be written for persistent/entity class
+We need to give this query to the object of Query interface
+We need to call/invoke method of this interface to execute HQL
+Query<T> query=session.createQuery("from EntityClassName",);

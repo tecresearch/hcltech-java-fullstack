@@ -1,0 +1,10 @@
+Creating CFG file
+=================
+This is an XML file
+In this file we need to configure following information
+1)HBM2DDL auto property
+2)show-sql property
+3)dialect property
+4)Database connection information(driver class name,url, username,password)
+5)hbm file name
+etc

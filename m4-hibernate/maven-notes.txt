@@ -1,0 +1,10 @@
+What is maven?
+--------------
+It is one of the build tool
+Build tools are very userful tools for developer
+It helps develope in application development such as
+1)Creating directory structure of the project
+2)Downloading project dependencies(external jar files) and adding them into project
+3)Compiling source code of the project
+4)Creating partial unit testing code
+etc

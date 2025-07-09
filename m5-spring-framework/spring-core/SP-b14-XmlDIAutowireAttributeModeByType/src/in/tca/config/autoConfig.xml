@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <!-- bean definitions here -->
+ 	<bean class="in.tca.model.Task" id="taskId">
+ 		<property name="tid" value="1001"/>
+ 		<property name="title" value="Spring Framework"/>
+ 		<property name="description" value="Spring Framework is a java framework which enables the loose coupling application creation "/>
+ 	</bean>
+    
+    <bean class="in.tca.model.User" id="userId" autowire="byType">
+    	<property name="uid" value="1001"/>
+    	<property name="name" value="Brijesh Nishad"/>
+    	<property name="username" value="mrjacks"/>
+    	<property name="email" value="bnlv1212@gmail.com"/>
+    	<property name="password" value="12345"/>
+    	 
+    </bean> 
+
+</beans>

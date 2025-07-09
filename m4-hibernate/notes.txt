@@ -1,0 +1,16 @@
+Hibernate framework
+===================
+This framework is an ORM tool
+ORM stands fro object relational mapping
+It is a lightweight framework
+It will perform database related operations for our application
+It calls JDBC API internally to perform database related operations
+It will perform following tasks
+1)Loading driver class
+2)Creating connection object
+3)Creating statement objects
+4)Creating SQL queries
+5)Executing SQL queries
+etc
+Hibernate is implementation of JPA
+JPA stands for java persistense API

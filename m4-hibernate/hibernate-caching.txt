@@ -1,0 +1,40 @@
+Hibernate caching
+===================
+Hibernate caching helps improve the performance of the hibernate application by reducing numer of database accesses/hits
+Hibernate keeps persistent object into cache to improve application performance.If an object will be accesed by the application multiple times then database will be hit only once
+Hibernate provides two levels of caching
+1)First-level Cache(Session cache)
+2)Second-level Cache(SessionFactory cache)
+
+First-level Cache
+=================
+It is associated with Hibernate Session and enabled by default
+All persisted objects are kept into first-level cache by Hibernate
+Each Hibernate Session maintains separate first-level cache
+First level cache is destoyed when Hibernate Session is closed
+This cache is used to reduce number of SQL queries.Hibernate provides object to the application from first-level cache
+
+Second-level Cache(SessionFactory cache)
+=========================================
+This cache is required when application is creating and using more than one Hibernate Session
+This cache will be associated with Hibernate SessionFactory
+Objects kept into second-level cache can be accessed by every Hibernate Session
+
+How to use second-level cache into project?
+===========================================
+1)Configure dependency of this cache into pom.xml
+2)Configure implemntation of this cache into cfg file and enable it
+3)Set cache concurrency strategy into entity class
+
+
+
+
+
+
+
+
+
+
+
+
+

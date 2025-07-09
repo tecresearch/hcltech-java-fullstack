@@ -1,0 +1,11 @@
+hbm2ddl.auto property
+---------------------
+We can set one of the following four values in this property
+1)update.In this case, hibernate will create mapping table if not exists
+
+2)create.In this case, hibernate will create mapping table if not exists.If exists then drop it and create it
+
+3)create-drop.In this case, hibernate will create mapping table if not exists.If exists then drop it and create it.When sessionfactory object will be closed then that table will be dropped
+
+4)validate:If table doest not exist then throws exception.It means table must exist
+

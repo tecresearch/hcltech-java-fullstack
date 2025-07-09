@@ -1,0 +1,8 @@
+How to use hibernate in java project?
+-------------------------------------
+1)Create maven project
+2)Configure project dependencies in pom.xml file
+3)Create persistent class
+4)Create HBM file
+5)Create CFG file
+6)Create repository class
