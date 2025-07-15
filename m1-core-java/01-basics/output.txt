@@ -1,0 +1,8 @@
+Contents of input.txt:
+This Line no 1 from input file 
+This line no 2 from input file 
+This line no 3 from output file
+
+Enter some lines (type 'exit' to stop):
+I am from console windows
+ok
