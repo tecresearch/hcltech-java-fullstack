@@ -1,0 +1,3 @@
+This Line no 1 from input file 
+This line no 2 from input file 
+This line no 3 from output file
