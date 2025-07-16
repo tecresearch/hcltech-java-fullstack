@@ -17,18 +17,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("rest-api")
+@RequestMapping("api")
 class MyController{
 	List<Person> persons=new ArrayList();
 	@PostMapping("/post")
 	public ResponseEntity<List<Person>> postMessage(@RequestBody Person person){
+		this.persons.add(new Person(0, null, 0));
 		this.persons.add(person);
 		return ResponseEntity.ok().body(persons);
 	}
 	@SuppressWarnings("null")
 	@GetMapping("/get")
 	public ResponseEntity<List<Person>> getMessage(){
-		this.persons.add(new Person(0, null, 0));
+		
 		return ResponseEntity.ok().allow().body(this.persons);
 	}
 	// @PutMapping("/update")
@@ -45,3 +46,11 @@ class MyController{
 	// }
 	
 }
+
+
+
+
+
+
+
+
