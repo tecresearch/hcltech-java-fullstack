@@ -9,8 +9,7 @@ import in.tca.resources.SpringConfig;
 public class Main {
 
 	public static void main(String[] args) {
-		
-		
+ 
 		ApplicationContext context=new AnnotationConfigApplicationContext(SpringConfig.class);
 		
 		Student student=(Student)context.getBean("stdObj1");

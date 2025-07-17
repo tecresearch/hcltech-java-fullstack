@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <!-- bean definitions here -->
+ <bean id="gson" class="com.google.gson.Gson" />
+    <bean id="stdId" class="in.tca.beans.Student">
+    	<property name="id" value="1"/>
+    	<property name="firstName" value="Brijesh"/>
+    	<property name="lastName" value="Nishad"/>
+    	<property name="email" value="bnlv1212@gmail.com"/>
+    	<property name="phone" value="9506563150" />
+    	<property name="address" value="Greater NOida UP 201310"/>
+    </bean>
+        <bean id="stdObj2" class="in.tca.beans.Student">
+    	<property name="id" value="2"/>
+    	<property name="firstName" value="Kishad"/>
+    	<property name="lastName" value="Nishad"/>
+    	<property name="email" value="knlv1212@gmail.com"/>
+    	<property name="phone" value="9565301279" />
+    	<property name="address" value="Varanasi UP 221104"/>
+    </bean>
+    
+
+</beans>

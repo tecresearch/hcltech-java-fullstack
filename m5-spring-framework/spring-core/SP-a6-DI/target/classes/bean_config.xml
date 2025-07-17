@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="addr1" class="com.hcl.setter.Address"><!-- addr1=new Address() -->
+		<property name="addressLine1" value="Greater Noida"/><!-- setAddressLine1(Greater Noida) -->
+		<property name="city" value="Gautam Buddh Nagar"/><!-- setCity(Gautam Buddh Nagar) -->
+		<property name="country" value="India"/><!-- setCountry(India) -->
+		
+	</bean>
+	
+
+	
+	
+</beans>

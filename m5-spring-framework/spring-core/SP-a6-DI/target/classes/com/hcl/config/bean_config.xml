@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="addr1" class="com.hcl.setter.Address"><!-- addr1=new Address() -->
+		<property name="addressLine1" value="Greater Noida"/><!-- setAddressLine1(Greater Noida) -->
+		<property name="city" value="Gautam Buddh Nagar"/><!-- setCity(Gautam Buddh Nagar) -->
+		<property name="country" value="India"/><!-- setCountry(India) -->
+		
+	</bean>
+	
+	<bean id="addr2" class="com.hcl.setter.Address"><!-- addr2=new Address() -->
+		<property name="addressLine1" value="Delhi"/><!-- setAddressLine1(Greater Noida) -->
+		<property name="city" value="NCR"/><!-- setCity(Gautam Buddh Nagar) -->
+		<property name="country" value="India2"/><!-- setCountry(India) -->
+		<property name="state" value="UP"/>
+		
+	</bean>
+	
+	<bean id="emp1" class="com.hcl.setter.Employee">
+		<property name="id" value="101"/>
+		<property name="name" value="Brijesh Nishad"/>
+		<property name="address" ref="addr1"/>		
+	
+	</bean>
+	
+	<bean id="emp2" class="com.hcl.setter.Employee">
+		<property name="id" value="102"/>
+		<property name="name" value="Sonu"/>
+		<property name="address" ref="addr2"/>		
+	
+	</bean>
+	
+	
+</beans>
