@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="subject1" class="com.hcl.list.Subject">
+       
+              <property name="isbn" value="134"/> 
+              <property name="name" value="Maths"/> 
+              <property name="duration" value="56"/> 
+              <property name="teachers">
+              	<list>
+              		<value>"Rohan"</value>
+              		<value>"Roshan"</value>
+              		<value >"Kishan"</value>
+              	</list>
+              </property>
+    
+    </bean>
+    
+     <bean id="subject2" class="com.hcl.list.Subject">
+       
+              <property name="isbn" value="135"/> 
+              <property name="name" value="Science"/> 
+              <property name="duration" value="50"/> 
+              <property name="teachers">
+              	<list>
+              		<value>"Rohan"</value>
+              		<value>"Roshan"</value>
+              		<value >"Kishan"</value>
+              	</list>
+              </property>
+    
+    </bean>
+    
+     <bean id="subject3" class="com.hcl.list.Subject">
+       
+              <property name="isbn" value="138"/> 
+              <property name="name" value="Hindi"/> 
+              <property name="duration" value="45"/> 
+              <property name="teachers">
+              	<list>
+              		<value>"Rohan"</value>
+              		<value>"Roshan"</value>
+              		<value >"Kishan"</value>
+              	</list>
+              </property>
+    
+    </bean>
+    
+    
+    <bean   id="student1" class="com.hcl.list.Student"><!-- student1=new Student(); -->
+
+             <constructor-arg name="id" value="1"/>
+             <constructor-arg name="name" value="Brijesh"/>
+             
+             <!-- 
+             List<Student> subject=new ArrayList<>();
+             subject.add(subject1);
+             subject.add(subject2);
+             subject.add(subject3);
+              -->
+              <constructor-arg name="subject" >
+              	<list>
+              		<ref bean="subject1"/>
+              		<ref bean="subject2"/>
+              		<ref bean="subject3"/>
+              	</list>
+              
+              </constructor-arg>
+              
+             
+              
+             
+    </bean>
+	
+	
+	
+	 
+	
+	
+</beans>
