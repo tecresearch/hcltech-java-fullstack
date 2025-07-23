@@ -1,6 +1,6 @@
 package in.tecresearch;
 
-import in.tecresearch.model.User;
+import in.tecresearch.model.Users;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -21,7 +21,7 @@ public class App {
         Transaction transaction=session.beginTransaction();
         System.out.println("Configuration has been successfully done");
 //Insert Operaration-------------------------------------------------------------
-        User user1=new User(8,"Brijesh ","bnlv121@gmail.com","1245","male","varanasi");
+        Users user1=new Users(8,"Brijesh ","bnlv121@gmail.com","1245","male","varanasi");
         try {
             session.save(user1);
             transaction.commit();
@@ -33,7 +33,7 @@ public class App {
         }
 //Get single object from database;
         try {
-            User duser=session.get(User.class,2);
+            Users duser=session.get(Users.class,2);
             System.out.println("Fetched User: "+duser);
         } catch (Exception e) {
             System.out.println("User not found");
@@ -41,9 +41,9 @@ public class App {
 //Gett all object from databases;
 
         try{
-            Query<User> query=session.createQuery("from User",User.class);
-            List<User> users=query.list();
-            for(User user:users){
+            Query<Users> query=session.createQuery("from Users",Users.class);
+            List<Users> users=query.list();
+            for(Users user:users){
                 System.out.println(user);
             }
         }catch (Exception e){

@@ -10,12 +10,13 @@
     <session-factory>  
         <property name="hbm2ddl.auto">update</property>  
         <property name="show_sql">true</property>  
-         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
-        <property name="connection.url">jdbc:mysql://localhost/m1-hibernate?createDatabaseIfNotExist=true</property>
-        <property name="connection.username">tecresearch</property>
+        <property name="hibernate.format_sql">true</property>
+         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="connection.url">jdbc:postgresql://localhost/hcltech?createDatabaseIfNotExist=true</property>
+        <property name="connection.username">postgres</property>
         <property name="connection.password">Tca@admin</property>
-        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>  
-<!--	    <mapping resource="hibernate.hbm.xml"/>-->
-        <mapping class="in.tecresearch.model.User"/>
+        <property name="connection.driver_class">org.postgresql.Driver</property>  
+<!--	<mapping resource="hibernate.hbm.xml"/>-->
+        <mapping class="in.tecresearch.model.Users"/>
     </session-factory>  
 </hibernate-configuration>  

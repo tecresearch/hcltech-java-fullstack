@@ -1,21 +1,19 @@
-<!--no need of hbm if model class configured in cfg class-->
-<!--<?xml version='1.0' encoding='UTF-8'?>  -->
-<!--&lt;!&ndash;<!DOCTYPE hibernate-mapping PUBLIC  &ndash;&gt;-->
-<!--&lt;!&ndash; "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  &ndash;&gt;-->
-<!--&lt;!&ndash; "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">&ndash;&gt;-->
-<!--<!DOCTYPE hibernate-mapping PUBLIC-->
-<!--		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
-<!--		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">-->
-
-<!--<hibernate-mapping>-->
-<!--	<class name="in.tecresearch.model.User" table="userinfo">-->
-<!--		<id name="id" column="uid">-->
-<!--			<generator class="assigned" />-->
-<!--		</id>-->
-<!--		<property name="name" column="name" />-->
-<!--		<property name="email" column="email" />-->
-<!--		<property name="password" column="password" />-->
-<!--		<property name="gender"  column="gender"/>-->
-<!--		<property name="city" column="city"/>-->
-<!--	</class>-->
-<!--</hibernate-mapping>-->
+<?xml version='1.0' encoding='UTF-8'?>  
+<!--<!DOCTYPE hibernate-mapping PUBLIC  -->
+<!-- "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  -->
+<!-- "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">-->
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="in.tecresearch.model.Users" table="userinfo">
+		<id name="id" column="uid">
+			<generator class="assigned" />
+		</id>
+		<property name="name" column="name" />
+		<property name="email" column="email" />
+		<property name="password" column="password" />
+		<property name="gender"  column="gender"/>
+		<property name="city" column="city"/>
+	</class>
+</hibernate-mapping>
