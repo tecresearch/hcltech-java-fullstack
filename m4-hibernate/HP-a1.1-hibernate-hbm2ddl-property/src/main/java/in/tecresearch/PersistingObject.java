@@ -17,6 +17,8 @@ public class PersistingObject {
 			tr.begin();
 			session.persist(new Product(101123, "Laptop", "HP", 50000));
 			session.persist(new Product(10222, "Mouse", "Logitech", 700));
+			session.clear();
+			session.persist(new Product(10222, "Mouse", "Logitech", 700));
 			session.persist(new Product(10332, "Printer", "Dell", 5000));
 			tr.commit();
 			System.out.print("Product added successfully");
