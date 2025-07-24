@@ -19,19 +19,21 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 			System.out.println("Hibernate configured successfully");
 			this.session = sessionFactory.openSession();
 			this.transaction = this.session.getTransaction();
-			transaction.begin();
+			 
 		}
 
 	}
 
 	@Override
 	public void save(Employee employee) {
+		transaction.begin();
 		session.save(employee);
 		transaction.commit();
 	}
 
 	@Override
 	public void persist(Employee employee) {
+		transaction.begin();
 		session.persist(employee);
 		transaction.commit();
 
@@ -39,6 +41,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
 	@Override
 	public void update(Employee employee) {
+		transaction.begin();
 		session.update(employee);
 		transaction.commit();
 
@@ -46,6 +49,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
 	@Override
 	public void delete(Employee employee) {
+		transaction.begin();
 		session.delete(employee);
 		transaction.commit();
 
@@ -53,6 +57,7 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 
 	@Override
 	public Employee get(int id) {
+		transaction.begin();
 		Employee employee = session.get(Employee.class, id);
 		transaction.commit();
 		return employee;

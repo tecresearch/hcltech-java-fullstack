@@ -1,8 +1,6 @@
 package com.hcl.employee.service.impl;
 
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-
+ 
 import com.hcl.employee.model.Employee;
 import com.hcl.employee.repository.EmployeeRepository;
 import com.hcl.employee.repository.impl.EmployeeRepositoryImpl;
@@ -12,7 +10,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	private EmployeeRepository employeeRepository;
 
-	EmployeeServiceImpl() {
+	public EmployeeServiceImpl() {
 		this.employeeRepository = new EmployeeRepositoryImpl();
 	}
 
@@ -24,7 +22,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public void persistEmployee(Employee employee) {
-		employeeRepository.persist(employee);
+		Employee employee2 = new Employee(123, "A", "B", 25, "HCL");
+		employeeRepository.persist(employee2);
 
 	}
 

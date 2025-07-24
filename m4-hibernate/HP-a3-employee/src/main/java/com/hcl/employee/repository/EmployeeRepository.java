@@ -82,7 +82,7 @@ package com.hcl.employee.repository;
 
 import com.hcl.employee.model.Employee;
 
-public interface EmployeeRepository {
+public interface EmployeeRepository{
 
 	public void save(Employee employee);
 	public void persist(Employee employee);
