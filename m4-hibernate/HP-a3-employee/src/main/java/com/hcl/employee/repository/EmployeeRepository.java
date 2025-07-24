@@ -86,8 +86,8 @@ public interface EmployeeRepository{
 
 	public void save(Employee employee);
 	public void persist(Employee employee);
-	public void update(Employee employee);
-	public void delete(Employee employee);
+	public void update(Employee employee,int id);
+	public void delete(int id);
 	public Employee get(int id);
 	
 }

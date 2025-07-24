@@ -1,6 +1,5 @@
 package com.hcl.employee.service.impl;
 
- 
 import com.hcl.employee.model.Employee;
 import com.hcl.employee.repository.EmployeeRepository;
 import com.hcl.employee.repository.impl.EmployeeRepositoryImpl;
@@ -21,27 +20,28 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	@Override
+	public Employee getEmployee(int id) {
+		return employeeRepository.get(id);
+	}
+
+	@Override
 	public void persistEmployee(Employee employee) {
-		Employee employee2 = new Employee(123, "A", "B", 25, "HCL");
-		employeeRepository.persist(employee2);
+
+		employeeRepository.persist(employee);
 
 	}
 
 	@Override
-	public void updateEmployee(Employee employee) {
-		employeeRepository.update(employee);
+	public void updateEmployee(Employee toUpdate, int id) {
+
+		employeeRepository.update(toUpdate, id);
 
 	}
 
 	@Override
-	public void deleteEmployee(Employee employee) {
-		employeeRepository.delete(employee);
+	public void deleteEmployee(int id) {
+		employeeRepository.delete(id);
 
-	}
-
-	@Override
-	public Employee getEmployee( int id) {
-		return employeeRepository.get( id);
 	}
 
 }

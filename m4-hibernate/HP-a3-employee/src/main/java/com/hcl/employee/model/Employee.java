@@ -19,7 +19,7 @@ public class Employee {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Employee(long sapId, String name, String emailId, int age, String company) {
+	public Employee(  String name, String emailId, int age, String company) {
 		super();
 		this.sapId = sapId;
 		this.name = name;
