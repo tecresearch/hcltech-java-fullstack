@@ -1,5 +1,6 @@
 package com.hcl.employee.controller;
 
+import java.util.List;
 import java.util.Scanner;
 
 import com.hcl.employee.model.Employee;
@@ -18,7 +19,8 @@ public class EmployeeController {
 			System.out.println("3.Update");
 			System.out.println("4.Delete");
 			System.out.println("5.Get");
-			System.out.println("6.Exit");
+			System.out.println("6.GetAll Employee");
+			System.out.println("7.Exit");
 			System.out.println("Enter choice: ");
 			int ch = sc.nextInt();
 			switch (ch) {
@@ -28,6 +30,7 @@ public class EmployeeController {
 				break;
 			case 2:
 				Employee emp = new Employee();
+				emp.setSapId(23);
 				emp.setAge(25);
 				emp.setEmailId("a.b@gmail.com");
 				emp.setName("ABC");
@@ -50,6 +53,14 @@ public class EmployeeController {
 				System.out.println("Deleted successfully");
 
 				break;
+			case 6:
+				
+			List<Employee> data=employeeService.getAllEmployee();
+			
+				System.out.println("FetchedAll successfully"+data);
+
+				break;
+				
 			case 5:
 				Employee empl = employeeService.getEmployee(10);
 				System.out.println(empl);

@@ -1,5 +1,7 @@
 package com.hcl.employee.service.impl;
 
+import java.util.List;
+
 import com.hcl.employee.model.Employee;
 import com.hcl.employee.repository.EmployeeRepository;
 import com.hcl.employee.repository.impl.EmployeeRepositoryImpl;
@@ -42,6 +44,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public void deleteEmployee(int id) {
 		employeeRepository.delete(id);
 
+	}
+
+	@Override
+	public List<Employee> getAllEmployee() {
+		// TODO Auto-generated method stub
+		List<Employee> data=employeeRepository.findAll();
+		
+		return data;
 	}
 
 }

@@ -1,13 +1,16 @@
 package com.hcl.employee.repository.impl;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.SharedSessionContract;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import com.hcl.employee.model.Employee;
 import com.hcl.employee.repository.EmployeeRepository;
+
 
 public class EmployeeRepositoryImpl implements EmployeeRepository {
 	private Session session;
@@ -69,6 +72,14 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
 		Employee employee = session.get(Employee.class, id);
 		transaction.commit();
 		return employee;
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		transaction.begin();
+		Query<Employee> query=session.createQuery("FROM Employee",Employee.class);
+		 List<Employee> data=query.list();
+		return data;
 	}
 
 }

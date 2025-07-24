@@ -80,6 +80,8 @@ Detached – Was associated but now disconnected.
 
 package com.hcl.employee.repository;
 
+import java.util.List;
+
 import com.hcl.employee.model.Employee;
 
 public interface EmployeeRepository{
@@ -89,5 +91,6 @@ public interface EmployeeRepository{
 	public void update(Employee employee,int id);
 	public void delete(int id);
 	public Employee get(int id);
+	public List<Employee> findAll();
 	
 }
