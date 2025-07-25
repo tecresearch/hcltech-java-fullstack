@@ -15,11 +15,11 @@ public class PersistingObject {
 			Session session = factory.openSession();
 			Transaction tr = session.getTransaction();
 			tr.begin();
-			session.persist(new Product(101123, "Laptop", "HP", 50000));
-			session.persist(new Product(10222, "Mouse", "Logitech", 700));
+			session.persist(new Product(01123, "Laptop", "HP", 50000));
+			session.persist(new Product(1222, "Mouse", "Logitech", 700));
 			session.clear();
-			session.persist(new Product(10222, "Mouse", "Logitech", 700));
-			session.persist(new Product(10332, "Printer", "Dell", 5000));
+			session.persist(new Product(1022, "Mouse", "Logitech", 700));
+			session.persist(new Product(1032, "Printer", "Dell", 5000));
 			tr.commit();
 			System.out.print("Product added successfully");
 
@@ -29,7 +29,7 @@ public class PersistingObject {
 			for (Product p : products) {
 				System.out.println(p);
 			}
-
+			factory.close();
 			 
 		} catch (HibernateException e) {
 			System.out.println(e.getMessage());

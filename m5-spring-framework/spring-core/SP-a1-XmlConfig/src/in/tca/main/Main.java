@@ -11,7 +11,7 @@ public class Main {
         String configLocation = "/in/tca/config/applicationContext.xml";
 
         try {
-            ApplicationContext context = new ClassPathXmlApplicationContext(configLocation);
+            applicationContext context = new ClassPathXmlApplicationContext(configLocation);
 
             
             Gson gson = (Gson) context.getBean("gson");
