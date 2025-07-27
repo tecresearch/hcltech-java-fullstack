@@ -13,9 +13,11 @@
   	<artifactId>postgresql</artifactId>
   	<version>42.7.7</version>
   </dependency>
-  <dependency><groupId>org.hibernate.orm</groupId>
-  <artifactId>hibernate-core</artifactId>
-  <version>6.6.18.Final</version></dependency>
+  <dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.4.30.Final</version> <!-- Use the version you need -->
+</dependency>
  <!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
 	<dependency>
 	    <groupId>jakarta.servlet</groupId>
