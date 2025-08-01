@@ -1,0 +1,66 @@
+a{
+	font-size:24px;
+	margin-right:20px;
+}
+.mdv{
+	text-align: center;
+}
+.dv{
+	text-align: center;
+	margin-top:50px
+}
+.dvv{
+	text-align: center;
+	margin-top:20px
+}
+.tai{
+	margin: auto;
+	border:2px solid red;
+	background-color:gray;
+	font-size:24px;
+	margin-top:30px;
+	color:white;
+	border-radius: 4px;
+}
+.tdp{
+	padding:14px;
+}
+.tb{
+	font-size:19px;
+	width:300px;
+}
+.bt{
+	color:white;
+	background-color:black;
+	font-size:18px;
+	padding:4px 15px;
+	border:none;
+	cursor: hand; 	
+	border-radius: 5px;
+}
+.tar{
+	margin: auto;
+	border-collapse: collapse;
+	width:50%;
+	margin-top:30px;
+	font-size:20px;	
+}
+.tr:hover{
+	background-color: gray;
+	color:white;
+}
+.talist{
+	margin: auto;
+	font-size:20px;
+	border-collapse: collapse;
+	width:60%;
+	margin-top:30px;
+}
+
+
+
+
+
+
+
+

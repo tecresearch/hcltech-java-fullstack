@@ -1,0 +1,59 @@
+.lal{
+	font-size:2vw;
+	text-decoration: underline;
+	font-family: arial;
+}
+.dv{
+	text-align: center;
+	margin-top:5vw;
+}
+.dvv{
+	text-align: center;
+	margin-top:1vw;
+}
+.lamsg{
+	font-size: 2.4vw;
+	font-family: cursive;
+	font-weight: bold;
+	
+}
+span{
+	color:red;
+	font-size:20px;
+}
+.la{
+	font-size:18px;
+}
+.bd{
+	border:3px solid silver;
+}
+.scrollit {
+    overflow:scroll;
+    max-height:53vh;
+}
+.scrollit thead th {
+      position: sticky;
+      background:teal;
+      color:white;
+      top: 0;
+}
+.ta{
+	margin: auto;
+	margin-top: 2vw;
+	border:3px solid silver;
+	background-color: aqua;
+	font-size:2vw;
+}
+.pad{
+	padding: 1.2vw;
+}
+.tar{
+	margin: auto;
+	margin-top: 1vw;
+	border-collapse:collapse;
+	border-color:silver;
+	border-width:3px;
+	background-color: aqua;
+	font-size:1.7vw;
+	width:45%;
+}
