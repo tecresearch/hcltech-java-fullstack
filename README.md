@@ -1,6 +1,6 @@
 "# HCLTech" 
 "# hcltech-java-fullstack"            
-```
+
 Project Name: HCL Tech Java Fullstack Training and DI
 
 Author
@@ -62,4 +62,3 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 For more detailed documentation, refer to individual module directories.
 
-```
