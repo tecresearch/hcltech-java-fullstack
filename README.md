@@ -1,7 +1,8 @@
 "# HCLTech" 
 "# hcltech-java-fullstack"            
 ```
-Project Name: HCL Tech Java Fullstack
+Project Name: HCL Tech Java Fullstack Training and DI
+
 Author
 Brijesh Nishad
 
