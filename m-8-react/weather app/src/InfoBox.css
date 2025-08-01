@@ -1,0 +1,12 @@
+.infoBox{
+    text-align: center;
+    padding: 20px;
+}
+
+.cardContainer{
+  display: flex;
+  justify-content: center;  /* Centers the card horizontally */
+  align-items: center;      /* Vertically centers the card if needed */
+  margin-top: 20px;         /* Optional: add some space at the top */
+}
+

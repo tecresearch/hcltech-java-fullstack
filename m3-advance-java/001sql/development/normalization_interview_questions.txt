@@ -1,0 +1,561 @@
+```
+
+Basic Concepts
+What is database normalization and why is it important?
+
+Normalization is the process of organizing data to minimize redundancy and dependency by dividing tables and establishing relationships.
+
+Importance: Reduces data redundancy, improves data integrity, prevents anomalies (insert/update/delete), and makes the database more efficient.
+
+Explain the different normal forms with examples.
+
+1NF: Atomic values, no repeating groups (e.g., split comma-separated courses into separate rows)
+
+2NF: Must be 1NF + no partial dependencies (e.g., separate student info from course enrollment)
+
+3NF: Must be 2NF + no transitive dependencies (e.g., move instructor details to a separate table)
+
+BCNF: Stricter 3NF where every determinant is a candidate key
+
+What problems does normalization solve?
+
+Update anomalies (inconsistent data when updating multiple places)
+
+Insert anomalies (can't add data without other data)
+
+Delete anomalies (losing unrelated data when deleting)
+
+Storage inefficiency from data redundancy
+
+When might you choose not to fully normalize?
+
+For read-heavy reporting systems where denormalization improves query performance
+
+When working with frequently accessed reference data
+
+In data warehousing (star/snowflake schemas)
+
+When application logic handles integrity checks
+
+UNF Questions
+Characteristics of an unnormalized table:
+
+Contains repeating groups/arrays
+
+Stores multiple values in single fields (comma-separated)
+
+Mixes different entity types in one table
+
+No clear primary key for all data
+
+Problems with UNF:
+
+Difficult to query specific values
+
+Impossible to enforce data integrity
+
+Wastes storage space
+
+Hard to update individual values
+
+Identifying UNF:
+
+Look for comma-separated values in fields
+
+Check if fields contain "lists" of information
+
+See if table mixes different entity types (students + courses + instructors)
+
+1NF Questions
+1NF requirements:
+
+All attributes contain atomic values
+
+No repeating groups/arrays
+
+Each row is uniquely identifiable
+
+All entries in a column are of the same domain
+
+UNF to 1NF conversion:
+
+sql
+-- Original UNF
+CREATE TABLE UnnormalizedStudent (
+    StudentID INT,
+    StudentName VARCHAR(100),
+    Courses VARCHAR(255),  -- "Math,Physics"
+    Instructors VARCHAR(255),
+    InstructorPhones VARCHAR(255)
+);
+
+-- Converted 1NF
+CREATE TABLE Student1NF (
+    StudentID INT,
+    StudentName VARCHAR(100),
+    Course VARCHAR(100),  -- Single value
+    Instructor VARCHAR(100),
+    InstructorPhone VARCHAR(15)
+);
+Split multi-valued fields into separate rows
+
+1NF anomalies:
+
+Partial dependency issues (student name repeated for each course)
+
+Transitive dependency issues (instructor phone tied to course)
+
+Update anomalies (changing a phone requires multiple updates)
+
+Insert anomalies (can't add instructor without student)
+
+2NF Questions
+Partial dependency & 2NF:
+
+Partial dependency = non-prime attribute depends on part of a composite PK
+
+2NF eliminates this by separating tables where all non-key attributes depend on the whole PK
+
+Identifying need for 2NF:
+
+Check if table has composite primary key
+
+See if any attributes depend on only part of that key
+
+In our example: StudentName depends only on StudentID (not the course)
+
+1NF to 2NF conversion:
+
+sql
+-- Student table (removes partial dependency)
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(100)
+);
+
+-- Course table
+CREATE TABLE Course (
+    CourseName VARCHAR(100) PRIMARY KEY,
+    Instructor VARCHAR(100),
+    InstructorPhone VARCHAR(15)
+);
+
+-- Junction table
+CREATE TABLE Enrollment (
+    StudentID INT,
+    CourseName VARCHAR(100),
+    PRIMARY KEY (StudentID, CourseName)
+);
+Remaining 2NF problems:
+
+Transitive dependencies (instructor phone → instructor → course)
+
+Instructor data redundancy across courses
+
+Update anomalies for instructor information
+
+3NF Questions
+3NF requirements:
+
+Must be 2NF
+
+No transitive dependencies (non-prime attributes must depend only on the PK)
+
+All non-key attributes must be mutually independent
+
+Identifying 3NF violations:
+
+Look for attributes that depend on other non-key attributes
+
+In our 2NF: InstructorPhone depends on Instructor which depends on CourseName
+
+2NF to 3NF conversion:
+
+sql
+-- Instructor table
+CREATE TABLE Instructor (
+    InstructorName VARCHAR(100) PRIMARY KEY,
+    InstructorPhone VARCHAR(15)
+);
+
+-- Updated Course table
+CREATE TABLE Course (
+    CourseName VARCHAR(100) PRIMARY KEY,
+    InstructorName VARCHAR(100),
+    FOREIGN KEY (InstructorName) REFERENCES Instructor(InstructorName)
+);
+3NF vs BCNF:
+
+3NF allows non-key attributes to depend on superkeys
+
+BCNF requires every determinant to be a candidate key
+
+Our 3NF model is also BCNF because:
+
+Student: StudentID is the only candidate key
+
+Instructor: InstructorName is the only candidate key
+
+Course: CourseName is the only candidate key
+
+Enrollment: Composite PK is the only candidate key
+
+Practical Application
+Denormalization example:
+
+sql
+-- For a reporting table that needs fast student+course+instructor queries:
+CREATE TABLE StudentCourseReport (
+    StudentID INT,
+    StudentName VARCHAR(100),
+    CourseName VARCHAR(100),
+    InstructorName VARCHAR(100),
+    InstructorPhone VARCHAR(15),
+    EnrollmentDate DATE
+);
+Tradeoff: Faster reads but harder to maintain consistency
+
+Performance considerations:
+
+Normalized: Better for OLTP (many small writes)
+
+Denormalized: Better for OLAP (complex reads/reports)
+
+Join overhead vs. data redundancy
+
+Indexing strategy differs for each approach
+
+
+
+
+
+
+
+
+ER Diagrams and Steps to Create Them for Normalization
+Steps to Create ER Diagrams for Each Normalization Form
+1. UNF (Unnormalized Form) ER Diagram
+Steps:
+
+Identify all attributes in the single table
+
+Mark the primary key (StudentID)
+
+Show multi-valued attributes with double ovals or brackets
+
+No relationships needed (single table)
+
+Result:
+
+┌───────────────────────────────────────┐
+│         UnnormalizedStudent          │
+├───────────────────────────────────────┤
+│ PK: StudentID                         │
+│    StudentName                        │
+│    Courses {multi-valued}             │
+│    Instructors {multi-valued}         │
+│    InstructorPhones {multi-valued}    │
+└───────────────────────────────────────┘
+2. 1NF ER Diagram
+Steps:
+
+Convert multi-valued attributes to separate rows
+
+Create composite primary key (StudentID + Course)
+
+Show all atomic attributes as single ovals
+
+Result:
+
+┌───────────────────────────────────────┐
+│            Student1NF                │
+├───────────────────────────────────────┤
+│ PK: (StudentID, Course)               │
+│    StudentName                        │
+│    Instructor                         │
+│    InstructorPhone                    │
+└───────────────────────────────────────┘
+3. 2NF ER Diagram
+Steps:
+
+Identify partial dependencies (StudentName depends only on StudentID)
+
+Create separate entities for independent data
+
+Establish relationships:
+
+Student to Enrollment (1-to-many)
+
+Course to Enrollment (1-to-many)
+
+Result:
+
+┌─────────────┐       ┌─────────────┐       ┌─────────────┐
+│  Student    │       │  Course     │       │ Enrollment  │
+├─────────────┤       ├─────────────┤       ├─────────────┤
+│ PK: StudentID│       │ PK: Course  │       │ PK: (Student│
+│    Name      │       │    Instructor│      │    ID,      │
+└──────┬───────┘       │    Phone    │      │    Course)  │
+       │               └──────┬───────┘      └──────┬──────┘
+       │                      │                     │
+       └──────────────────────┴─────────────────────┘
+4. 3NF ER Diagram
+Steps:
+
+Identify transitive dependencies (InstructorPhone → Instructor)
+
+Create new entity for Instructor
+
+Modify Course to reference Instructor
+
+Establish relationships:
+
+Instructor to Course (1-to-many)
+
+Student to Enrollment (1-to-many)
+
+Course to Enrollment (1-to-many)
+
+Final ER Diagram:
+
+┌─────────────┐       ┌─────────────┐       ┌─────────────┐
+│  Student    │       │  Course     │       │ Instructor  │
+├─────────────┤       ├─────────────┤       ├─────────────┤
+│ PK: StudentID│       │ PK: Course  │       │ PK: Name    │
+│    Name      │       │ FK: Instructor│     │    Phone    │
+└──────┬───────┘       └──────┬───────┘     └──────┬──────┘
+       │                      │                     │
+       │                ┌─────┴─────┐               │
+       └───────────────┤ Enrollment ├───────────────┘
+                       ├────────────┤
+                       │PK: (Student│
+                       │    ID,     │
+                       │    Course) │
+                       └────────────┘
+ER Diagram Creation Process
+Identify Entities:
+
+For UNF/1NF: Single entity
+
+For 2NF/3NF: Multiple entities (Student, Course, Instructor)
+
+Determine Attributes:
+
+List all attributes for each entity
+
+Identify primary keys (underlined in ER diagrams)
+
+Identify Relationships:
+
+1:1, 1:many, or many:many
+
+For many:many (like Enrollment), create junction tables
+
+Check Dependencies:
+
+Ensure all attributes depend on their entity's PK
+
+Remove partial/transitive dependencies
+
+Choose Notation Style:
+
+Chen notation (rectangles for entities, diamonds for relationships)
+
+Crow's Foot notation (boxes for entities, lines with crow's feet for cardinality)
+
+UML class diagram style (shown in examples above)
+
+Common ER Diagram Symbols
+Entity: Rectangle
+
+Attribute: Oval connected to entity
+
+Multi-valued attribute: Double oval
+
+Primary key: Underlined
+
+Relationship: Diamond (Chen) or line with cardinality (Crow's Foot)
+
+Foreign key: Dotted line to related entity
+
+Tools for Creating ER Diagrams
+Lucidchart
+
+draw.io
+
+Microsoft Visio
+
+MySQL Workbench (for database-specific diagrams)
+
+dbdiagram.io
+
+ERDPlus
+
+
+
+
+
+
+
+
+Deep Dive Questions
+Identifying partial dependency in 1NF to 2NF:
+
+In the 1NF table, StudentName depends only on StudentID (part of composite PK)
+
+Resolution:
+
+sql
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    StudentName VARCHAR(100)
+);
+
+CREATE TABLE CourseInfo (
+    Course VARCHAR(100) PRIMARY KEY,
+    Instructor VARCHAR(100),
+    InstructorPhone VARCHAR(15))
+);
+
+CREATE TABLE Enrollment (
+    StudentID INT,
+    Course VARCHAR(100),
+    PRIMARY KEY (StudentID, Course))
+);
+Multiple instructor phones in 3NF:
+
+Would require moving to 1NF first by creating separate phone table:
+
+sql
+CREATE TABLE InstructorPhone (
+    InstructorName VARCHAR(100),
+    PhoneNumber VARCHAR(15),
+    PRIMARY KEY (InstructorName, PhoneNumber))
+);
+This represents a multi-valued dependency, potentially requiring 4NF
+
+Denormalization scenario:
+
+Example: Student dashboard showing courses/instructors
+
+Trade-offs:
+
+Create read-optimized materialized view
+
+Accept slower writes for faster reads
+
+Implement refresh strategy for consistency
+
+Practical Implementation Questions
+Query for students with Prof. Smith:
+
+sql
+SELECT s.StudentName, c.CourseName, i.InstructorPhone
+FROM Student s
+JOIN Enrollment e ON s.StudentID = e.StudentID
+JOIN Course c ON e.CourseName = c.CourseName
+JOIN Instructor i ON c.InstructorName = i.InstructorName
+WHERE i.InstructorName = 'Prof. Smith';
+API endpoint design:
+
+python
+def enroll_student(student_id, course_name):
+    with transaction.atomic():
+        # Check student exists
+        if not Student.objects.filter(pk=student_id).exists():
+            raise Http404("Student not found")
+            
+        # Check course exists
+        if not Course.objects.filter(name=course_name).exists():
+            raise Http404("Course not found")
+            
+        # Check not already enrolled
+        if Enrollment.objects.filter(student_id=student_id, course_name=course_name).exists():
+            return Response({"error": "Already enrolled"}, status=400)
+            
+        Enrollment.objects.create(student_id=student_id, course_name=course_name)
+Theory and Best Practices
+Maintenance overhead comparison:
+
+Operation	UNF Overhead	3NF Overhead
+Change student name	High (update all course records)	Low (single update)
+Update instructor phone	High (update all course records)	Medium (update instructor + cache invalidation)
+Add new course	Medium (append to CSV)	Low (single insert)
+Course prerequisites extension:
+
+sql
+CREATE TABLE Prerequisite (
+    Course VARCHAR(100),
+    RequiredCourse VARCHAR(100),
+    PRIMARY KEY (Course, RequiredCourse),
+    FOREIGN KEY (Course) REFERENCES Course(CourseName),
+    FOREIGN KEY (RequiredCourse) REFERENCES Course(CourseName)
+);
+ER diagram adds new many-to-many relationship between courses
+
+Troubleshooting Questions
+Slow join performance:
+
+Diagnosis: Examine query execution plan
+
+Solutions:
+
+Add indexes on all join columns
+
+Consider covering indexes
+
+Denormalize for read-heavy queries
+
+Implement caching layer
+
+Deleting a course with enrollments:
+
+Options:
+
+sql
+-- Option 1: Cascade delete (dangerous)
+ALTER TABLE Enrollment ADD CONSTRAINT fk_course 
+FOREIGN KEY (CourseName) REFERENCES Course(CourseName) 
+ON DELETE CASCADE;
+
+-- Option 2: Prevent deletion (recommended)
+ALTER TABLE Enrollment ADD CONSTRAINT fk_course 
+FOREIGN KEY (CourseName) REFERENCES Course(CourseName);
+Application should first disallow enrollments or archive course
+
+Advanced Design Questions
+Historical phone tracking:
+
+sql
+CREATE TABLE InstructorPhoneHistory (
+    InstructorName VARCHAR(100),
+    PhoneNumber VARCHAR(15),
+    ValidFrom TIMESTAMP,
+    ValidTo TIMESTAMP,
+    PRIMARY KEY (InstructorName, ValidFrom)
+);
+Requires temporal database design patterns
+
+Partitioning Enrollment table:
+
+sql
+CREATE TABLE Enrollment (
+    StudentID INT,
+    CourseName VARCHAR(100),
+    EnrollmentDate DATE
+) PARTITION BY RANGE (YEAR(EnrollmentDate)) (
+    PARTITION p2020 VALUES LESS THAN (2021),
+    PARTITION p2021 VALUES LESS THAN (2022),
+    PARTITION pmax VALUES LESS THAN MAXVALUE
+);
+Partition by academic year for natural data grouping
+
+
+
+
+
+
+
+
+
+```
