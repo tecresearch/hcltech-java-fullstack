@@ -1,0 +1,24 @@
+Web Services
+=============
+Like web application, web services run on web server
+Methods of these services are remotely called by client application over web.These methods are known as APIs
+Any client application(Angular application, ReactJS application, .Net appplication, Python application, Java application,etc)can access web services
+
+Web services in Spring Boot allow applications to communicate over the web using standardized protocols like HTTP. Spring Boot simplifies the development of web services by providing built-in support for RESTful and SOAP-based services.
+
+Types of Web Services in Spring Boot
+====================================
+
+1)RESTful Web Services (REST API)
+  REST stands for representational state transfer
+  a)Based on HTTP methods (GET, POST, PUT, DELETE, PATCH,etc)
+  b)Uses JSON or XML for data exchange
+  c)Lightweight and stateless
+  d)Implemented using @RestController in Spring Boot
+  etc  
+
+2)SOAP Web Services
+SOAP stands for simple object access protocol
+  a)Uses XML messages over HTTP
+  b)More standardized but heavier than REST
+  c)Implemented using Spring Web Services (Spring-WS)

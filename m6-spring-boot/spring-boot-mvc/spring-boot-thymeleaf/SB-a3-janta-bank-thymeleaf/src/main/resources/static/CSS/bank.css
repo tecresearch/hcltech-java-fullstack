@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header {
+    background-color: #004080;
+    color: white;
+    padding: .8vw;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background: #00264d;
+    padding: .5vw;
+}
+.nav a {
+    color: white;
+    padding: 1vw 1vw;
+    text-decoration: none;
+}
+.hero {
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.services {
+    text-align: center;
+    padding: .5vw;
+}
+.services div {
+    display: inline-block;
+    background: white;
+    padding: .5vw;
+    margin: .5vw;
+    border-radius:.2vw;
+    box-shadow: 0px 0px .5vw rgba(0, 0, 0, 0.1);
+}
+.footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: .5vw;
+    margin-top: .2vw;
+}
+.ddm{
+    background:#00264d;
+}
+.bt{
+    border:none;
+    color:white;
+    cursor: pointer;
+    background: #00264d;  
+    margin-top: 12px;
+}
+a.dropdown-item:hover{
+    background:white;
+    color:#00264d;
+}
+.bg-image{
+	background: url("../images/bank-background-image.jpg")no-repeat center center/cover
+}
+.ch{
+	height:18vw;
+}

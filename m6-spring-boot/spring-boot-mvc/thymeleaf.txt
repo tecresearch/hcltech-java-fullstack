@@ -1,0 +1,6 @@
+Thymeleaf in Spring Boot
+========================
+Thymeleaf is a popular templating engine for Spring Boot applications. It is mainly used for rendering dynamic HTML pages in a Spring MVC web application.
+Spring Boot provides built-in support for Thymeleaf. To use it, add the following dependency to your pom.xml (for a Maven project):
+
+http://localhost:8080/sayhello/hellouser?str=Amit

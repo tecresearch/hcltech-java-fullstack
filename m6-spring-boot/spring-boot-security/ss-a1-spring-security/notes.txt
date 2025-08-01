@@ -1,0 +1,51 @@
+🔐 Types of Authentication
+1. Basic Authentication
+Credentials (username & password) are sent with every request (Base64 encoded).
+
+Simple, but not recommended for production without HTTPS.
+
+2. Form-Based Authentication
+User logs in through a custom HTML form.
+
+Spring Security handles session creation and authentication.
+
+3. Token-Based Authentication (JWT)
+Stateless: credentials are exchanged for a token (JWT).
+
+Token is sent in headers (Authorization: Bearer <token>) on every request.
+
+Widely used in REST APIs.
+
+4. OAuth2 Authentication
+Allows login via external providers (Google, GitHub, Facebook).
+
+Common for SSO and third-party integrations.
+
+Uses Authorization Code Flow or Implicit Flow.
+
+5. LDAP Authentication
+Authentication against LDAP (Lightweight Directory Access Protocol) servers.
+
+Common in enterprise applications.
+
+6. Session-Based Authentication
+After login, a session is created and tracked via session ID (cookie-based).
+
+Default in Spring Security when not using stateless auth.
+
+7. Multi-Factor Authentication (MFA/2FA)
+Combines multiple credentials (e.g., password + OTP).
+
+Adds extra layer of security.
+
+Can be integrated with Spring Security manually or using libraries.
+
+8. Social Login
+Uses OAuth2 under the hood.
+
+Login with platforms like Google, Facebook, GitHub.
+
+9. Certificate-Based Authentication
+Uses X.509 certificates to verify identity.
+
+Often used in highly secure environments.

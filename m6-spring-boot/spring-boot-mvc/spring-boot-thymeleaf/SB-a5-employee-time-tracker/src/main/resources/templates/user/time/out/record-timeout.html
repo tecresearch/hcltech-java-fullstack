@@ -1,0 +1,27 @@
+<div class="modal fade" id="employeeTimeOutModal" tabindex="-1" aria-labelledby="employeeTimeOutModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content col-8">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="employeeTimeOutModalLabel">Record Employee Time Out</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="/employee-timetracker/user/time/record-timeout">
+					<div class="row my-3">
+						<div class="col-12">
+							<label class="form-label">Select Employee</label>
+							<select name="empId" id="inEmpId" class="form-select">
+							</select>
+						</div>
+					</div>	
+					<div class="row my-3">	
+						<div class="col-12">
+							<button type="submit" class="btn btn-success w-100">Record Time</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

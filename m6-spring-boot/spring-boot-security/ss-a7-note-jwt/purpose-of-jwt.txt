@@ -1,0 +1,19 @@
+Purpose of JWT in Spring Boot Security
+======================================
+1)Stateless Authentication
+
+Unlike traditional session-based authentication (where the server keeps a session per user), JWTs allow authentication to be stateless. Once the server generates the token, it doesn't need to remember anything about the user — all the info is inside the token itself.
+
+2)Compact and Self-Contained
+
+A JWT contains user identity and possibly roles or permissions. It’s self-contained, so it carries all the necessary data to authenticate a user
+
+3)Authorization
+
+After a user logs in and receives a JWT, they include it in the Authorization header of subsequent requests:
+
+Authorization: Bearer <JWT>
+
+4)Cross-Service Communication
+
+In microservices, JWTs are ideal for authenticating requests between services without managing sessions centrally.

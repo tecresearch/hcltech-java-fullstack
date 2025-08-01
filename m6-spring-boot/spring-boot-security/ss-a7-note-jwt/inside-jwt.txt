@@ -1,0 +1,11 @@
+What’s Inside a JWT?
+====================
+A JWT typically has three parts:
+
+[Header].[Payload].[Signature]
+
+1)Header: Type of token (JWT) and signing algorithm (e.g., HS256).
+
+2)Payload: Claims (user ID, roles, expiry time).
+
+3)Signature: Verifies the token hasn’t been tampered with.

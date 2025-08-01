@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <div th:insert="@{reusable-code/header}"></div>
+  <div class='bg-image'>
+   <div class="container py-5">
+        <div class="card mx-auto shadow ch" style="max-width:40%">
+            <div class="card-body text-center py-5">
+               <p class="fs-3 card-title">Your Account Balance</p>
+               <p class="card-text display-6 text-success">&#8377;<span th:text="${amount}"></span></p>
+               <button type="button" class='btn btn-primary' onclick="history.back()">Back Home</button>
+            </div>
+        </div>
+    </div>
+   </div> 
+   <div th:insert="@{reusable-code/footer}"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+	<div class="modal-dialog model-lg">
+		<div class="modal-content">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="addUserModalLabel">Add User</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="add-user" method="post" onsubmit="return validatePassword()">
+					<div class="row my-3">
+						<div class="col-12">
+							<label class="form-label">Username </label>
+							<input type="text" id="username" name="username" class="form-control" required>
+							<span id="userExistMessage" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">Password</label>
+							<input type="password" id="password" name="password" onkeyup="validatePassword()"  class="form-control" required>
+							<span id="passwordMessage"></span>
+						</div>
+						<div class="col-6">
+							<label class="form-label">Repeat Password</label>
+							<input type="password" id="rpassword" name="rpassword" onkeyup="validatePasswordMatch()" class="form-control" required>
+							<span id="passwordMatchMessage"></span>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">First Name</label>
+							<input type="text" name="firstname" class="form-control" required>
+						</div>
+						<div class="col-6">
+							<label class="form-label">lastname</label>
+							<input type="text" name="lastname" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">Email</label>
+							<input type="text" id="email" name="email" onkeyup="validateEmail()" class="form-control" required>
+							<span id="emailMessage"></span>
+						</div>
+						<div class="col-6">
+							<label class="form-label">Phone</label>
+							<input type="text" name="phone" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-12">
+							<button type="submit" onclick="checkUserExistense()" id="addUser" class="btn btn-success w-100">Add User</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

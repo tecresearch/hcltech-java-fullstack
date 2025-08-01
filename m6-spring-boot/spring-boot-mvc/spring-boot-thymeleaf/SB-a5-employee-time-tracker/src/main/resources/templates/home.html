@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+	<div th:insert="@{csslink}"></div>
+	<style>
+		.btn {
+			padding: 10px 20px;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+			color:white;
+			font-size:1.8vw;
+		}
+		.employee-btn {
+		     background-color: #4CAF50;  /* Employee login button color */
+		}
+		.admin-btn{
+		     background-color: #FF9800;  /* Admin login button color */
+		}
+		.btn:hover{
+			background-color:gray;	
+			color:white;
+		}
+	</style>
+</head>
+
+<body class="bg-image">
+	<div class="container py-5">
+		<div class="card mx-auto shadow ch" style="width:60%">
+			<div class="card-body text-center py-5">
+				<a href="user/login" class="btn employee-btn">User Login</a>
+				<a href="admin/login" class="btn admin-btn">Admin Login</a>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

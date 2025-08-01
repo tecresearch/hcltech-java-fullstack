@@ -1,0 +1,21 @@
+Main class in spring boot project
+=================================
+This class is created bydefault in each project
+This class is annotation with @SpringBootApplication annotation
+@SpringBootApplication
+public class DemoApplication 
+{
+  public static void main(String[] args) 
+  {
+    SpringApplication.run(DemoApplication.class, args);
+  }
+}
+@SpringBootApplication Annotation
+This annotation is a combination of:
+1)@Configuration: Marks the class as a source of bean definitions.
+2)@EnableAutoConfiguration: Enables Spring Boot's auto-configuration.
+3)@ComponentScan: Scans for Spring components in the package and sub-packages.
+
+SpringApplication.run(MySpringBootApplication.class, args);
+1)This method starts the Spring Boot application.
+2)It initializes the Spring context, auto-configures beans, and starts the embedded web server (if applicable, e.g., Tomcat for web apps).

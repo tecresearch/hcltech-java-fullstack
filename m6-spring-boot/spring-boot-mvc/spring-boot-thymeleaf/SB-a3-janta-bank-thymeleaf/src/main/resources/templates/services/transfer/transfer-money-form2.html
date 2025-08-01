@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <div th:insert="@{reusable-code/header}"></div>
+<body class="bg-light text-center">
+ <div class='bg-image'>
+   <div class="container py-5">
+	 <div class="card mx-auto shadow ch" style='max-width: 40%'>
+	   <div class="card-body py-0">
+		 <form action="transfer.do">
+		   <p class='fs-3 py-0 text-primary'>Transfer Form(Enter amount)</p>
+		   <div class="row fs-6">
+		    <div class="col-6 text-start text-dark"><b>Account Holder</b></div>
+		    <div class="col-6 text-end text-danger" th:text="${session.rname}"></div>
+		   </div>
+		   <div class="row fs-6 py-2">
+		    <div class="col-6 text-start"><b>Account Number</b></div>
+		    <div class="col-6 text-end text-danger" th:text="${session.raccountno}"></div>
+		   </div>
+		   <p><input type="text" th:value="${amount}" class="form-control text-center" name="amount" placeholder="Enter amount"></p>
+		   <button class='btn btn-primary'>Submit</button>
+		   <button type="button" class='btn btn-secondary' onclick="history.back()">Back Home</button>
+		   <p class='my-1'><span class='text-danger' th:text="${msg}"></span></p>
+		  </form>
+		 </div>
+		</div>
+	  </div>
+	</div>
+	<div th:insert="@{reusable-code/footer}"></div>
+</body>
+</html>

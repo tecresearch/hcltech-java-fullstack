@@ -1,0 +1,3 @@
+@RestControllerAdvice annotation
+================================
+@RestControllerAdvice in Spring Boot is a specialized version of @ControllerAdvice that combines @ControllerAdvice and @ResponseBody. It’s used to handle exceptions globally across your REST controllers, and the responses are automatically converted to JSON (or XML) format depending on your API configuration.

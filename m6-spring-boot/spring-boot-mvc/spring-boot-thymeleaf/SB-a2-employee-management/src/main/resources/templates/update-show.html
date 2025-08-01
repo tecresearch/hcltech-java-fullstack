@@ -1,0 +1,51 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <div th:insert="navbar"></div>
+  <style>
+   input{
+    width:100%;
+   }
+  </style>
+  <body onload="makeActive('edit')">
+   <form action='update-record' method="post">
+	<input type='hidden' th:value='${emp.eid}' name='eid'>
+    <table class='tar' border='1' cellpadding='5'>
+	   <tr style='background-color:black;color:white'>
+	    <th colspan="2" style="text-align: center">Employee Details</th>
+	   </tr>
+	   <tr>
+	    <th align="left">Employee Id</th>
+	    <td th:text="${emp.eid}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Edit first name</th>
+	    <td><input type='text' name='firstname' th:value='${emp.firstname}'></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Edit last name</th>
+	    <td><input type='text' name='lastname' th:value='${emp.lastname}'></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Edit phone number</th>
+	    <td><input type='text' name='phone' th:value='${emp.phone}'></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Edit email id</th>
+	    <td><input type='text' name='email' th:value='${emp.email}'></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Edit department</th>
+	    <td><input type='text' name='department' th:value='${emp.department}'></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Edit salary</th>
+	    <td><input type='text' name='salary' th:value='${emp.salary}'></td>
+	   </tr>
+	   <tr>
+	    <td colspan="2" align="right">
+	     <button class='btn btn-primary'>Update Record</button>
+	    </td>
+	   </tr>
+	  </table>
+	</form>  
+ </body>
+</html>

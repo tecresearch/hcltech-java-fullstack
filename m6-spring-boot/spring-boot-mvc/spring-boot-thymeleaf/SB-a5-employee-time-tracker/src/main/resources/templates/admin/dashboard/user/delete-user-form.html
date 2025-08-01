@@ -1,0 +1,69 @@
+<div class="modal fade" id="deleteEmployeeModal" tabindex="-1" aria-labelledby="deleteEmployeeModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content col-8">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="deleteEmployeeModalLabel">Delete Employee</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="delete-employee">
+					<div class="row my-3">
+						<div class="col-12">
+							<label class="form-label">Enter Employee Id</label>
+							<input type="text" id="deleteEid" name="eid" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-12 text-center">
+							<button type="button" id="loadDeleteEmployee" class="btn btn-success w-100">Get Employee
+								Details</button>
+							<br><br>
+							<span class="text-danger" id="messageDisplay"></span>
+						</div>
+					</div>
+					<div class="table" id="employeeDeleteDetails" style="display: none">
+						<table class="table table-bordered">
+							<tr>
+								<th>First Name</th>
+								<td id="lblfirstname"></td>
+							</tr>
+							<tr>
+								<th>Last Name</th>
+								<td id="lbllastname"></td>
+							</tr>
+							<tr>
+								<th>Email Id</th>
+								<td id="lblemail"></td>
+							</tr>
+							<tr>
+								<th>Phone number</th>
+								<td id="lblphone"></td>
+							</tr>
+							<tr>
+								<th>Department</th>
+								<td id="lbldepartment"></td>
+							</tr>
+							<tr>
+								<th>Role</th>
+								<td id="lblrole"></td>
+							</tr>
+							<tr>
+								<th>Office timein</th>
+								<td id="lbltimein"></td>
+							</tr>
+							<tr>
+								<th>Office timeout</th>
+								<td id="lbltimeout"></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<button type="submit" class="btn btn-danger w-100">Delete Employee</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <div th:insert="navbar"></div>
+  <body onload="makeActive('delete')">
+  <div class='container'>
+  	<div class='card col-md-10 mx-auto'>
+  	 <div class='card-body'>
+  	  <form action="save-record" method="post">
+  	   <div class='row'>
+  	    <div class='form-group col-md-10'>
+  	      <label>Enter employee id</label><span> *</span>
+  	      <input type="number" class='form-control' name='eid' required>
+  	    </div>
+  	   </div>
+  	   <div class='row'>
+  	    <div class='form-group col-md-5'>
+  	      <label>Enter first name</label><span> *</span>
+  	      <input type="text" class='form-control' name='firstname' required>
+  	    </div>
+  	    <div class='form-group col-md-5'>
+  	      <label>Enter last name</label><span> *</span>
+  	      <input type="text" class='form-control' name='lastname' required>
+  	    </div>
+  	   </div>
+  	   <div class='row'>
+  	    <div class='form-group col-md-5'>
+  	      <label>Enter phone number</label><span> *</span>
+  	      <input type="number" class='form-control' name='phone' required>
+  	    </div>
+  	    <div class='form-group col-md-5'>
+  	      <label>Enter email id</label><span> *</span>
+  	      <input type="email" class='form-control' name='email' required>
+  	    </div>
+  	   </div>
+  	   <div class='row'>
+  	    <div class='form-group col-md-5'>
+  	      <label for="department">Enter department</label><span> *</span>
+  	      <input type="text" class='form-control' name='department' required>
+  	    </div>
+  	    <div class='form-group col-md-5'>
+  	      <label>Enter salary</label><span> *</span>
+  	      <input type="number" class='form-control' name='salary' required>
+  	    </div>
+  	   </div>
+  	   <div class='row'>
+  	    <div class='form-group col-md-10'>
+  	     <button class='btn btn-primary'>Add Record</button>
+  	    </div>
+  	   </div>
+  	  </form>
+  	 </div>
+  	</div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,42 @@
+Return type of RESTFul API method
+=================================
+In Spring Boot, the return type of a RESTful API method can vary depending on the requirement. Here are the commonly used return types:
+
+1)ResponseEntity<T> (Recommended)
+ResponseEntity<T> is the most flexible and preferred return type as it allows customization of HTTP status codes, headers, and body.
+public ResponeEntity<User> method()
+{
+}
+
+2)Java Objects or DTOs (Converted to JSON/XML)
+If you return a Java object (e.g., User), Spring Boot automatically converts it to JSON (or XML if configured).
+public User method()
+{
+}
+
+3)List<T> (For Returning Collections)
+If you return a list, Spring automatically converts it into a JSON array.
+public List<User> method()
+{
+}
+
+4)Map<String, Object> (For Flexible Responses)
+public Map<Integer,User> method()
+{
+}
+
+5)String (For Simple Text Responses)
+public String method()
+{
+}
+
+6)void (For No Content)
+@ResponseStatus(HttpStatus.NO_CONTENT)
+public void method()
+{
+}
+etc
+
+
+
+

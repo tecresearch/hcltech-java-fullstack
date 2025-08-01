@@ -1,0 +1,18 @@
+Swagger
+=======
+
+Swagger is a powerful tool for documenting and testing REST APIs. In a Spring Boot application, you can integrate Swagger using the Springfox or the newer springdoc-openapi library. Since Springfox is no longer actively maintained, most modern Spring Boot apps use springdoc-openapi for Swagger integration.
+
+Setting Up Swagger (springdoc-openapi) in Spring Boot
+======================================================
+
+1)Add the dependency (for Maven):
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.1.0</version> <!-- Check for latest version -->
+</dependency>
+2)Run your Spring Boot app
+Once it's running, open your browser and go to:
+http://localhost:8080/swagger-ui.html
+

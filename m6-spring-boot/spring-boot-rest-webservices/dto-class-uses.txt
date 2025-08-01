@@ -1,0 +1,8 @@
+DTO class
+===========
+In Spring Boot REST APIs, a DTO (Data Transfer Object) is used to transfer data between layers (e.g., between the controller and service layer) without exposing internal entities. It helps in:
+
+1)Encapsulation: Hiding internal entity details.
+2)Validation: Ensuring only valid data is processed.
+3)Performance: Reducing unnecessary data transfer.
+A DTO class typically contains only fields and getters/setters.

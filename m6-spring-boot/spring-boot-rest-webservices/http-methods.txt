@@ -1,0 +1,35 @@
+HTTP methods
+============
+HTTP methods (also known as HTTP verbs) define the actions that can be performed on a given resource/data in a web application. Here are the most common HTTP methods:
+
+1)GET – Retrieves resource/data from the server.
+2)POST – Sends data to the server to create a new resource.
+3)PUT – Updates an existing resource or creates one if it does not exist.
+4)DELETE – Removes a resource from the server.
+5)PATCH – Partially updates an existing resource.
+etc
+On client application/front-end requirement you will have to build RESTFul APIs for aove methods
+
+RESTFul APIs supports both JSON and XML data-exchnage format
+
+XML-fromat
+============
+<User>
+    <id>1</id>
+    <name>John Doe</name>
+    <email>john@example.com</email>
+</User>
+
+JSON format
+===========
+{
+  "id":1,
+  "name":"John Doe"
+  "email":"john@example.com"
+}
+
+
+
+
+
+

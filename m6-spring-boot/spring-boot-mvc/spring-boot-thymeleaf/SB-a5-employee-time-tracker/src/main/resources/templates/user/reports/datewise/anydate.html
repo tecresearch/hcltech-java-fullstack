@@ -1,0 +1,29 @@
+<div class="modal fade" id="anyDateReportModal" tabindex="-1" aria-labelledby="anyDateReportModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content col-8">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="anyDateReportModalLabel">See Datewise reports of all employees</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="/employee-timetracker/user/datewise/report/anydate">
+					<div class="row my-3">
+						<div class="col-12 d-flex justify-content-center">
+							<script>
+							    const today = new Date().toISOString().split('T')[0];
+						        document.getElementById("anyDate").setAttribute("max", today);
+							    </script>
+							<input type="date" id="anyDate" class="form-control" name="date">
+						</div>
+					</div>	
+					<div class="row my-3">	
+						<div class="col-12">
+							<button type="submit" class="btn btn-success w-100">Get Report</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

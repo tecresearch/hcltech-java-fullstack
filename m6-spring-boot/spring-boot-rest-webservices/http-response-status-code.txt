@@ -1,0 +1,42 @@
+HTTP response status codes
+===========================
+HTTP response status codes indicate the result of a client's request to a server. They are grouped into five categories:
+
+1)1xx - Informational
+=====================
+a)100(Continue) – The server has received the request headers and the client should proceed with the request.
+2)101(Switching Protocols) – The server is switching protocols as requested by the client.
+3)102(Processing) – The server has received the request but needs more time to process.
+etc
+
+2)2xx - Success
+================
+a)200(OK) – The request was successful.
+b)201(Created) – The request was successful, and a new resource was created.
+c)202(Accepted) – The request has been received but not yet acted upon.
+d)204(No Content) – The request was successful, but there is no content to return.
+etc
+
+3)3xx - Redirection
+===================
+a)301(Moved Permanently) – The requested resource has been permanently moved to a new URL.
+b)302(Found (Moved Temporarily))– The resource is temporarily located at a different URL.
+c)304(Not Modified) – The resource has not been modified since the last request.
+etc
+
+4)4xx - Client Errors
+===================
+a)400(Bad Request) – The server could not understand the request due to invalid syntax.
+b)401(Unauthorized) – Authentication is required.
+c)403(Forbidden) – The client does not have permission to access the resource.
+d)404(Not Found) – The requested resource was not found.
+e)408(Request Timeout) – The server timed out waiting for the request.
+etc
+
+5)5xx - Server Errors
+===================
+a)500(Internal Server Error) – A generic error indicating something went wrong on the server.
+b)502(Bad Gateway) – The server received an invalid response from an upstream server.
+c)503(Service Unavailable) – The server is currently unavailable (e.g., overloaded or under maintenance).
+d)504(Gateway Timeout) – The server, while acting as a gateway, did not receive a timely response.
+etc

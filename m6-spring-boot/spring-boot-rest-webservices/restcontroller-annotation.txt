@@ -1,0 +1,29 @@
+@RestController
+==============
+
+@RestController is a Spring Boot annotation used to create RESTful web services. It is a specialized version of @Controller, combining it with @ResponseBody, which means that methods in a class annotated with @RestController will return data/resource directly as JSON or XML instead of rendering a view.
+
+Resource in RESTFul web sevrer
+==============================
+In a RESTful API built using Spring Boot, a resource refers to an entity or an object that can be accessed via an endpoint. Each resource is typically represented by a Java class (often called an entity, model, or 
+DTO) and is exposed through a controller that handles HTTP requests.
+
+Endpoint
+===========
+An endpoint is a specific URL where an API can be accessed. It represents a resource (such as users, products, or orders) and is used to send or receive data.
+
+If entity class is User then
+
+HTTP Method	Endpoint			Action
+-----------     --------			-------
+GET		/users				Retrieve a list of users
+GET		/users/{id}			Retrieve a specific user
+POST		/users				Create a new user
+PUT		/users/{id}			Update a user’s information
+PATCH		/users/{id}			Partially update a user
+DELETE		/users/{id}			Delete a user
+
+
+
+
+

@@ -1,0 +1,12 @@
+Spring boot framework
+=====================
+Spring Boot is a Java-based framework that simplifies the development of Spring applications by providing auto-configuration, embedded servers (like Tomcat, Jetty, or Undertow), and production-ready features out of the box. It minimizes boilerplate code, making it easier to build stand-alone, production-grade applications.
+1)Auto configuration
+2)Does not support XML-vased configuration
+3)Spring starter dependency
+4)It has embeded web server.Default web server is Tomcat
+5)Spring boot cli
+6)Standalone application.Every project of spring boot has main class
+etc
+By using this framework we can build both web services and micro services easily
+It is an extension of spring framework

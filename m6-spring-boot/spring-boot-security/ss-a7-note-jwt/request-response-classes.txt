@@ -1,0 +1,19 @@
+Create Authentication Request and Response DTOs
+-------------------------------------------------
+These classes will be used for sending and receiving authentication requests.
+
+public class AuthRequest {
+    private String username;
+    private String password;
+    
+    // Getters and Setters
+}
+public class AuthResponse {
+    private String token;
+
+    public AuthResponse(String token) {
+        this.token = token;
+    }
+
+    // Getter
+}

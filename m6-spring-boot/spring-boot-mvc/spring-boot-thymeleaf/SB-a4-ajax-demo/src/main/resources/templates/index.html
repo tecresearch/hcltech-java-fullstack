@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>AJAX with Spring Boot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>AJAX in Spring Boot with Thymeleaf</h2>
+    <button id="loadMessage">Get Message</button>
+    <p id="messageDisplay"></p>
+
+    <script>
+        $(document).ready(function() {
+            $("#loadMessage").click(function() {
+                $.ajax({
+                    url: "/api/message",
+                    type: "GET",
+                    success: function(response) {
+                        $("#messageDisplay").text(response.message);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("AJAX Error: " + error);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

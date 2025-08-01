@@ -1,0 +1,70 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- admin navbar -->
+<div th:insert="~{@{admin/admin-navbar}}"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+</head>
+<body>
+	<div class="container-fluid">
+	    <div class="row">
+	        <!-- Sidebar -->
+			<div th:insert="~{@{admin/dashboard/employee/employee-sidebar}}"></div>
+	        <!-- Main Content -->
+	        <main class="col-md-9 col-lg-10 offset-md-3 offset-lg-2 p-4">
+	            <div class="d-flex justify-content-between align-items-center mb-3">
+	                <h3 class="fw-bold">Employee List</h3>
+	                <button class="btn btn-success" id="addEmployee" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">+ Add Employee</button>
+	            </div>
+
+	            <!-- Employee Table -->
+	            <div class="table-responsive">
+	                <table class="table table-striped table-hover border rounded">
+	                    <thead class="table-dark">
+	                        <tr>
+	                            <th>ID</th>
+	                            <th>Name</th>
+	                            <th>Email</th>
+								<th>Dept Id</th>
+								<th>Role Id</th>
+	                            <th>Time In</th>
+	                            <th>Time Out</th>
+	                            <th>Actions</th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr th:each="emp:${empList}">
+	                            <td th:text="${emp.empId}"></td>
+	                            <td th:text="${emp.firstname+' '+emp.lastname}"></td>
+	                            <td th:text="${emp.email}"></td>
+								<td><a th:text="${emp.deptId}" href="#"></a></td>
+								<td><a th:text="${emp.roleId}" href="#"></a></td>
+	                            <td th:text="${emp.timein}"></td>
+	                            <td th:text="${emp.timeout}"></td>
+								<td>
+	                                <a class="btn btn-sm btn-primary" href="#">Edit</a>
+ 									<a class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?')" th:href="@{delete-employee(eid=${emp.empId})}">Delete</a>
+	                            </td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	            </div>
+	        </main>
+	    </div>
+	</div>
+
+	<!-- Add Employee Modal -->
+	<div th:insert="~{@{admin/dashboard/employee/add-employee-form}}"></div>
+	<!-- Delete Employee Modal -->
+	<div th:insert="~{@{admin/dashboard/employee/delete-employee-form}}"></div>
+	<!-- Edit Employee Modal -->
+	<div th:insert="~{@{admin/dashboard/employee/edit-employee-form}}"></div>
+	<!-- Employee List Modal -->
+	<div th:insert="~{@{admin/dashboard/employee/employee-list}}"></div>
+\	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+	</html>	 
+</body>
+</html>

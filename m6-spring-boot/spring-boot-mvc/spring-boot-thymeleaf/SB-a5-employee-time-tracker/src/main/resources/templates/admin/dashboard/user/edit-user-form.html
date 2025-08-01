@@ -1,0 +1,90 @@
+<style>
+	label{
+		color:darkblue;
+		font-size: 1.5vw;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	}
+</style>
+<div class="modal fade" id="editEmployeeModal" tabindex="-1" aria-labelledby="editEmployeeModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content col-8">
+			<div class="modal-header bg-primary text-white">
+				<h5 class="modal-title" id="editEmployeeModalLabel">Edit Employee</h5>
+				<button type="button" id="closeEdit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="update-employee" method="post">
+					<div class="row my-1">
+						<div class="col-12">
+							<label class="form-label">Enter Employee Id</label>
+							<input type="text" id="editEid" name="empId" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-2">
+						<div class="col-12 text-center">
+						    <button type="button" id="loadEditEmployee" class="btn btn-success w-100">Get Employee Details</button>
+						</div>
+					</div>
+					<div id="employeeEditDetails" style="display: none">
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">Edit First Name</label>
+							<input type="text" id="firstname" name="firstname" class="form-control" required>
+						</div>
+						<div class="col-6">
+							<label class="form-label">Edit Last Name</label>
+							<input type="text" id="lastname" name="lastname" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">Edit Email Id</label>
+							<input type="text" id="email" name="email" class="form-control" required>
+						</div>
+						<div class="col-6 ">
+							<label class="form-label">Edit Phone Number</label>
+							<input type="text" id="phone" name="phone" class="form-control" required>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">Edit Department</label>
+							<select class="form-select" id="edepartment" name="deptId">
+							</select>
+						</div>
+						<div class="col-6">
+							<label class="form-label">Edit Role</label>
+							<select id="erole" name="roleId" class="form-select">
+							</select>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-6">
+							<label class="form-label">Select Time In</label>
+							<select id="timein" name="timein" class="form-select" required>
+								<option>09:00 AM</option>
+								<option>09:30 AM</option>
+								<option>10:00 AM</option>
+							</select>
+						</div>
+						<div class="col-6">
+							<label class="form-label">Select Time Out</label>
+							<select id="timeout" name="timeout" class="form-select" required>
+								<option>06:00 PM</option>
+								<option>06:30 PM</option>
+								<option>07:00 PM</option>
+							</select>
+						</div>
+					</div>
+					<div class="row my-3">
+						<div class="col-12">
+							<button type="submit" class="btn btn-success w-100">Update Employee</button>
+						</div>
+					</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

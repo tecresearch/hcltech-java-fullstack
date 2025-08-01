@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <div th:insert="navbar"></div>
+ <body  onload="makeActive('list')">
+  <div class='container mt-5'>
+  	<div class='card col-md-12 mx-auto' style='border:3px solid silver'>
+  	  <div class='card-body'>
+  	   <div class='table scrollit'>
+  	    <table class='table table-hover'>
+  	     <thead>
+  	      <tr>
+  	      	<th>Employee id</th><th>First name</th><th>Last name</th>
+  	      	<th>Phone number</th><th>Email Id</th><th>Department</th><th>Salary</th>
+  	      </tr>
+  	     </thead>
+  	     <tbody>
+  	       <tr th:each="employee:${elist}">
+  	        <td th:text="${employee.eid}"></td>
+  	        <td th:text="${employee.firstname}"></td>
+  	        <td th:text="${employee.lastname}"></td>
+  	        <td th:text="${employee.phone}"></td>
+  	        <td th:text="${employee.email}"></td>
+  	        <td th:text="${employee.department}"></td>
+  	        <td th:text="${employee.salary}"></td>
+  	       </tr>
+  	     </c:forEach>
+  	     </tbody> 
+  	    </table>
+  	   </div> 	
+  	  </div>
+  	</div>
+  </div>
+ </body>
+</html>

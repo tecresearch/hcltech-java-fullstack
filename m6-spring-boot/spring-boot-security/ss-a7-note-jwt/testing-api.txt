@@ -1,0 +1,5 @@
+Testing the API
+Login (POST /auth/login with { "username": "admin", "password": "password" })
+Use the JWT in Authorization: Bearer <token> for secured endpoints.
+
+http://localhost:8080/demo/add

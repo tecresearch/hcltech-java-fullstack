@@ -1,0 +1,11 @@
+Common Use Case in Spring Boot
+==============================
+1)User logs in with username/password.
+
+2)Spring Boot validates credentials and generates a JWT.
+
+3)JWT is sent back to the client.
+
+4)For each subsequent request, the client includes the JWT in the header.
+
+5)Spring Security filters decode and validate the JWT to allow access.

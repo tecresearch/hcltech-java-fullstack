@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <div th:insert="navbar"></div>
+  <body onload="makeActive('delete')">
+   <form action='delete-record'>
+	<input type='hidden' th:value='${emp.eid}' name='eid'>
+    <table class='tar' border='1' cellpadding='5'>
+	   <tr style='background-color:red;color:white'>
+	    <th colspan="2" style="text-align: center">Employee Details</th>
+	   </tr>
+	   <tr>
+	    <th align="left">Employee Id</th>
+	    <td th:text="${emp.eid}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">First name</th>
+	    <td th:text="${emp.firstname}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Last name</th>
+	    <td th:text="${emp.lastname}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Phone number</th>
+	    <td th:text="${emp.phone}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Email id</th>
+	    <td th:text="${emp.email}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Department</th>
+	    <td th:text="${emp.department}"></td>
+	   </tr>
+	   <tr>
+	    <th align="left">Salary</th>
+	    <td th:text="${emp.salary}"></td>
+	   </tr>
+	   <tr>
+	    <td colspan="2" align="right">
+	     <button class='btn btn-secondary'>Confirm Delete</button>
+	    </td>
+	   </tr>
+	  </table>
+	</form>  
+ </body>
+</html>

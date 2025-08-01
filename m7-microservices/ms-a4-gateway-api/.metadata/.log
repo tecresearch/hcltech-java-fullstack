@@ -1,0 +1,491 @@
+!SESSION 2025-04-16 12:08:04.696 -----------------------------------------------
+eclipse.buildId=4.35.0.202503181406
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data D:\rehan\CETPA\wd\adv\12-2\micro-services/gateway
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-16 12:08:08.309
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.lemminx.uber-jar 4 0 2025-04-16 12:08:08.629
+!MESSAGE bundle org.eclipse.lemminx.uber-jar:0.29.0 (328) Component descriptor entry 'OSGI-INF/*.xml' not found
+
+!ENTRY ch.qos.logback.classic 1 0 2025-04-16 12:08:09.796
+!MESSAGE Logback config file: D:\rehan\CETPA\wd\adv\12-2\micro-services\gateway\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-04-16 12:08:10.362
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-16 12:08:10.362
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-04-16 12:08:10.832
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-04-16 12:08:10.832
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-04-16 12:08:15.717
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-16 12:08:17.624
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cipl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:33.059
+!MESSAGE Classpath changed for project: employee-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:34.943
+!MESSAGE Classpath changed for project: employee-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:34.944
+!MESSAGE Boot project ADDED: employee-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:34.945
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:34.969
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-16 12:10:34.984
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\rehan\software\spring-tool-suite-4-4.29.1.RELEASE-e4.35.0-win32.win32.x86_64 (1)\sts-4.29.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=D:/rehan/CETPA/wd/adv/12-2/micro-services/gateway/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1744785634983
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\rehan\software\spring-tool-suite-4-4.29.1.RELEASE-e4.35.0-win32.win32.x86_64 (1)\sts-4.29.1.RELEASE\plugins\org.springframework.tooling.boot.ls_1.61.1.202503181316\servers\spring-boot-language-server\spring-boot-language-server-1.61.1-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:34.985
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-16 12:10:34.990
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7880
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:10:39.013
+!MESSAGE Classpath changed for project: employee-service
+
+!ENTRY org.eclipse.jface 2 0 2025-04-16 12:12:33.426
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-04-16 12:12:33.426
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:13:09.905
+!MESSAGE Classpath changed for project: department-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:13:09.907
+!MESSAGE Boot project ADDED: department-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:13:12.558
+!MESSAGE Classpath changed for project: department-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:15:36.439
+!MESSAGE Classpath changed for project: registry-service
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-04-16 12:15:36.446
+!MESSAGE Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.jdt.core.IClasspathEntry.getPath()" because the return value of "org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.getJreContainer(org.eclipse.jdt.core.IClasspathEntry[])" is null
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:98)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:15:39.634
+!MESSAGE Classpath changed for project: registry-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:15:39.635
+!MESSAGE Boot project ADDED: registry-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:15:40.543
+!MESSAGE Classpath changed for project: registry-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:19:18.433
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:19:18.434
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:19:18.434
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:19:18.434
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:20:48.001
+!MESSAGE Classpath changed for project: department-service
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-16 12:23:20.955
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-gateway-mvc:4.2.1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway-mvc:jar:sources:4.2.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-gateway-mvc:jar:sources:4.2.1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-04-16 12:23:20.956
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway-mvc:jar:sources:4.2.1
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-04-16 12:23:20.956
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-gateway-mvc:jar:sources:4.2.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:23:20.993
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:23:20.993
+!MESSAGE Boot project ADDED: apigateway-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:23:21.013
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:23:21.014
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:23:21.014
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:23:21.014
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:23:21.969
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:23:22.248
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-16 12:24:56.206
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:72)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:250)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-16 12:24:57.032
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:72)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:250)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-04-16 12:24:57.858
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:72)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:250)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4321)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1208)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4119)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3707)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:668)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:576)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:670)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:607)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1492)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:25:32.726
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:25:32.793
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-04-16 12:25:33.594
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-gateway:4.2.1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:4.2.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:4.2.1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-04-16 12:25:33.594
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:4.2.1
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2025-04-16 12:25:33.594
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-gateway:jar:sources:4.2.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:25:38.565
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:25:47.788
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:30:06.080
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:30:06.080
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:30:06.081
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:30:06.082
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:31:56.014
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:31:56.014
+!MESSAGE Boot project ADDED: gateway-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:31:56.031
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:31:56.031
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:31:56.031
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:31:56.033
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:31:57.654
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:32:46.509
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:32:56.782
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:34:10.206
+!MESSAGE Classpath changed for project: apigateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:34:10.207
+!MESSAGE Boot project REMOVED: apigateway-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:34:10.208
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:34:10.208
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:34:10.208
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:34:10.209
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:10.467
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:10.467
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:10.468
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:10.468
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:35:20.584
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:35.765
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:35.765
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:35.766
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:35:35.766
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:11.103
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:11.103
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:11.103
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:11.104
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:41.660
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:41.660
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:41.661
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:39:41.661
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:40:00.600
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-16 12:40:08.951
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:41:30.096
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:41:30.096
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:41:30.097
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:41:30.097
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:07.497
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:07.497
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:07.497
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:07.498
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:22.350
+!MESSAGE System property http.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:22.350
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:22.350
+!MESSAGE System property https.proxyHost is set to 172.16.0.7 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2025-04-16 12:46:22.351
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.

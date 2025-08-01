@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+	<div th:insert="~{@{csslink}}"></div>
+ </head>	 
+ <body class="ubg-image">
+  <div class="bg">
+    <div class="container py-5 d-flex justify-content-center align-items-center py-1">
+    <div class="card p-4 shadow-lg" style="width: 40%;height: 70%;">
+        <h4 class="text-center mb-4">User Login</h4>
+        <form action="login.do" method="post">
+            <div class="mb-3">
+                <label for="userid" class="form-label" style="font-weight:bold;">User Id</label>
+                <input type="text" id="userid" th:value="${uid}" class="form-control" name="userid" placeholder="Enter user id" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label" style="font-weight:bold;">User Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="mb-3 my-4">
+                <p><button class="btn btn-primary w-100">Login</button></p>
+            </div>
+        </form>
+        <div class='text-center'>
+          <label class='text-danger' th:text="${msg}"></label>
+        </div>
+     </div>
+    </div>
+   </div>
+  </body>
+</html>
