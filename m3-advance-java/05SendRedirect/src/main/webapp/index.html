@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Engine</title>
+<style>
+	body{
+		
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		height: auto;
+		font-size: 1.6em;
+		gap: 15px;
+	}
+	form{
+		background-color:white;
+		border:1px solid  silver;
+		border-radius: 50px;
+		height: auto;
+		width: 700px;
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+		box-shadow: 5px 5px 5px 3px rgb(192, 192, 192);
+		margin-top: 5%;
+		
+	}
+	
+	 input[name=query]{
+		background-color: transparent;
+		border:none    ;
+		border-radius: 50px;
+		border-color: transparent;
+		height: auto;
+		width: 700px;
+		color: rgb(128, 128, 128);
+		font-family: sans-serif;
+		font-size: 25px;
+		padding: 10px;
+		box-shadow: 1px 1px 1px 1px rgb(192, 192, 192);
+		
+	}
+	
+	 input[type=submit]{
+		background-color: transparent;
+		border:1px solid  silver;
+		border-radius: 50px;
+		box-shadow: 1px 1px 1px 1px rgb(192, 192, 192);
+		
+	}
+	input:focus {
+    outline: none;
+    border: none;
+}
+
+h2{
+	font-size: 30px;
+	font-family: sans-serif;
+	margin-top:5%;
+	color:gainsboro;
+}
+	
+</style>
+</head>
+<body>
+	<h2>Custom Search Engine</h2>
+	<form action="myQuery" method="post" target="_blank">
+		
+		<input type="text" name="query" >
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>

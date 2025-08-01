@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(64, 128, 128);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color:transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            height: auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color:darkslategray;
+        }
+
+        form caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border:1px solid gainsboro;
+            border-radius: 5px;
+            color: rgb(128, 128, 128);
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: rgb(192, 192, 192);
+            opacity: 0.8;
+            border:1px solid gainsboro;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="login" method="post">
+        <caption>Administrator</caption>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="example@gmail.com" required>
+        <input type="submit" value="Login">
+    </form>
+
+</body>
+
+</html>

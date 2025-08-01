@@ -1,6 +1,6 @@
 ## Notes------>
 
-## Collection Framework
+## Collection Framework 
 
 The Collection Framework in Java is a unified architecture for storing and manipulating groups of objects. It provides a
 set of interfaces and classes that implement them, catering to various data structures and algorithms.

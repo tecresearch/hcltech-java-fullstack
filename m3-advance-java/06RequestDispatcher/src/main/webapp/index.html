@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+	body{
+		display: flex;
+		flex-direction: column;
+		font-size: 16px;
+		font-family: sans-serif;
+		padding:0px;
+		margin:0px;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		background-color: rgba(192, 192, 192,0.9);
+		}
+		
+		form{
+			border: 1px solid gainsboro;
+			border-radius: 15px;
+			background-color: transparent;
+			height: auto;
+			width: auto;
+			padding: 10px;
+			margin:5%;
+			background-color: transparent;
+			box-shadow: 2px 2px 2px 2px rgb(192, 192, 192);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 15px;
+		}
+		
+		input:focus{
+			outline: none;
+			border: 1px solid rgba(0, 128, 0,0.6);
+		}
+		input{
+			border-radius: 50px;
+			border: none;
+			background-color: transparent;
+			box-shadow: 1px 1px 1px 1px gainsboro;
+			padding: 10px;
+			width: 250px;
+			height: auto;
+			font-size: 16px;
+			font-family: sans-serif;
+			}
+		input[type=submit]:hover{
+			background-color: rgba(255, 255, 255,0.9);
+			color: rgba(0, 0, 64,0.3);
+			font-size: 16px;
+			font-family: sans-serif;
+			width: 250px;
+			cursor: pointer;
+			font-size: 18px;
+			font-family: sans-serif;
+			
+		}
+		h2{
+			font-size: 25px;
+			font-family: sans-serif;
+			color: grey;
+			padding: 5px;
+			margin:5px;
+		}
+</style>
+</head>
+<body>
+
+	<form action="login" method="post">
+			<h2>Login </h2>
+		<input type="text" name="userid" placeholder="Userid" required>
+		<input type="password" name="password" placeholder="Password" required>
+		<input type="submit" value="Login" >
+	</form>
+</body>
+</html>

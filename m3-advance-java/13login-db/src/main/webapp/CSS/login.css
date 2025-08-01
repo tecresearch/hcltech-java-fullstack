@@ -1,0 +1,24 @@
+.ta{
+	margin: auto;
+	background-color:gray;
+	color:white;
+	border:3px solid black;
+	border-radius:15px;
+	font-size:25px;	
+}
+td{
+	padding:20px 10px;
+}
+.tb{
+	font-size:20px;
+	width:300px;
+}
+.bt{
+	padding:5px 15px;
+	background-color:blue;
+	color:white;
+	border:none;
+	cursor: pointer;
+	font-size:20px;
+	border-radius: 4px;
+}
