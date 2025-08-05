@@ -15,5 +15,5 @@ import jakarta.persistence.ManyToOne;
 public class Loan {
     @ManyToOne
     @JoinColumn(name="customer_id")//Foreign Key
-    private Customer customer;
+    private Customer customer;//add customer_id as fk references to pk
 }
