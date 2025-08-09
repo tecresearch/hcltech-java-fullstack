@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Reports</h2>
+    <p>Report data will be displayed here.</p>
+    <script>
+        // Sample data for demonstration
+        const reports = JSON.parse(localStorage.getItem('reports')) || [];
+
+        // Function to display reports
+        function displayReports() {
+            const reportContainer = document.createElement('div');
+            reports.forEach(report => {
+                const reportItem = document.createElement('p');
+                reportItem.textContent = `Report: ${report.title} - ${report.details}`;
+                reportContainer.appendChild(reportItem);
+            });
+            document.body.appendChild(reportContainer);
+        }
+
+        displayReports();
+      
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+{
+    "news": [
+      {
+        "category": "City News",
+        "articles": [
+          {
+            "title": "City Introduces New Bike Lanes",
+            "description": "New bike lanes are being built to promote cycling in the city.",
+            "content": "The project is part of the city’s green initiative to reduce carbon emissions and promote healthier commuting options.",
+            "publishedAt": "2024-09-15",
+            "imageUrl":"customApi/img/bike.jfif"
+          },
+          {
+            "title": "City Market Expands with New Vendors",
+            "description": "The local farmers' market is adding new stalls to accommodate more vendors.",
+            "content": "New local businesses will join the market, offering a range of fresh produce and artisanal products.",
+            "publishedAt": "2024-09-14"
+          },
+          {
+            "title": "New Library Opens Downtown",
+            "description": "A state-of-the-art public library has been opened downtown.",
+            "content": "The new facility offers a variety of services, including digital access to books, free internet, and community events.",
+            "publishedAt": "2024-09-13"
+          },
+          {
+            "title": "City Council Plans Affordable Housing Project",
+            "description": "Affordable housing developments are planned for several neighborhoods.",
+            "content": "The council is focused on providing more housing options for low-income families as rent prices continue to rise.",
+            "publishedAt": "2024-09-12"
+          },
+          {
+            "title": "Cleanup Drive Continues Through the Weekend",
+            "description": "City volunteers are continuing their efforts to clean up local parks.",
+            "content": "The cleanup is part of a city-wide initiative to maintain public spaces and engage the community in environmental efforts.",
+            "publishedAt": "2024-09-11"
+          },
+          {
+            "title": "Traffic Congestion Eases After Road Expansions",
+            "description": "Recent roadwork has improved traffic flow in previously congested areas.",
+            "content": "Drivers are noticing faster commutes after the city expanded major roads and improved traffic signal timing.",
+            "publishedAt": "2024-09-10"
+          },
+          {
+            "title": "City Zoo Welcomes New Baby Giraffe",
+            "description": "A baby giraffe was born at the city zoo this week, drawing large crowds.",
+            "content": "The zoo has announced the birth of the baby giraffe and is hosting special tours to allow visitors to see the new addition.",
+            "publishedAt": "2024-09-09"
+          },
+          {
+            "title": "Water Conservation Campaign Launches",
+            "description": "The city has started a new campaign urging residents to conserve water.",
+            "content": "With drought conditions affecting the region, the city is providing tips on how to reduce water usage and offering rebates for water-saving appliances.",
+            "publishedAt": "2024-09-08"
+          },
+          {
+            "title": "City Announces Winter Festival Plans",
+            "description": "This year’s winter festival will feature expanded events and attractions.",
+            "content": "The annual winter festival will include ice skating, a holiday market, and live performances.",
+            "publishedAt": "2024-09-07"
+          },
+          {
+            "title": "Public Transportation Fares Reduced",
+            "description": "In response to economic challenges, the city is lowering public transportation fares.",
+            "content": "The reduced fares are aimed at making public transit more accessible to all residents, particularly those on tight budgets.",
+            "publishedAt": "2024-09-06"
+          },
+          {
+            "title": "City Art Exhibition Opens to Public",
+            "description": "The annual city art exhibition has opened, showcasing local talent.",
+            "content": "This year's exhibition features over 200 works of art from local artists, including paintings, sculptures, and digital art.",
+            "publishedAt": "2024-09-05"
+          },
+          {
+            "title": "New Dog Park Opens in the West End",
+            "description": "Pet owners can now enjoy a new dog park in the West End neighborhood.",
+            "content": "The park features separate areas for large and small dogs, agility equipment, and shaded seating for pet owners.",
+            "publishedAt": "2024-09-04"
+          },
+          {
+            "title": "City Park Renovations Completed",
+            "description": "The city's main park has completed its long-awaited renovations.",
+            "content": "The park now features upgraded playgrounds, new walking trails, and improved landscaping, making it a popular spot for residents.",
+            "publishedAt": "2024-09-03"
+          }
+        ]
+      },
+      {
+        "category": "Cricket News",
+        "articles": [
+          {
+            "title": "India Wins Series Against South Africa",
+            "description": "India clinched the series in a decisive match against South Africa.",
+            "content": "India’s bowlers dominated the final match, securing a comfortable win and taking the series 3-2.",
+            "publishedAt": "2024-09-15"
+          },
+          {
+            "title": "T20 World Cup Schedule Announced",
+            "description": "The ICC has released the official schedule for the T20 World Cup.",
+            "content": "Fans are eagerly anticipating the start of the tournament, which will kick off next month with matches across multiple cities.",
+            "publishedAt": "2024-09-14"
+          },
+          {
+            "title": "Top Performers in IPL Season 2024",
+            "description": "This season's IPL saw standout performances from several players.",
+            "content": "Key players from various teams have shone, with exceptional displays of batting and bowling that have thrilled fans across the country.",
+            "publishedAt": "2024-09-13"
+          },
+          {
+            "title": "Australia Announces Squad for Ashes Series",
+            "description": "Australia has announced its squad for the upcoming Ashes series.",
+            "content": "The squad features a mix of experienced players and promising newcomers as Australia prepares to take on England in this historic rivalry.",
+            "publishedAt": "2024-09-12"
+          },
+          {
+            "title": "Sri Lanka Eyes Victory in Tri-Series",
+            "description": "Sri Lanka looks set to win the ongoing tri-series after a strong performance.",
+            "content": "Sri Lanka defeated both India and Bangladesh in back-to-back matches, putting them in a prime position to take the title.",
+            "publishedAt": "2024-09-11"
+          },
+          {
+            "title": "West Indies Star Player Retires from International Cricket",
+            "description": "A legendary player from the West Indies has announced his retirement.",
+            "content": "The player, known for his explosive batting and leadership skills, leaves behind a legacy of unforgettable performances.",
+            "publishedAt": "2024-09-10"
+          },
+          {
+            "title": "Pakistan Defeats New Zealand in ODI Series",
+            "description": "Pakistan secured a series win against New Zealand with a strong showing in the final ODI.",
+            "content": "Pakistan’s top-order batsmen delivered a commanding performance, chasing down New Zealand's total with ease.",
+            "publishedAt": "2024-09-09"
+          },
+          {
+            "title": "England Prepares for ODI Series Against India",
+            "description": "England is gearing up for a tough ODI series against India.",
+            "content": "England’s squad is set, and analysts are predicting a highly competitive series between the two cricketing giants.",
+            "publishedAt": "2024-09-08"
+          },
+          {
+            "title": "New Zealand Announces Changes to Coaching Staff",
+            "description": "New Zealand’s cricket board has made significant changes to its coaching team.",
+            "content": "The changes come after a disappointing season, and the board is hoping the new team will bring fresh energy to the squad.",
+            "publishedAt": "2024-09-07"
+          },
+          {
+            "title": "India's Emerging Talent Shines in Domestic League",
+            "description": "India’s young players have made a mark in the domestic league.",
+            "content": "Several up-and-coming stars have impressed selectors with their performances, raising hopes for the future of Indian cricket.",
+            "publishedAt": "2024-09-06"
+          },
+          {
+            "title": "Cricket World Cup Venue Preparations Underway",
+            "description": "Preparations are in full swing at venues hosting the Cricket World Cup.",
+            "content": "Groundsmen are ensuring pitches are in perfect condition ahead of the tournament, which begins in a few weeks.",
+            "publishedAt": "2024-09-05"
+          },
+          {
+            "title": "India Sets Record-Breaking Total in ODI",
+            "description": "India posted a record-breaking score in their latest ODI match.",
+            "content": "The team’s batsmen took apart the opposition’s bowling attack, setting a new record for the highest total in ODI history.",
+            "publishedAt": "2024-09-04"
+          }
+        ]
+      },
+      {
+        "category": "Entertainment News",
+        "articles": [
+          {
+            "title": "New Action Film Breaks Box Office Records",
+            "description": "The latest action blockbuster has shattered box office records in its opening weekend.",
+            "content": "Fans flocked to theaters to watch the high-octane film, which features groundbreaking special effects and a star-studded cast.",
+            "publishedAt": "2024-09-15"
+          },
+          {
+            "title": "Hollywood Star Visits City for Film Premiere",
+            "description": "A major Hollywood star visited the city for the premiere of their latest film.",
+            "content": "The actor walked the red carpet and met with fans at the event, which saw a packed house for the screening.",
+            "publishedAt": "2024-09-14"
+          },
+          {
+            "title": "New TV Series Gains Massive Popularity",
+            "description": "A new TV series has become a hit, with viewers praising its storytelling and performances.",
+            "content": "The show, which focuses on the lives of a group of friends navigating modern life, has been renewed for a second season.",
+            "publishedAt": "2024-09-13"
+          },
+          {
+            "title": "Music Festival Lineup Announced",
+            "description": "The lineup for this year’s music festival has been announced, featuring top artists from around the world.",
+            "content": "Festival-goers can expect performances from a wide range of genres, from pop to rock to electronic music.",
+            "publishedAt": "2024-09-12"
+          },
+          {
+            "title": "Documentary Wins International Film Award",
+            "description": "A documentary focusing on climate change has won a prestigious international film award.",
+            "content": "The film was praised for its powerful storytelling and stunning cinematography, raising awareness about environmental issues.",
+            "publishedAt": "2024-09-11"
+          },
+          {
+            "title": "Popular Band Announces Reunion Tour",
+            "description": "A popular band from the 90s has announced a reunion tour, delighting fans worldwide.",
+            "content": "The band, known for their chart-topping hits, will perform in major cities across the globe starting next year.",
+            "publishedAt": "2024-09-10"
+          },
+          {
+            "title": "New Streaming Platform Launches",
+            "description": "A new streaming service has launched, offering a wide range of movies and TV shows.",
+            "content": "The platform promises to provide exclusive content, including original series and films from top directors.",
+            "publishedAt": "2024-09-09"
+          },
+          {
+            "title": "Indie Film Gains Critical Acclaim",
+            "description": "An indie film has gained critical acclaim after its debut at a major film festival.",
+            "content": "The film, which explores complex themes of identity and belonging, has been praised for its innovative storytelling.",
+            "publishedAt": "2024-09-08"
+          },
+          {
+            "title": "New Season of Reality Show Premieres Tonight",
+            "description": "The latest season of a popular reality TV show premieres tonight.",
+            "content": "Fans are eager to see what drama unfolds as contestants compete for the grand prize.",
+            "publishedAt": "2024-09-07"
+          },
+          {
+            "title": "Award-Winning Actor Joins Cast of New Film",
+            "description": "An award-winning actor has joined the cast of an upcoming film.",
+            "content": "The film, which is expected to be a box office hit, is currently in pre-production and will begin filming next month.",
+            "publishedAt": "2024-09-06"
+          },
+          {
+            "title": "Classic Film to Be Re-Released in Theaters",
+            "description": "A classic film is set to be re-released in theaters for a limited time.",
+            "content": "The film, considered one of the greatest of all time, will be shown in select theaters with a newly restored version.",
+            "publishedAt": "2024-09-05"
+          },
+          {
+            "title": "Fashion Week Showcases Upcoming Trends",
+            "description": "This year’s Fashion Week has given a glimpse of the trends that will dominate next season.",
+            "content": "Designers unveiled bold, creative collections that are sure to inspire fashion enthusiasts around the world.",
+            "publishedAt": "2024-09-04"
+          }
+        ]
+      },
+      {
+        "category": "Education",
+        "articles": [
+          {
+            "title": "New Education Policy Aims to Boost Digital Learning",
+            "description": "The government has introduced a new education policy focused on enhancing digital learning.",
+            "content": "The policy includes funding for new technology in schools, as well as online learning resources for students.",
+            "publishedAt": "2024-09-15"
+          },
+          {
+            "title": "Top Universities Release Admissions Criteria for 2025",
+            "description": "Several top universities have released their admissions criteria for the upcoming academic year.",
+            "content": "Prospective students can now review the requirements and begin preparing their applications for the 2025 intake.",
+            "publishedAt": "2024-09-14"
+          },
+          {
+            "title": "Scholarships for Low-Income Students Announced",
+            "description": "A new scholarship program has been announced to support low-income students pursuing higher education.",
+            "content": "The program will cover tuition fees and provide additional financial assistance for living expenses.",
+            "publishedAt": "2024-09-13"
+          },
+          {
+            "title": "Schools Prepare for Transition to Hybrid Learning",
+            "description": "Schools across the country are preparing for a transition to a hybrid learning model.",
+            "content": "The model will combine in-person and online learning to provide greater flexibility for students and teachers.",
+            "publishedAt": "2024-09-12"
+          },
+          {
+            "title": "New Research Center Opens at University",
+            "description": "A new research center focusing on renewable energy has opened at a major university.",
+            "content": "The center will conduct cutting-edge research into sustainable energy solutions, with the goal of reducing reliance on fossil fuels.",
+            "publishedAt": "2024-09-11"
+          },
+          {
+            "title": "Study Finds Benefits of Early Childhood Education",
+            "description": "A new study has found that early childhood education has long-term benefits for academic success.",
+            "content": "The study, conducted by leading education researchers, highlights the importance of providing quality education from a young age.",
+            "publishedAt": "2024-09-10"
+          },
+          {
+            "title": "Education Technology Startups See Surge in Investment",
+            "description": "Investment in education technology startups has surged in recent months.",
+            "content": "Startups developing innovative digital learning tools are attracting significant funding as demand for remote education grows.",
+            "publishedAt": "2024-09-09"
+          },
+          {
+            "title": "University Expands Online Course Offerings",
+            "description": "A major university has expanded its online course offerings to reach more students worldwide.",
+            "content": "The new courses cover a range of subjects and are designed to be flexible for working professionals and part-time students.",
+            "publishedAt": "2024-09-08"
+          },
+          {
+            "title": "Education Ministry Launches Initiative for Rural Schools",
+            "description": "The Education Ministry has launched a new initiative to improve rural schools.",
+            "content": "The initiative will focus on upgrading infrastructure, providing teacher training, and enhancing digital access for students in remote areas.",
+            "publishedAt": "2024-09-07"
+          },
+          {
+            "title": "Teachers Call for Increased Support for Mental Health Programs",
+            "description": "Teachers are calling for more support for mental health programs in schools.",
+            "content": "Many educators believe that mental health resources are critical for student well-being and academic success, especially in the wake of the pandemic.",
+            "publishedAt": "2024-09-06"
+          },
+          {
+            "title": "Education Sector to Focus on STEM Initiatives",
+            "description": "The education sector is shifting its focus to STEM (Science, Technology, Engineering, and Mathematics) initiatives.",
+            "content": "New programs are being developed to encourage more students to pursue careers in STEM fields, which are seen as crucial for future economic growth.",
+            "publishedAt": "2024-09-05"
+          },
+          {
+            "title": "New High School Curriculum to Include Environmental Studies",
+            "description": "A new high school curriculum will include mandatory environmental studies courses.",
+            "content": "The courses aim to raise awareness about environmental issues and encourage students to think critically about sustainability.",
+            "publishedAt": "2024-09-04"
+          }
+        ]
+      }
+    ]
+  }
+  

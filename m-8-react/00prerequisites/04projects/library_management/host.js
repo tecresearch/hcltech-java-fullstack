@@ -1,0 +1,1 @@
+const BASE_URL="/mastery-in-javascript/library_management/admin-dashboard.html";

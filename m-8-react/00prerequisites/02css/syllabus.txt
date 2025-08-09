@@ -1,0 +1,73 @@
+1.1. Introduction to CSS
+What is CSS?
+The role of CSS in web development
+Inline, Internal, and External CSS
+CSS Syntax: Selectors, Properties, and Values
+CSS Selectors: Tag, Class, ID, Attribute, Universal, Grouping
+CSS Specificity
+===============================================================
+1.2. CSS Box Model
+Understanding the Box Model: Content, Padding, Border, Margin
+Box-sizing property: content-box vs border-box
+Width, Height, and Box dimensions
+===============================================================
+1.3. Styling Text and Fonts
+Font-family, Font-size, Font-weight, Font-style, Text-transform
+Text-align, Text-decoration, Text-shadow, Letter-spacing
+Line-height, Word-spacing
+Web fonts (Google Fonts, etc.)
+CSS @font-face rule
+================================================================
+1.4. Colors and Backgrounds
+Color values: named colors, hex, RGB, RGBA, HSL, HSLA
+Background-color, Background-image, Background-repeat, Background-size, Background-position
+Gradients: Linear and Radial gradients
+Opacity and transparency
+================================================================
+2. CSS Layout Techniques
+ a:Positioning: static, relative, absolute, fixed, and sticky
+ b:Flexbox: Flex container, Flex items, justify-content, align-items, flex-direction, flex-wrap, flex-grow, flex-shrink, and align-self
+ c:Grid: Grid container, grid items, grid-template-columns, grid-template-rows, grid-gap, grid-template-areas, auto placement
+ d:Float and Clear: Creating layouts using floats, clearing floats
+=================================================================
+3. CSS Transitions and Animations
+Transition property: transition-duration, transition-timing-function, transition-delay
+Animations: @keyframes, animation property (duration, timing-function, delay, iteration-count, etc.)
+Animation events and timing functions
+=================================================================
+4. Responsive Web Design
+Media Queries: @media rule, targeting screen sizes, and breakpoints
+Mobile-first design
+Viewport units (vw, vh, vmin, vmax)
+Responsive typography, images, and elements
+=================================================================
+5.CSS Pseudo-Classes and Pseudo-Elements
+Pseudo-classes: :hover, :active, :focus, :first-child, :last-child, :nth-child, :nth-of-type
+Pseudo-elements: ::before, ::after, ::first-letter, ::first-line
+=================================================================
+6.CSS Variables (Custom Properties)
+Syntax: --variable-name
+Global and Local Scope
+Using variables with colors, font sizes, etc.
+=================================================================
+7.Advanced CSS Concepts (Optional)
+CSS Transforms: translate, scale, rotate, skew
+CSS Filters: blur, brightness, contrast, grayscale, invert, sepia, etc.
+Z-index and Stacking context
+CSS Shapes and Clipping
+Custom CSS animations for UI elements
+Writing maintainable and clean CSS
+Modular CSS (e.g., BEM, SMACSS)
+Avoiding !important in styles
+Optimizing CSS for performance
+SCSS
+===================================================================
+8. CSS Debugging and Browser Compatibility
+Using browser developer tools for debugging
+Cross-browser compatibility issues and solutions
+Vendor prefixes (e.g., -webkit-, -moz-)
+===================================================================
+9. CSS Frameworks (Optional)
+Introduction to CSS frameworks: Bootstrap, Tailwind CSS, Bulma, etc.
+How to use a CSS framework for rapid development
+=================================================================

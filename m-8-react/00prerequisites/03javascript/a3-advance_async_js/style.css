@@ -1,0 +1,85 @@
+/* General page styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Flexbox container for user cards */
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+/* Styling each user card */
+.user-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect for user card */
+.user-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylish heading for user name */
+.user-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Styling for each piece of user info */
+.user-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Highlight key information */
+.user-card p strong {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Add a slight shadow for the text */
+.user-card p {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: footer text or any extra card details */
+.user-card-footer {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .user-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .root {
+        flex-direction: column;
+        align-items: center;
+    }
+}

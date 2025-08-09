@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url('img/main.jpg');
+    
+}
+
+/* Make the navbar sticky */
+.navbar {
+    position: sticky;
+    top: 0; /* Sticks the navbar to the top when scrolling */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: rgba(230, 234, 234, 0.8); /* Optional for transparency */
+    width: 100%; /* Full-width navbar */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for a sticky effect */
+}
+
+.navbar .myList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: rgba(230, 234, 234, 0.747);
+    padding: 20px;
+    border-radius: 30px;
+    border-color: rgb(37, 36, 36);
+    margin-top: 10px;
+     
+}
+
+.myList, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.myList a:hover {
+    transition: ease-in-out 0.2s;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: rgba(238, 29, 133, 0.94);
+}
+
+.myList .mode:hover {
+    transition: ease-in-out 0.4s;
+    letter-spacing: 2px;
+    padding: 5px;
+    color: rgba(238, 29, 133, 0.94);
+}
+
+.myList #active:hover {
+    transition: ease-in-out 0.4s;
+    letter-spacing: 2px;
+    padding: 5px;
+    color: rgba(238, 29, 133, 0.94);
+}
+
+.myList #close:hover {
+    transition: ease-in-out 0.4s;
+    letter-spacing: 2px;
+    padding: 5px;
+    color: rgba(238, 29, 133, 0.94);
+}
+
+.dark {
+    color: white;
+}
+
+.light {
+    color: black;
+}
+
+#myNewLogo {
+    background-color: rgba(255, 217, 0, 0.856);
+    padding: 5px;
+    color: rgb(117, 117, 117);
+    border-radius: 50px;
+}
+
+#myNewLogo p:hover {
+    background-color: rgba(255, 166, 0, 0.822);
+    padding: 3px;
+    color: rgb(241, 237, 245);
+    border-radius: 50px;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 10px rgba(87, 86, 86, 0.94);
+    transition: ease-in-out 0.7s;
+    cursor: pointer;
+}
+
+
+/* 
+css for hero section
+*/
+
+
+.heroSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:5vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-image: url('img/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container{
+    display: flex;
+    gap:5vw;
+    padding: 2rem;
+  
+}
+#heroHead{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 50px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: goldenrod;
+   
+}
+#heroContent{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(110, 110, 110);
+}
+.welcomeNote{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 5rem;
+    width: 50vw;
+    height: auto;
+}
+
+
+.welcomeBg{
+    background-image: url(hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 35vw;
+    height: 375px;
+    cursor: pointer;
+}
+.welcomeBg:hover{
+    transform: scale(0.8);
+    transition: ease-in-out 0.6s;
+}
+
+
+
+#btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scales the button on hover */
+}
+
+#btn:active {
+    transform: scale(0.98); /* Shrinks the button slightly on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduces the shadow on click */
+}
+
+
+#sectionMain {
+    background-image: url('img/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto; /* Adjusted height to fit content */
+    opacity: 0.9;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children */
+}
+
+
+
+
+.infoContainer {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Space out About and Features */
+    width: 100%; /* Full width */
+    margin-bottom: 2rem; /* Space below the container */
+    padding: 10px;
+}
+
+.about, .features {
+    background: rgba(230, 230, 230, 0.8); /* Light grey with transparency */
+    border-radius: 10px;
+    padding: 2rem;
+    width: 45%; /* Adjust width as needed */
+    color: #8b7b94;
+}
+
+.myDivMain {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Space out MD sections */
+    width: 100%; /* Full width */
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+@keyframes rectilinear-motion {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); } /* Move right */
+    100% { transform: translateX(0); } /* Return to original position */
+}
+
+.MD {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* White with transparency */
+    backdrop-filter: blur(10px); /* Glassy effect */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 28%; /* Adjust width for 4 sections */
+    text-align: center;
+    transition: transform 0.4s;
+    color: #8b7b94;
+}
+
+.MD:hover { /* Corrected hover selector */
+    cursor: pointer;
+    transition: all 0.9s;
+    transform: scale(1.05);
+    animation: rectilinear-motion 0.7s ease-in-out; /* Apply animation on hover */
+}
+
+h2 {
+    margin: 10px 0; /* Spacing for titles */
+}
+
+p {
+    color: #666; /* Grey color for description */
+    font-size: 14px;
+}
+
+
+#sectionFooter {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    position: relative; /* Needed for positioning the overlay */
+    width: 100%;
+    color: rgb(12, 33, 214); /* Text color for footer */
+    padding: 20px; /* Padding for space */
+    align-items: center; /* Center items */
+    background-color: #2a0042; /* Fallback color */
+}
+
+#sectionFooter::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute; /* Positioning it absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/img/footer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5; /* Adjust this value for darkness (0.0 to 1.0) */
+    z-index: 1; /* Ensure the overlay is below text */
+}
+
+#sectionFooter * {
+    position: relative; /* Ensure text is above the overlay */
+    z-index: 2; /* Make text appear above the overlay */
+}
+
+
+#sectionFooter h3 {
+    margin: 10px 0; /* Spacing for headings */
+}
+
+#sectionFooter ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#sectionFooter a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#sectionFooter a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+.contentDiv {
+    display: flex;
+    flex-direction: row; /* Stack items horizontal */
+    justify-content: space-around;
+    align-items: center; /* Center items */
+    width: 100%; /* Full width */
+}

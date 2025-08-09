@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">MyApp - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="app-name"></h1>
+        <nav>
+            <a href="#" id="home-link"></a>
+            <a href="#" id="login-btn"></a>
+            <a href="#" id="signup-btn"></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="landing-content">
+            <h2 id="landing-title"></h2>
+            <p id="landing-description"></p>
+        
+             <div class="" style="display: flex; justify-content: center; align-items: center;flex-direction: column;">
+                <h2>Ready to Take the Next Step?</h2>
+                <p>Join us today and start enjoying the benefits.</p>
+            </div>
+       
+        </section>
+    </main>
+    
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="login-close">&times;</span>
+            <h2 id="login-title"></h2>
+            <form id="login-form">
+                <label for="login-username" id="login-username-label"></label>
+                <input type="text" id="login-username" required>
+                <label for="login-password" id="login-password-label"></label>
+                <input type="password" id="login-password" required>
+                <button type="submit" id="login-submit"></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="signup-close">&times;</span>
+            <h2 id="signup-title"></h2>
+            <form id="signup-form">
+                <label for="signup-username" id="signup-username-label"></label>
+                <input type="text" id="signup-username" required>
+                <label for="signup-email" id="signup-email-label"></label>
+                <input type="email" id="signup-email" required>
+                <label for="signup-password" id="signup-password-label"></label>
+                <input type="password" id="signup-password" required>
+                <button type="submit" id="signup-submit"></button>
+            </form>
+        </div>
+    </div>
+    <footer>
+    <div class="" style="display: flex; justify-content: center; align-items: center;">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

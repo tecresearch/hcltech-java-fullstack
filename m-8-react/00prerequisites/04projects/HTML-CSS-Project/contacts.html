@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Brijesh</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: separate;
+            border-spacing: 20px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #00796b;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #004d40;
+            margin: 20px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: justify;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00796b;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #004d40;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #b2dfdb;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        ul li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        form {
+            margin: 20px auto;
+            max-width: 600px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        form table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        form td {
+            padding: 10px;
+        }
+
+        form label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        form input[type="submit"] {
+            background: #00796b;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background: #004d40;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+
+<body>
+    <table contenteditable="true" cellspacing="20">
+        <tr>
+           
+                <h1>Brijesh Nishad</h1>
+                <p><em>Founder and CEO of <strong>The T&C Research Group</strong></em></p>
+                <p><strong>Web Developer</strong> and <strong>Software Developer</strong></p>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <p>I am Brijesh Nishad from Varanasi and currently live in Greater Noida. I passed my 10<sup>th</sup> from
+        <small>V.Y</small> Inter College Varanasi with 83%. I passed my 12<sup>th</sup> from S.K.B Inter College Varanasi with 73%. I am pursuing B.Tech right now in
+        2<sup>nd</sup> year with Computer Science branch. I like to find the mystery of anything.</p>
+
+    <h3><a href="hobbies.html">Hobbies</a></h3>
+    <h3><a href="favorite.html">Favorites</a></h3>
+    <h3>Contact</h3>
+    <ul>
+        <li>Email: Mracks.coder@gmail.com</li>
+        <li>Phone: 8601084708</li>
+        <li>Address: Greater Noida</li>
+    </ul>
+    <form action="mailto:Mracks.coder@gmail.com" method="post" enctype="text/plain">
+        <table>
+            <tr>
+                <td><label for="yourname">Your Name:</label></td>
+                <td><input type="text" name="yourname" id="yourname" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" placeholder="Mracks.coder@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="massage">Your Message:</label></td>
+                <td><textarea name="massage" id="massage" rows="8" placeholder="Start typing..."></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send Message"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h3><a href="skills.html">Skills and Experiences</a></h3>
+
+    <div class="links">
+        <a href="home.html">Back</a>
+        <a href="#top">Top</a>
+    </div>
+</body>
+
+</html>

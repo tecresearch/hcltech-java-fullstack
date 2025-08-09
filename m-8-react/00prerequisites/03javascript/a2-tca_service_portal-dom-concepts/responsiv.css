@@ -1,0 +1,206 @@
+
+ .hamburger  {
+    display: none;
+}
+
+.hamburger, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.close{
+    display: none;
+}
+@media only screen and (max-width: 735px) {
+   
+    
+    .navbar .myList a{
+        display: none;
+    }
+    .navbar, .myList{
+        margin: 0;
+        width: 100%;
+        
+        
+    }
+   
+    .close{
+        display: block;
+    }
+    .navbar .myList{
+        border-radius: 0px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+   
+    .hamburger{
+    /*display: flex;added by js*/
+    transition: all 1s ease;
+    width: auto;
+    flex-direction: column;
+    gap: 5px;
+    background-color: transparent;
+    border-color: rgb(37, 36, 36);
+    padding: 20px;
+    width: 50%;
+    border-radius: 0px 0px 30px 0px ;
+    box-shadow: 2px 2px 10px  rgba(230, 234, 234, 0.533);
+    
+    }
+  
+    .hamburger a:hover {
+        transition: ease-in-out 0.2s;
+        letter-spacing: 2px;
+        padding: 20px;
+        color: rgba(238, 29, 133, 0.94);
+        text-decoration: underline;
+       
+    }
+    
+
+    .heroSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:5vw;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        padding-bottom: 1rem;
+        
+    
+    }
+    
+    .container{
+        display: flex;
+        gap:5vw;
+        padding: 2rem;
+    }
+    #heroHead{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: goldenrod;
+       
+    }
+    #heroContent{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        font-family: "Sofadi One", system-ui;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: rgb(110, 110, 110);
+    }
+    .welcomeNote{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        padding: 30px;
+        padding-top: 90px;
+        width: 40vw;
+        height: auto;
+    }
+    
+    
+    .welcomeBg{
+        background-image: url(hero.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 40vw;
+       
+        cursor: pointer;
+         
+    }
+
+    .infoContainer {
+        display: flex; /* Use flexbox for horizontal layout */
+        justify-content: space-around; /* Space out About and Features */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%; /* Full width */
+        margin-bottom: 2rem; /* Space below the container */
+        padding: 10px;
+    }
+
+    .about, .features {
+        background: rgba(230, 230, 230, 0.8); /* Light grey with transparency */
+        border-radius: 10px;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: auto; /* Adjust width as needed */
+        color: #8b7b94;
+    }
+    .MD {
+        display: flex;
+        flex-wrap: wrap;
+        background: rgba(255, 255, 255, 0.8); /* White with transparency */
+        backdrop-filter: blur(10px); /* Glassy effect */
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        width: 40%; /* Adjust width for 4 sections */
+        text-align: center;
+        transition: transform 0.4s;
+        color: #8b7b94;
+    }
+    .MD :hover{
+        cursor: pointer;
+        transition: ease-in-out 0.4s;
+        transform: scale(1.1);
+    }
+    .MD h2{
+        font-size: 18px;
+    }
+
+
+  #root .model-login   {
+        /* position: absolute; */
+       position: fixed;
+       z-index: 1000; /* Ensures it stays above other elements */
+       top: 30%; /* Center vertically */
+       left: 50%; /* Center horizontally */
+       transform: translate(-50%, -50%); /* Center the modal */
+       display: none;
+      
+     }
+    
+     #root  .model-enroll{
+        /* position: absolute; */
+       position: fixed;
+       z-index: 1000; /* Ensures it stays above other elements */
+       top: 30%; /* Center vertically */
+       left: 50%; /* Center horizontally */
+       transform: translate(-50%, -50%); /* Center the modal */
+       display: none;
+      
+     }
+
+     
+/* Overlay for the modal */
+#root .modal-overlay {
+    position: fixed;
+    top: 60%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the modal */
+    width: 50%;
+    height: 60%;
+    background: rgba(173, 173, 173, 0.062); /* Dark overlay */
+    display: none; /* Initially hidden */
+    z-index: 999; /* Below the modal */
+    border: 1px solid rgb(196, 196, 196);
+    box-shadow: 2px 2px 5px rgba(196, 196, 196, 0.767);
+   
+  }
+  
+  
+  }

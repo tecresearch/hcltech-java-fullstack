@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCA Service Portal</title>
+    <!-- <link rel="stylesheet" href="animation/css/onload.css"> inject via js-->
+     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">injected via js -->
+
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="responsiv.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="model.css">
+  </head>
+  <body>
+    <div id="root">
+      <nav class="navbar">
+        <ul class="myList" data-aos="zoom-in">
+          <li><a href="#" data-section="home">HOME</a></li>
+          <li><a href="#" data-section="services">SERVICES</a></li>
+          <li><a href="#" data-section="platforms">PLATFORMS</a></li>
+          <li><a href="#" data-section="clients">CLIENTS</a></li>
+          <li><a href="#" data-section="login"><button class="myBtn login-btn">LOGIN</button></a></li>
+          <li><a href="#" data-section="enroll"><button  class="myBtn enroll-btn">ENROLL</button></a></li>
+          <span>
+            <img
+              src="mode.svg"
+              alt=""
+              class="mode"
+              style="
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                border-radius: 100%;
+              "
+            />
+          </span>
+          <span>
+            <img
+              src="hamburger-close.svg"
+              alt=""
+              id="hmbgr"
+              class="close mode"
+              style="
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                border-radius: 100%;
+              "
+            />
+          </span>
+        </ul>
+        <ul class="hamburger" data-aos="slide-right">
+          <li><a href="#" data-section="home">HOME</a></li>
+          <li><a href="#" data-section="services">SERVICES</a></li>
+          <li><a href="#" data-section="platforms">PLATFORMS</a></li>
+          <li><a href="#" data-section="clients">CLIENTS</a></li>
+          <li><a href="#" data-section="login"><button  class="myBtn enroll-btn">LOGIN</button></a></li>
+          <li><a href="#" data-section="enroll"><button  class="myBtn login-btn">ENROLL</button></a></li>
+        </ul>
+      </nav>
+      <div class="heroSection">
+        <div class="container">
+          <div class="welcomeNote">
+            <h1 id="heroHead" >Building digital products & brands.</h1>
+            <p id="heroContent" >
+              A digital brand building web project involves creating and
+              managing online platforms, primarily a website, to establish a
+              consistent.
+            </p>
+          </div>
+
+          <div class="welcomeBg"></div>
+        </div>
+      </div>
+
+      <div class="model-enroll modal-overlay" >
+        <img src="close.svg" alt="" id="e-close">
+        
+        <form class="myForm" >
+          <h1 class="m-h">
+            Enrollment  <hr width="100%">
+          </h1>
+        
+          <input type="text" id="name" placeholder="Your name">
+          <input type="text" id="i-user" placeholder="Your username">
+          <input type="email" id="email" placeholder="username@gmail.com">
+          <input type="password" id="i-pass" placeholder="Your password">
+          <button type="submit" class="myBtn" id="enroll-form">  Enroll </button>
+        </form>
+
+      </div>
+      <div class="model-login modal-overlay">
+        <img src="close.svg" alt="" id="l-close">
+     
+        <form class="myForm">
+          <h1 class="m-h">
+           Login <hr >
+          </h1>
+         
+        <input type="text" id="username" placeholder="Your username">
+        <input type="password" id="password" placeholder="Your password">
+        <button type="submit" class="myBtn" id="login-form">Login </button>
+      </form>
+
+    </div>
+    
+    </div>
+    <script src="dom-concepts/complete_dom_manipulation.js"></script>
+    <script src="event-handling-concepts/events-handling-complete.js"></script>
+    <script src="form-handling/form.js"></script>
+    <!-- <script src="animation/css/onload.js"></script>inject via js -->
+     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> inject via js  -->
+     <script>
+    const loadAnimation=async()=>{
+       AOS.init({
+  offset: 150,       // Offset value for animation triggers
+  duration: 2000    // Duration of the animation
+});
+console.log("AOS animation applied on you elements")
+    }
+    loadAnimation();
+ </script>
+  </body>
+</html>

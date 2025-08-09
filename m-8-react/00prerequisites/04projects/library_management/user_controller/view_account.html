@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Account Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Account Details</h2>
+    <div id="accountDetails"></div>
+    <script>
+        // Simulate fetching account details
+        const accountDetails = {
+            username: "john_doe",
+            email: "john_doe@example.com"
+        };
+
+        document.getElementById('accountDetails').innerHTML = `
+            <p>Username: ${accountDetails.username}</p>
+            <p>Email: ${accountDetails.email}</p>
+        `;
+
+      
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

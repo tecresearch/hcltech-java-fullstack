@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Update Book</h2>
+    <form id="updateBookForm">
+        <label for="bookIndex">Book Index:</label>
+        <input type="text" id="bookIndex" required>
+
+        <label for="newBookTitle">New Title:</label>
+        <input type="text" id="newBookTitle" required>
+
+        <label for="newBookAuthor">New Author:</label>
+        <input type="text" id="newBookAuthor" required>
+
+        <button type="submit">Update Book</button>
+    </form>
+    <script>
+        document.getElementById('updateBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const bookIndex = document.getElementById('bookIndex').value;
+            const newBookTitle = document.getElementById('newBookTitle').value;
+            const newBookAuthor = document.getElementById('newBookAuthor').value;
+
+            const books = JSON.parse(localStorage.getItem('books')) || [];
+            if (bookIndex < books.length) {
+                books[bookIndex] = {
+                    title: newBookTitle,
+                    author: newBookAuthor
+                };
+                localStorage.setItem('books', JSON.stringify(books));
+                alert('Book updated successfully!');
+            } else {
+                alert('Book not found!');
+            }
+
+            this.reset();
+         
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

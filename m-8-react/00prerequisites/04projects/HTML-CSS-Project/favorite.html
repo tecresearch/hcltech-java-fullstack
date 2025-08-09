@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Brijesh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #343a40;
+            margin: 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #495057;
+            margin: 20px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #dee2e6;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        ol {
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+            padding: 0;
+        }
+
+        ol li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .top-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .top-link:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table contenteditable="true" cellspacing="20">
+            <tr>
+                <td>
+                    <h1>Brijesh Nishad</h1>
+                    <p><em>Founder and CEO of <strong>The T&C Research Group</strong></em></p>
+                    <p><strong>Web Developer</strong> and <strong>Software Developer</strong></p>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <p>
+            I am Brijesh Nishad from Varanasi and currently live in Greater Noida. I passed my 10<sup>th</sup> from
+            <small>V.Y</small> Inter College Varanasi with 83%. I passed my 12<sup>th</sup> from S.K.B Inter College Varanasi with 73%. I am pursuing B.Tech right now in
+            2<sup>nd</sup> year with a Computer Science branch. I like to find the mystery of anything.
+        </p>
+
+        <h3><a href="hobbies.html">Hobbies</a></h3>
+
+        <h3>My Favorite Books</h3>
+        <ol type="1" reversed>
+            <li>Java SE8</li>
+            <li>Black Book</li>
+            <li>Histories</li>
+            <li>Geeta</li>
+        </ol>
+
+        <h3><a href="contacts.html">Contacts</a></h3>
+        <h3><a href="skills.html">Skills and Experiences</a></h3>
+
+        <a href="home.html" class="top-link">Back</a>
+        <a href="#top" class="top-link">Top</a>
+    </div>
+</body>
+
+</html>

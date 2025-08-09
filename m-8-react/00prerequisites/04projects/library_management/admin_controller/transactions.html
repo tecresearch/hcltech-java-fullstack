@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Transactions</h2>
+    <p>Transaction history will be displayed here.</p>
+    <script>
+        // Sample transaction data
+        const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+
+        // Function to display transactions
+        function displayTransactions() {
+            const transactionContainer = document.createElement('div');
+            transactions.forEach(transaction => {
+                const transactionItem = document.createElement('p');
+                transactionItem.textContent = `Transaction: ${transaction.description} - ${transaction.amount}`;
+                transactionContainer.appendChild(transactionItem);
+            });
+            document.body.appendChild(transactionContainer);
+        }
+
+        displayTransactions();
+     
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

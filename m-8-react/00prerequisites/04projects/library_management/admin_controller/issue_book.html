@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Issue Book</h2>
+    <form id="issueBookForm">
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" required>
+
+        <label for="userName">User Name:</label>
+        <input type="text" id="userName" required>
+
+        <button type="submit">Issue Book</button>
+    </form>
+    <script>
+        document.getElementById('issueBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const bookTitle = document.getElementById('bookTitle').value;
+            const userName = document.getElementById('userName').value;
+
+            alert(`Book "${bookTitle}" has been issued to ${userName}.`);
+            // Here you could add logic to save the issuance to local storage if needed
+            this.reset();
+           
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

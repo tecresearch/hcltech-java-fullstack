@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripting Tags in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Scripting Tags with Definitions and Examples</h2>
+
+    <!-- 1. <script> Tag -->
+    <h3>1. &lt;script&gt; - Embed JavaScript Code</h3>
+    <p>
+        The <code>&lt;script&gt;</code> tag is used to include JavaScript code within an HTML document. 
+        It can be placed inside the `<head>` or `<body>` section.
+    </p>
+    <button onclick="showAlert()">Click Me</button>
+    <script>
+        function showAlert() {
+            alert("Hello! This is a JavaScript alert.");
+        }
+    </script>
+
+    <!-- 2. <noscript> Tag -->
+    <h3>2. &lt;noscript&gt; - Fallback for Disabled JavaScript</h3>
+    <p>
+        The <code>&lt;noscript&gt;</code> tag provides alternative content when JavaScript is disabled in the browser.
+    </p>
+    <noscript>
+        <p>Your browser does not support JavaScript or it is disabled.</p>
+    </noscript>
+
+    <!-- 3. <canvas> Tag -->
+    <h3>3. &lt;canvas&gt; - Draw Graphics with JavaScript</h3>
+    <p>
+        The <code>&lt;canvas&gt;</code> tag is used to draw graphics on a webpage using JavaScript.
+    </p>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(10, 10, 150, 80);
+    </script>
+
+    <!-- 4. <template> Tag -->
+    <h3>4. &lt;template&gt; - Define Reusable HTML Content</h3>
+    <p>
+        The <code>&lt;template&gt;</code> tag is used to store HTML code that can be cloned using JavaScript.
+    </p>
+    <template id="greetingTemplate">
+        <p>Hello, this is a dynamic message!</p>
+    </template>
+    <button onclick="showTemplate()">Show Template Content</button>
+    <div id="templateContainer"></div>
+    <script>
+        function showTemplate() {
+            let template = document.getElementById("greetingTemplate");
+            let clone = template.content.cloneNode(true);
+            document.getElementById("templateContainer").appendChild(clone);
+        }
+    </script>
+
+</body>
+</html>

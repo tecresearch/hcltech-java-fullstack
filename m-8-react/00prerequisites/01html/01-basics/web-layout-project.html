@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="This is our web layout for any website">
+   <link rel="icon" type="image/png" href="https://via.placeholder.com/50"> <!-- Website favicon -->
+   <title>.:: Web Layout</title>
+   <style>
+      * {
+         padding: 0px;
+      }
+   </style>
+</head>
+
+<body style="padding:0px; margin: 0px;">
+   <div class="root" style="   
+        width:100%;
+        height: auto;
+        background-color: #a5f08e00;
+        ">
+      <!--  Header section start-->
+      <div class="header" style="
+               width: 100%;
+               height: 50px;
+               background-color: rgba(166, 110, 218, 0.651);
+               display: flex;
+               flex-direction: row;
+            ">
+         <!-- Logo start -->
+         <div class="logo" style="
+              width:10%; 
+              height: auto; 
+              background-color:  rgb(212, 103, 30);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: rgba(255, 255, 255, 0.801);
+             
+              ">
+            <h3 style=" margin-left:10px ;">Info Fiber Solutions</h3>
+         </div>
+         <!-- logo end -->
+
+         <!-- navbar start -->
+         <div class="navbar" style="
+             width: 90%;
+             height: auto;
+             background-color: rgb(212, 103, 30);
+             display: flex;
+             justify-content: flex-end;
+             align-items: center;
+             
+             ">
+            <ul style="
+               display: flex;
+               flex-direction: row;
+               gap:30px; 
+               justify-content: center;
+               align-items: center;
+               list-style: none;
+               color: white;
+               font-size: 18px;
+               margin-left:20px ;
+               margin-right:20px ;
+               cursor: pointer;
+               ">
+               <li>Home</li>
+               <li>About</li>
+               <li>Contact</li>
+               <li>Career</li>
+               <li>Products</li>
+            </ul>
+
+         </div>
+         <!-- navbar end -->
+      </div>
+      <!--  Header section end-->
+
+      <!-- hero section start -->
+      <div class="hero" style="
+          width: 100%;
+          height: 300px;
+          background-color: rgba(245, 183, 112, 0.658);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         ">
+         <p
+            style="font-weight:500;font-size:28px; font-family: Georgia, 'Times New Roman', Times, serif; font-style: oblique;">
+            Welcome to Info Fiber Solutions <br>we provide 24/7 hours services to the customers
+         </p>
+
+      </div>
+      <!-- hero section end -->
+
+      <!-- main section started -->
+      <div class="main" style="
+          width: 100%;
+          height: auto;
+          background-color: rgba(155, 236, 205, 0);
+          display: flex;
+          flex-direction:row;
+          gap:2px;
+
+          ">
+         <aside class="sidebar" style="
+                
+                width: 25%;
+                height: auto;
+                background-color: rgba(224, 240, 239, 0.712);
+                border-radius: 4px;
+                border: 1px solid rgb(68, 68, 68);  
+               display: flex;
+               justify-content: center;
+               
+             ">
+            <ul style="
+                  display: flex;
+                   flex-direction: column;
+                   gap:10px;
+                   list-style: none;
+                   font-size:25px ;
+                   background-color: transparent;
+                   border-radius: 4px;
+                   border: 1px solid gray;
+                   padding: 10px;
+                   ">
+               <h1>Daily Updates
+                  <hr>
+               </h1>
+
+               <li>Lastest Updates</li>
+               <li>Notice</li>
+               <li>Career</li>
+               <li>Helpdesk</li>
+               <li>Our Clients</li>
+            </ul>
+         </aside>
+         <main class="main-section" style="
+              
+              width:75%;
+              height: auto;
+              background-color:  rgba(224, 240, 239, 0.712);
+              border-radius: 4px;
+              border: 1px solid rgba(68, 68, 68, 0.5);  
+               padding: 20px;
+               display: flex;
+               flex-wrap: wrap;
+               gap:10px;
+               justify-content: center;
+               align-items: center;
+             ">
+            <div class="card" style="
+              width: 250px;
+              display: flex;
+              flex-direction: column;
+              list-style: none;
+              font-size:18px ;
+              background-color: transparent;
+              border-radius: 4px;
+              border: 1px solid gray;
+              padding: 10px;
+              ">
+               <h1>Post 1
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+            <div class="card" style="
+            width: 250px;
+           
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            font-size:18px ;
+            background-color: transparent;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 10px;
+            ">
+               <h1>Post 2
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+          width: 250px;
+         
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          font-size:18px ;
+          background-color: transparent;
+          border-radius: 4px;
+          border: 1px solid gray;
+          padding: 10px;
+          ">
+               <h1>Post 3
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+        width: 250px;
+       
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-size:18px ;
+        background-color: transparent;
+        border-radius: 4px;
+        border: 1px solid gray;
+        padding: 10px;
+        ">
+               <h1>Post 4
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+      width: 250px;
+     
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      font-size:18px ;
+      background-color: transparent;
+      border-radius: 4px;
+      border: 1px solid gray;
+      padding: 10px;
+      ">
+               <h1>Post 5
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+    width: 250px;
+   
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size:18px ;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 10px;
+    ">
+               <h1>Post 6
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+  width: 250px;
+ 
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size:18px ;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 10px;
+  ">
+               <h1>Post 6
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+width: 250px;
+
+display: flex;
+flex-direction: column;
+list-style: none;
+font-size:18px ;
+background-color: transparent;
+border-radius: 4px;
+border: 1px solid gray;
+padding: 10px;
+">
+               <h1>Post 7
+                  <hr>
+               </h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                  , eaque assumenda consequatur
+                  nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam
+                  sit officiis qui saepe id </p>
+            </div>
+
+            <div class="card" style="
+            width: 250px;
+           
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            font-size:18px ;
+            background-color: transparent;
+            border-radius: 4px;
+            border: 1px solid gray;
+            padding: 10px;
+            "><h1>Post 8<hr></h1>
+           
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis facere
+                , eaque assumenda consequatur 
+                nulla, quae minus porro magnam natus fugit voluptas animi ea, laboriosam 
+                sit officiis qui saepe id </p>
+          </div>
+         
+         </main>
+      </div>
+      <!-- main section ended -->
+
+      <!-- footer started -->
+       <footer
+        class="f1"
+        style="
+        background-color: #393E46;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      
+        "
+       >
+         <div class="footer-content" style="display: flex; justify-content: space-around; ">
+            <ul style="list-style: none; ">
+               <h3>Quick Links</h3>
+            
+               <li>Home</li>
+               <li>About</li>
+               <li>Lastest</li>
+               <li>Career</li>
+               <li>Helpdesk</li>
+             </ul>
+             <ul style="list-style: none;">
+               <h3>Address</h3>
+            
+               <li>India</li>
+               <li>Uttar Pradesh</li>
+               <li>Noida</li>
+               <li>Sector 73</li>
+               <li>Sarfabaad</li>
+             </ul>
+             <ul style="list-style: none;">
+               <h3>Contact</h3>
+           
+               <li>Brijesh Nishad</li>
+               <li>Bnlv1212@gmail.com</li>
+               <li>9506563150</li>
+               <li>https://wwww.tecresearch.in</li>
+               <li>https://www.github.com/tecresearch</li>
+             </ul>
+         </div>
+         <p style="  text-align: center;">Copyright@2025 Tecresearch Association Pvt. Limited Developerd by Abhishek </p>
+       </footer>
+
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+/* Adding smooth transitions for each element in the navigation, hero section, and buttons */
+.myList li, .hamburger li, #heroHead, #heroContent, #btn, .hamburger{
+  transition: all 1s ease;
+  /* Apply a smooth transition effect to all properties with a duration of 0.5s */
+}
+
+#heroHead {
+  opacity: 0;
+  /* Initially hide the heading */
+  transform: translateX(-50px);
+  /* Moves the heading slightly to the left */
+}
+
+#heroContent {
+  opacity: 0;
+  /* Initially hide the content */
+  transform: translateX(50px);
+  /* Moves the content slightly to the right */
+}
+
+#btn {
+  opacity: 0;
+  /* Initially hide the button */
+  transform: translateY(20px);
+  /* Moves the button slightly downward */
+}
+
+
+/* When the page loads, add a class to trigger smooth animations */
+body.loaded #heroHead {
+  opacity: 1;
+  /* Makes the heading visible */
+  transform: translateX(0);
+  /* Moves the heading to its original position */
+}
+
+body.loaded #heroContent {
+  opacity: 1;
+  /* Makes the content visible */
+  transform: translateX(0);
+  /* Moves the content to its original position */
+}
+
+body.loaded #btn {
+  opacity: 1;
+  /* Makes the button visible */
+  transform: translateY(0);
+  /* Moves the button to its original position */
+}
+
+/* Transition effect for the navbar items */
+.navbar .myList li, .navbar .hamburger li {
+  opacity: 0;
+  /* Initially hide the navigation items */
+  transform: translateY(-20px);
+  /* Moves the navigation items slightly upwards */
+}
+
+body.loaded .navbar .myList li, body.loaded .navbar .hamburger li {
+  opacity: 1;
+  /* Makes the navigation items visible */
+  transform: translateY(0);
+  /* Moves the navigation items to their original position */
+}

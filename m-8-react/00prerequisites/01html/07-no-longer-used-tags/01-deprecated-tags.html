@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsolete/Deprecated Tags in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .deprecated {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Obsolete/Deprecated HTML Tags with Definitions and Examples</h2>
+    <p class="deprecated">⚠️ These tags are no longer supported in HTML5 and should not be used.</p>
+
+    <!-- 1. <applet> Tag -->
+    <h3>1. &lt;applet&gt; - Embed Java Applets</h3>
+    <p>
+        The <code>&lt;applet&gt;</code> tag was used to embed Java applets, but it is now deprecated due to security concerns. 
+        Use the `<object>` or `<embed>` tag instead.
+    </p>
+    <p class="deprecated">❌ This tag is no longer supported in modern browsers.</p>
+
+    <!-- 2. <acronym> Tag -->
+    <h3>2. &lt;acronym&gt; - Define Acronyms</h3>
+    <p>
+        The <code>&lt;acronym&gt;</code> tag was used to define acronyms, but it is now replaced by `<abbr>`.
+    </p>
+    <p><acronym title="Hypertext Markup Language">HTML</acronym> (Deprecated)</p>
+    <p>✅ Use: <abbr title="Hypertext Markup Language">HTML</abbr></p>
+
+    <!-- 3. <bgsound> Tag -->
+    <h3>3. &lt;bgsound&gt; - Background Sound</h3>
+    <p>
+        The <code>&lt;bgsound&gt;</code> tag was used to play background music in webpages. 
+        It is now replaced by `<audio>`.
+    </p>
+    <p class="deprecated">❌ This tag is no longer supported.</p>
+    <p>✅ Use: <code>&lt;audio&gt;</code> instead.</p>
+
+    <!-- 4. <dir> Tag -->
+    <h3>4. &lt;dir&gt; - Directory List</h3>
+    <p>
+        The <code>&lt;dir&gt;</code> tag was used to create directory lists, but it is replaced by `<ul>`.
+    </p>
+    <p class="deprecated">❌ This tag is no longer supported.</p>
+    <p>✅ Use:</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- 5. <frame> and <frameset> Tags -->
+    <h3>5. &lt;frame&gt; &amp; &lt;frameset&gt; - Frames in Webpages</h3>
+    <p>
+        The <code>&lt;frame&gt;</code> and <code>&lt;frameset&gt;</code> tags were used to divide a webpage into multiple sections.
+        They have been replaced by modern layouts using `<div>` and CSS Flexbox/Grid.
+    </p>
+    <p class="deprecated">❌ These tags are no longer supported.</p>
+
+    <!-- 6. <noframes> Tag -->
+    <h3>6. &lt;noframes&gt; - Alternative Content for Frames</h3>
+    <p>
+        The <code>&lt;noframes&gt;</code> tag was used to provide alternative content for browsers that do not support frames.
+    </p>
+    <p class="deprecated">❌ This tag is obsolete.</p>
+
+    <!-- 7. <big> Tag -->
+    <h3>7. &lt;big&gt; - Bigger Text</h3>
+    <p>
+        The <code>&lt;big&gt;</code> tag was used to increase font size, but it is now replaced by CSS.
+    </p>
+    <p><big>This text is big (Deprecated)</big></p>
+    <p>✅ Use: <span style="font-size: 1.2em;">This is big text using CSS</span></p>
+
+    <!-- 8. <tt> Tag -->
+    <h3>8. &lt;tt&gt; - Teletype Text</h3>
+    <p>
+        The <code>&lt;tt&gt;</code> tag was used to display text in teletype (monospace), but it is replaced by `<code>` or `<pre>`.
+    </p>
+    <p><tt>This is teletype text (Deprecated)</tt></p>
+    <p>✅ Use: <code>This is code text</code></p>
+
+</body>
+</html>

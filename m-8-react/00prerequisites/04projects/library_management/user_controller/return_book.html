@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Return Book</h2>
+    <form id="returnBookForm">
+        <label for="bookId">Enter Book ID to Return:</label>
+        <input type="text" id="bookId" required>
+        <button type="submit">Return Book</button>
+    </form>
+    <script>
+        document.getElementById('returnBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const bookId = document.getElementById('bookId').value;
+            // Logic to return the book
+            alert(`Book with ID ${bookId} returned successfully!`);
+            this.reset();
+            
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

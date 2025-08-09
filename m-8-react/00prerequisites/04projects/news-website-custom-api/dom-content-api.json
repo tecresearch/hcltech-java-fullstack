@@ -1,0 +1,219 @@
+
+  [
+      {
+        "id": 1,
+        "title": "Introduction to the DOM",
+        "content": [
+          {
+            "id": 1.1,
+            "heading": "What is the DOM?",
+            "description": "The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content."
+          },
+          {
+            "id": 1.2,
+            "heading": "DOM tree structure",
+            "description": "The DOM represents the document as a tree of nodes, with each node corresponding to an element, attribute, or text."
+          },
+          {
+            "id": 1.3,
+            "heading": "Nodes",
+            "description": "Nodes are the fundamental units of the DOM, representing elements (tags), attributes (like class or id), and text within elements."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Selecting DOM Elements",
+        "content": [
+          {
+            "id": 2.1,
+            "heading": "document.getElementById()",
+            "description": "Selects a single element by its unique ID."
+          },
+          {
+            "id": 2.2,
+            "heading": "document.getElementsByClassName()",
+            "description": "Selects all elements with a given class name."
+          },
+          {
+            "id": 2.3,
+            "heading": "document.getElementsByTagName()",
+            "description": "Selects all elements with a specific tag name."
+          },
+          {
+            "id": 2.4,
+            "heading": "document.querySelector()",
+            "description": "Selects the first element that matches a CSS selector."
+          },
+          {
+            "id": 2.5,
+            "heading": "document.querySelectorAll()",
+            "description": "Selects all elements that match a CSS selector."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "DOM Traversal",
+        "content": [
+          {
+            "id": 3.1,
+            "heading": "Parent, child, and sibling relationships",
+            "description": "Refers to navigating through parent, child, and sibling nodes within the DOM tree."
+          },
+          {
+            "id": 3.2,
+            "heading": "parentNode, childNodes, firstChild, lastChild",
+            "description": "Properties that allow access to the parent of a node, all child nodes, the first child, and the last child of a node."
+          },
+          {
+            "id": 3.3,
+            "heading": "previousSibling, nextSibling",
+            "description": "Properties that allow access to the previous and next sibling nodes."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Manipulating DOM Elements",
+        "content": [
+          {
+            "id": 4.1,
+            "heading": "Creating elements: document.createElement()",
+            "description": "Creates a new element node."
+          },
+          {
+            "id": 4.2,
+            "heading": "Appending elements: appendChild(), insertBefore()",
+            "description": "Appends a new child node to a parent or inserts it before an existing child node."
+          },
+          {
+            "id": 4.3,
+            "heading": "Removing elements: removeChild()",
+            "description": "Removes a child node from its parent node."
+          },
+          {
+            "id": 4.4,
+            "heading": "Replacing elements: replaceChild()",
+            "description": "Replaces an existing child node with a new one."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Manipulating Attributes",
+        "content": [
+          {
+            "id": 5.1,
+            "heading": "Getting and setting attributes: getAttribute(), setAttribute()",
+            "description": "Retrieves or sets the value of an attribute on an element."
+          },
+          {
+            "id": 5.2,
+            "heading": "Removing attributes: removeAttribute()",
+            "description": "Removes an attribute from an element."
+          },
+          {
+            "id": 5.3,
+            "heading": "Handling data attributes",
+            "description": "Special attributes prefixed with `data-` used for embedding custom data within elements."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Manipulating Content",
+        "content": [
+          {
+            "id": 6.1,
+            "heading": "innerHTML vs textContent",
+            "description": "innerHTML sets or retrieves HTML content inside an element, while textContent sets or retrieves text content only."
+          },
+          {
+            "id": 6.2,
+            "heading": "Adding/removing text content",
+            "description": "Methods for dynamically changing the text inside an element."
+          },
+          {
+            "id": 6.3,
+            "heading": "Working with innerHTML, outerHTML",
+            "description": "innerHTML allows setting or getting the HTML inside an element, while outerHTML includes the element itself."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Manipulating Styles",
+        "content": [
+          {
+            "id": 7.1,
+            "heading": "Inline styles: style property",
+            "description": "Directly sets styles on an element using the `style` property."
+          },
+          {
+            "id": 7.2,
+            "heading": "Adding/removing CSS classes: classList property (add(), remove(), toggle(), contains())",
+            "description": "Methods for dynamically adding, removing, toggling, and checking for CSS classes on an element."
+          },
+          {
+            "id": 7.3,
+            "heading": "Handling computed styles: getComputedStyle()",
+            "description": "Retrieves the actual computed styles applied to an element, as determined by the browser."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Event Handling in the DOM",
+        "content": [
+          {
+            "id": 8.1,
+            "heading": "Adding event listeners: addEventListener()",
+            "description": "Attaches an event handler function to an element for a specific event."
+          },
+          {
+            "id": 8.2,
+            "heading": "Removing event listeners: removeEventListener()",
+            "description": "Removes an event handler that was previously added with addEventListener."
+          },
+          {
+            "id": 8.3,
+            "heading": "Event object, event propagation (bubbling and capturing)",
+            "description": "The event object contains details about the event. Event propagation refers to the order in which events are handled (bubbling or capturing)."
+          },
+          {
+            "id": 8.4,
+            "heading": "Event delegation",
+            "description": "A technique to handle events efficiently by assigning a single event handler to a parent element instead of multiple handlers."
+          },
+          {
+            "id": 8.5,
+            "heading": "Common events: click, focus, blur, change, submit, etc.",
+            "description": "Examples of frequently used DOM events that can be handled with JavaScript."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Working with Forms",
+        "content": [
+          {
+            "id": 9.1,
+            "heading": "Accessing form elements: form.elements, form.submit()",
+            "description": "Methods for accessing and submitting form data."
+          },
+          {
+            "id": 9.2,
+            "heading": "Validating form input",
+            "description": "Techniques for ensuring user input is valid before submitting a form."
+          },
+          {
+            "id": 9.3,
+            "heading": "Handling form submissions with JavaScript",
+            "description": "Methods for capturing and processing form data on the client side using JavaScript."
+          }
+        ]
+      }
+    ]
+  
+  

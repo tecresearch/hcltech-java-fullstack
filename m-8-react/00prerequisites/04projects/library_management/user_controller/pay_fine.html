@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Fine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pay Fine</h2>
+    <form id="payFineForm">
+        <label for="amount">Enter Amount to Pay:</label>
+        <input type="text" id="amount" required>
+        <button type="submit">Pay Fine</button>
+    </form>
+    <script>
+        document.getElementById('payFineForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const amount = document.getElementById('amount').value;
+            // Logic to pay the fine
+            alert(`Fine of ${amount} paid successfully!`);
+            this.reset();
+          
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

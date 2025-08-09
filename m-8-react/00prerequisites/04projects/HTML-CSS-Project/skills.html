@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Brijesh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #f0f4f8, #cfe0e8);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        td {
+            background-color: #ecf0f1;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #dfe6e9;
+        }
+
+        tr:hover td {
+            background-color: #b2bec3;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background: #bdc3c7;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #1e90ff;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .contenteditable {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .animate {
+            transition: transform 0.3s ease;
+        }
+
+        .animate:hover {
+            transform: scale(1.05);
+        }
+
+        .projects-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .projects-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="contenteditable">
+            <h1><a href="#">Brijesh Nishad</a></h1>
+            <p><em>Founder and CEO of <strong>The T&C Research Group</strong></em></p>
+            <p><strong>Web Developer</strong> and <strong>Software Developer</strong></p>
+        </header>
+
+        <hr>
+
+        <section>
+            <p>I am Brijesh Nishad from Varanasi and currently live in Greater Noida. I passed my 10<sup>th</sup> from <small>V.Y</small> Inter College Varanasi with 83%. I passed my 12<sup>th</sup> from S.K.B Inter College Varanasi with 73%. I am pursuing B.Tech right now in 2<sup>nd</sup> year with Computer Science branch. I like to find mystery in anything.</p>
+        </section>
+
+        <nav>
+            <h3><a href="hobbies.html">Hobbies</a></h3>
+            <h3><a href="favorite.html">Favorites</a></h3>
+            <h3><a href="contacts.html">Contacts</a></h3>
+        </nav>
+
+        <!-- Programming Skills and Projects -->
+        <section>
+            <table border="0" class="animate">
+                <tr>
+                    <th>Technical Skills</th>
+                </tr>
+            </table>
+            <br>
+            <table border="1" cellspacing="5" class="animate">
+                <thead>
+                    <tr>
+                        <th>Programming Skills</th>
+                        <th>Projects</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row 1 -->
+                    <tr>
+                        <td>
+                            <table border="1" cellspacing="5">
+                                <thead>
+                                    <tr>
+                                        <th>Programming Languages</th>
+                                        <th>Frameworks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>NA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C++</td>
+                                        <td>QT</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <ol class="projects-list">
+                                <li>Super Market Billing System</li>
+                                <li>College Management System</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr>
+                        <td>
+                            <table border="1" cellspacing="5">
+                                <thead>
+                                    <tr>
+                                        <th>Programming Languages</th>
+                                        <th>Frameworks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HTML</td>
+                                        <td>NA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CSS</td>
+                                        <td>NA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JavaScript</td>
+                                        <td>NA</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <ol class="projects-list">
+                                <li>Personal Website</li>
+                                <li>Portfolio</li>
+                                <li>Face Authentication Login System</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr>
+                        <td>
+                            <table border="1" cellspacing="5">
+                                <thead>
+                                    <tr>
+                                        <th>Programming Languages</th>
+                                        <th>Frameworks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Java</td>
+                                        <td>Swing</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <ol class="projects-list">
+                                <li>Company Management System</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Work Experience -->
+        <section>
+            <br>
+            <table border="0" class="animate">
+                <tr>
+                    <th>Work Experience</th>
+                </tr>
+            </table>
+            <br>
+            <table border="1" cellspacing="10" class="animate">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Work</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020-2021:</td>
+                        <td>Oxiinc Group</td>
+                    </tr>
+                    <tr>
+                        <td>2022-:</td>
+                        <td>Aashmaan Foundation</td>
+                    </tr>
+                    <tr>
+                        <td>2022-:</td>
+                        <td>T&C Research Group (Startup)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <footer>
+            <a href="home.html">Back</a> | 
+            <a href="#top">Top</a>
+        </footer>
+    </div>
+</body>
+</html>

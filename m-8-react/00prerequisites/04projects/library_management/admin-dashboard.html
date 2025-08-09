@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="admin_controller/add_user.html" class="nav-link">Add User</a></li>
+                <li><a href="admin_controller/reports.html" class="nav-link">Reports</a></li>
+                <li><a href="admin_controller/transactions.html" class="nav-link">Transactions</a></li>
+                <li><a href="admin_controller/pay_fine.html" class="nav-link">Pay Fine</a></li>
+                <li><a href="admin_controller/search_books.html" class="nav-link">Search Books</a></li>
+                <li><a href="admin_controller/add_book.html" class="nav-link">Add Book</a></li>
+                <li><a href="admin_controller/update_book.html" class="nav-link">Update Book</a></li>
+                <li><a href="admin_controller/issue_book.html" class="nav-link">Issue Book</a></li>
+                <li><a href="admin_controller/return_book.html" class="nav-link">Return Book</a></li>
+                <li><button id="logoutBtn">Logout</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <h2>Welcome, Admin</h2>
+        <p>Your dashboard allows you to manage the library system. Please select an option from the menu.</p>
+        <div id="userListContainer"></div>
+    </div>
+
+    <script src="js/logout.js"></script>
+    <script>
+        // Ensure user is logged in
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        if (!loggedInUser) {
+            // Redirect to login page if no user is logged in
+            window.location.href = "index.html";
+        } else {
+            document.querySelector('h2').textContent = `Welcome, ${loggedInUser.username}`;
+        }
+
+        // Handle logout
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = 'index.html';
+        });
+
+        // Function to fetch and display users from local storage
+        function fetchAndDisplayUsers() {
+            const users = JSON.parse(localStorage.getItem('users')) || []; // Fetch users from local storage
+
+            const userListContainer = document.getElementById("userListContainer");
+            // Clear previous user list
+            userListContainer.innerHTML = '<h3>Users List</h3>';
+
+            if (users.length === 0) {
+                userListContainer.innerHTML += '<p>No users found.</p>';
+            } else {
+                const userList = document.createElement('ul');
+                users.forEach(user => {
+                    const userItem = document.createElement('li');
+                    userItem.textContent = `Name: ${user.userName}, Email: ${user.userEmail}, Type: ${user.userType}, Membership: ${user.membershipDuration} months`;
+                    userList.appendChild(userItem);
+                });
+                userListContainer.appendChild(userList);
+            }
+        }
+
+        // Fetch and display users when the page loads
+        fetchAndDisplayUsers();
+
+        // Function to fetch and display books from local storage
+        function fetchAndDisplayBooks() {
+            const books = JSON.parse(localStorage.getItem('books')) || []; // Fetch books from local storage
+
+            const bookListContainer = document.createElement('div');
+            bookListContainer.innerHTML = '<h3>Books List</h3>';
+            userListContainer.appendChild(bookListContainer); // Append to userListContainer
+
+            if (books.length === 0) {
+                bookListContainer.innerHTML += '<p>No books found.</p>';
+            } else {
+                const bookList = document.createElement('ul');
+                books.forEach(book => {
+                    const bookItem = document.createElement('li');
+                    bookItem.textContent = `Title: ${book.title}, Author: ${book.author}`;
+                    bookList.appendChild(bookItem);
+                });
+                bookListContainer.appendChild(bookList);
+            }
+        }
+
+        // Fetch and display books when the page loads
+        fetchAndDisplayBooks();
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

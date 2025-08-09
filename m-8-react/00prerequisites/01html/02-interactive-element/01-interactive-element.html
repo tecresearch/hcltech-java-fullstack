@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements</title>
+</head>
+<body>
+
+    <h2>Interactive Elements with Definitions</h2>
+
+    <!-- Details and Summary -->
+    <p>
+        <strong>&lt;details&gt; and &lt;summary&gt; (Expandable Content):</strong> 
+        The <code>&lt;details&gt;</code> tag creates a collapsible section, and <code>&lt;summary&gt;</code> 
+        defines the visible heading for the content.
+    </p>
+    <details>
+        <summary>Click to reveal more information</summary>
+        <p>This is additional content that can be toggled.</p>
+    </details>
+    <hr>
+
+    <!-- Dialog -->
+    <p>
+        <strong>&lt;dialog&gt; (Modal Dialog Box):</strong> 
+        The <code>&lt;dialog&gt;</code> tag represents a pop-up dialog box.
+    </p>
+    <dialog id="myDialog">
+        <p>This is a dialog box!</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+    <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+    <hr>
+
+    <!-- Marquee (Deprecated) -->
+    <p>
+        <strong>&lt;marquee&gt; (Scrolling Text - Deprecated):</strong> 
+        The <code>&lt;marquee&gt;</code> tag was used for scrolling text but is now deprecated.
+    </p>
+    <marquee behavior="scroll" direction="left">This text scrolls from right to left.</marquee>
+    <p>Note: The <code>&lt;marquee&gt;</code> tag is obsolete and should be avoided in modern web development.</p>
+    <hr>
+
+    <!-- BDI -->
+    <p>
+        <strong>&lt;bdi&gt; (Bi-Directional Isolation):</strong> 
+        The <code>&lt;bdi&gt;</code> tag isolates text that might have different text directionality.
+    </p>
+    <p>Username: <bdi>مرحبا</bdi> (This Arabic text remains unaffected by surrounding content direction.)</p>
+
+</body>
+</html>

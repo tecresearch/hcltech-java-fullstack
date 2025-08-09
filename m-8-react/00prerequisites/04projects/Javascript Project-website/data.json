@@ -1,0 +1,95 @@
+{
+    "appName": "",
+    "releaseVersion": "1.0.0",
+    "developedBy": "TechResearch",
+    "developer": "Mr. Brijesh (Software Engineer)",
+    "navbar": {
+        "home": "Home",
+        "service": "Service",
+        "projects": "Projects",
+        "about": "About",
+        "login": "Login",
+        "logout": "Logout",
+        "signup": "Sign Up",
+        "dashboard": "Dashboard"
+    },
+    "landing": {
+        "title": "Welcome to Website",
+        "description": "This is a brief introduction to MyApp, showcasing its features and benefits."
+    },
+    "login": {
+        "title": "Sign In",
+        "usernameLabel": "Username:",
+        "passwordLabel": "Password:",
+        "submitButton": "Sign In"
+    },
+    "signup": {
+        "title": "Sign Up",
+        "usernameLabel": "Username:",
+        "emailLabel": "Email:",
+        "passwordLabel": "Password:",
+        "submitButton": "Sign Up"
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "welcomeMessage": "Welcome to your dashboard. Here you can view your stats and manage your projects.",
+        "userStats": {
+            "title": "User Statistics",
+            "totalProjects": "Total Projects",
+            "completedTasks": "Completed Tasks",
+            "pendingTasks": "Pending Tasks",
+            "totalUsers": "Total Users"
+        },
+        "recentActivities": {
+            "title": "Recent Activities",
+            "activityList": [
+                "Completed task: Design UI",
+                "Started new project: E-commerce site",
+                "Updated profile picture"
+            ]
+        },
+        "quickActions": {
+            "title": "Quick Actions",
+            "actions": [
+                "Create New Project",
+                "View Reports",
+                "Manage Tasks",
+                "Update Profile"
+            ]
+        },
+        "recentProjects": {
+            "title": "Recent Projects",
+            "projects": [
+                "Project A",
+                "Project B",
+                "Project C"
+            ]
+        },
+        "notifications": {
+            "title": "Notifications",
+            "notificationsList": [
+                "New comment on your project",
+                "System update available"
+            ]
+        },
+        "settings": {
+            "title": "Settings",
+            "options": [
+                "Profile",
+                "Account Settings",
+                "Privacy",
+                "Help"
+            ]
+        }
+    },
+    "sidebar": {
+        "title": "Dashboard",
+        "links": [
+            { "name": "Overview", "url": "#" },
+            { "name": "Projects", "url": "#" },
+            { "name": "Tasks", "url": "#" },
+            { "name": "Reports", "url": "#" },
+            { "name": "Settings", "url": "#" }
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #5cb85c;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h2>Add New User</h2>
+    <form id="addUserForm">
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" required>
+
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" required>
+
+        <label for="userType">User Type:</label>
+        <select id="userType">
+            <option value="admin">Admin</option>
+            <option value="member">Member</option>
+        </select>
+
+        <label for="membershipDuration">Membership Duration (months):</label>
+        <input type="text" id="membershipDuration" required>
+
+        <button type="submit">Add User</button>
+    </form>
+    <script>
+        document.getElementById('addUserForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const userName = document.getElementById('userName').value;
+            const userEmail = document.getElementById('userEmail').value;
+            const userType = document.getElementById('userType').value;
+            const membershipDuration = document.getElementById('membershipDuration').value;
+
+            const newUser = {
+                userName,
+                userEmail,
+                userType,
+                membershipDuration
+            };
+
+            const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+            existingUsers.push(newUser);
+            localStorage.setItem('users', JSON.stringify(existingUsers));
+
+            this.reset();
+            alert('User added successfully!');
+           
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

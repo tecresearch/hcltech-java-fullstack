@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Content Tags in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        img, audio, video, iframe, embed, object {
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Embedded Content Tags with Definitions and Examples</h2>
+
+    <!-- 1. <img> Tag -->
+    <h3>1. &lt;img&gt; - Display an Image</h3>
+    <p>
+        The <code>&lt;img&gt;</code> tag is used to embed images in an HTML page.
+        It requires the <code>src</code> attribute to specify the image path and the <code>alt</code> attribute for alternative text.
+    </p>
+    <img src="https://via.placeholder.com/300" alt="Sample Image" width="300">
+
+    <!-- 2. <audio> Tag -->
+    <h3>2. &lt;audio&gt; - Embed Audio Files</h3>
+    <p>
+        The <code>&lt;audio&gt;</code> tag is used to embed audio files in a webpage. The <code>controls</code> attribute adds play, pause, and volume options.
+    </p>
+    <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- 3. <video> Tag -->
+    <h3>3. &lt;video&gt; - Embed Video Files</h3>
+    <p>
+        The <code>&lt;video&gt;</code> tag is used to embed video content in a webpage.
+        The <code>controls</code> attribute provides play, pause, and volume controls.
+    </p>
+    <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 4. <source> Tag -->
+    <h3>4. &lt;source&gt; - Specify Media Source</h3>
+    <p>
+        The <code>&lt;source&gt;</code> tag allows multiple media formats to be specified inside <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements.
+    </p>
+    <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        <source src="sample-video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 5. <track> Tag -->
+    <h3>5. &lt;track&gt; - Add Subtitles to Video</h3>
+    <p>
+        The <code>&lt;track&gt;</code> tag is used to add subtitles or captions to videos.
+    </p>
+    <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 6. <iframe> Tag -->
+    <h3>6. &lt;iframe&gt; - Embed an External Webpage</h3>
+    <p>
+        The <code>&lt;iframe&gt;</code> tag is used to embed another webpage inside the current page.
+    </p>
+    <iframe src="https://www.example.com" width="600" height="300"></iframe>
+
+    <!-- 7. <embed> Tag -->
+    <h3>7. &lt;embed&gt; - Embed External Content</h3>
+    <p>
+        The <code>&lt;embed&gt;</code> tag is used to embed external content like PDF, Flash, or music players.
+    </p>
+    <embed src="sample.pdf" width="500" height="400" type="application/pdf">
+
+    <!-- 8. <object> Tag -->
+    <h3>8. &lt;object&gt; - Embed External Resources</h3>
+    <p>
+        The <code>&lt;object&gt;</code> tag is used to embed objects like PDF, Flash files, and Java applets.
+    </p>
+    <object data="sample.pdf" type="application/pdf" width="500" height="400">
+        <p>PDF cannot be displayed.</p>
+    </object>
+
+    <!-- 9. <param> Tag -->
+    <h3>9. &lt;param&gt; - Define Parameters for Objects</h3>
+    <p>
+        The <code>&lt;param&gt;</code> tag is used to define parameters for embedded objects.
+    </p>
+    <object data="sample.swf" type="application/x-shockwave-flash" width="400" height="300">
+        <param name="autoplay" value="true">
+        <param name="loop" value="false">
+    </object>
+
+</body>
+</html>

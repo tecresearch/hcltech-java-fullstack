@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Membership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Update Membership</h2>
+    <form id="updateMembershipForm">
+        <label for="membershipType">Membership Type:</label>
+        <select id="membershipType">
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+        <button type="submit">Update Membership</button>
+    </form>
+    <script>
+        document.getElementById('updateMembershipForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const membershipType = document.getElementById('membershipType').value;
+            // Logic to update membership type
+            alert(`Membership updated to ${membershipType}!`);
+            this.reset();
+         
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

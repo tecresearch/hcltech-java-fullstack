@@ -1,0 +1,51 @@
+Introduction to the DOM
+
+What is the DOM?: The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content.
+DOM tree structure: The DOM represents the document as a tree of nodes, with each node corresponding to an element, attribute, or text.
+Nodes: Nodes are the fundamental units of the DOM, representing elements (tags), attributes (like class or id), and text within elements.
+Selecting DOM Elements
+
+document.getElementById(): Selects a single element by its unique ID.
+document.getElementsByClassName(): Selects all elements with a given class name.
+document.getElementsByTagName(): Selects all elements with a specific tag name.
+document.querySelector(): Selects the first element that matches a CSS selector.
+document.querySelectorAll(): Selects all elements that match a CSS selector.
+DOM Traversal
+
+Parent, child, and sibling relationships: Refers to navigating through parent, child, and sibling nodes within the DOM tree.
+parentNode, childNodes, firstChild, lastChild: Properties that allow access to the parent of a node, all child nodes, the first child, and the last child of a node.
+previousSibling, nextSibling: Properties that allow access to the previous and next sibling nodes.
+Manipulating DOM Elements
+
+Creating elements: document.createElement(): Creates a new element node.
+Appending elements: appendChild(), insertBefore(): Appends a new child node to a parent or inserts it before an existing child node.
+Removing elements: removeChild(): Removes a child node from its parent node.
+Replacing elements: replaceChild(): Replaces an existing child node with a new one.
+Manipulating Attributes
+
+Getting and setting attributes: getAttribute(), setAttribute(): Retrieves or sets the value of an attribute on an element.
+Removing attributes: removeAttribute(): Removes an attribute from an element.
+Handling data attributes: Special attributes prefixed with data- used for embedding custom data within elements.
+Manipulating Content
+
+innerHTML vs textContent: innerHTML sets or retrieves HTML content inside an element, while textContent sets or retrieves text content only.
+Adding/removing text content: Methods for dynamically changing the text inside an element.
+Working with innerHTML, outerHTML: innerHTML allows setting or getting the HTML inside an element, while outerHTML includes the element itself.
+Manipulating Styles
+
+Inline styles: style property: Directly sets styles on an element using the style property.
+Adding/removing CSS classes: classList property (add(), remove(), toggle(), contains()): Methods for dynamically adding, removing, toggling, and checking for CSS classes on an element.
+Handling computed styles: getComputedStyle(): Retrieves the actual computed styles applied to an element, as determined by the browser.
+Event Handling in the DOM
+
+Adding event listeners: addEventListener(): Attaches an event handler function to an element for a specific event.
+Removing event listeners: removeEventListener(): Removes an event handler that was previously added with addEventListener.
+Event object, event propagation (bubbling and capturing): The event object contains details about the event. Event propagation refers to the order in which events are handled (bubbling or capturing).
+Event delegation: A technique to handle events efficiently by assigning a single event handler to a parent element instead of multiple handlers.
+Common events: click, focus, blur, change, submit, etc.: Examples of frequently used DOM events that can be handled with JavaScript.
+Working with Forms
+
+Accessing form elements: form.elements, form.submit(): Methods for accessing and submitting form data.
+Validating form input: Techniques for ensuring user input is valid before submitting a form.
+Handling form submissions with JavaScript: Methods for capturing and processing form data on the client side using JavaScript.
+

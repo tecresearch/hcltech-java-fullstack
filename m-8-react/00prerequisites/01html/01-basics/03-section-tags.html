@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example of Sectioning Tags in HTML">
+    <meta name="keywords" content="HTML, Sectioning Tags, Semantic Elements">
+    <meta name="author" content="John Doe">
+    <title>Sectioning Tags Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, nav, section, article, aside, footer {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        address {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <header>: Represents the introductory section of a webpage or a section -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Your go-to source for web development tutorials.</p>
+    </header>
+
+    <!-- <nav>: Defines a navigation menu containing links -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- <main>: The main content of the document, unique per page -->
+    <main>
+        <!-- <section>: Represents a thematic grouping of content -->
+        <section>
+            <h2>Latest Articles</h2>
+            <p>Find the most recent updates on web technologies.</p>
+        </section>
+
+        <!-- <article>: Represents an independent piece of content -->
+        <article>
+            <h2>Understanding Semantic HTML</h2>
+            <p>Semantic HTML improves accessibility and SEO.</p>
+        </article>
+    </main>
+
+    <!-- <aside>: Represents additional content related to the main content -->
+    <aside>
+        <h3>Related Topics</h3>
+        <ul>
+            <li>CSS Grid Layout</li>
+            <li>JavaScript ES6 Features</li>
+            <li>Building Responsive Websites</li>
+        </ul>
+    </aside>
+
+    <!-- <footer>: Represents the footer of a document or section -->
+    <footer>
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- <address>: Provides contact details -->
+    <address>
+        Contact us at: <a href="mailto:support@mywebsite.com">support@mywebsite.com</a>
+    </address>
+
+    <!-- <hgroup>: Groups related headings -->
+    <hgroup>
+        <h1>Web Development Tutorials</h1>
+        <h2>Learn, Code, and Build</h2>
+    </hgroup>
+
+</body>
+</html>

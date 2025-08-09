@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+
+    <h2>Forms and Input Tags with Definitions</h2>
+
+    <!-- Form Tag -->
+    <p>
+        <strong>&lt;form&gt; (Form Tag):</strong> The <code>&lt;form&gt;</code> tag is used to create an HTML form 
+        for user input. It can contain various input fields, buttons, and controls.
+    </p>
+    <form action="#" method="post">
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+
+    <!-- Input Tag -->
+    <p>
+        <strong>&lt;input&gt; (Input Tag):</strong> The <code>&lt;input&gt;</code> tag allows users to enter 
+        data into a form. It supports various types like text, password, checkbox, radio, etc.
+    </p>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+    <hr>
+
+    <!-- Label Tag -->
+    <p>
+        <strong>&lt;label&gt; (Label Tag):</strong> The <code>&lt;label&gt;</code> tag provides a label 
+        for form elements, making them more accessible.
+    </p>
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </form>
+    <hr>
+
+    <!-- Button Tag -->
+    <p>
+        <strong>&lt;button&gt; (Button Tag):</strong> The <code>&lt;button&gt;</code> tag creates a clickable button.
+    </p>
+    <form>
+        <button type="submit">Click Me</button>
+    </form>
+    <hr>
+
+    <!-- Select, Option, and Optgroup -->
+    <p>
+        <strong>&lt;select&gt;, &lt;option&gt;, &lt;optgroup&gt; (Dropdown List):</strong> 
+        The <code>&lt;select&gt;</code> tag creates a dropdown menu. The <code>&lt;option&gt;</code> tag 
+        defines individual options, while <code>&lt;optgroup&gt;</code> groups related options.
+    </p>
+    <form>
+        <label for="country">Choose a country:</label>
+        <select id="country" name="country">
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="india">India</option>
+                <option value="japan">Japan</option>
+            </optgroup>
+        </select>
+    </form>
+    <hr>
+
+    <!-- Textarea -->
+    <p>
+        <strong>&lt;textarea&gt; (Multiline Input):</strong> The <code>&lt;textarea&gt;</code> tag allows users 
+        to enter multiple lines of text.
+    </p>
+    <form>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+    </form>
+    <hr>
+
+    <!-- Fieldset and Legend -->
+    <p>
+        <strong>&lt;fieldset&gt; and &lt;legend&gt; (Grouping Form Elements):</strong> 
+        The <code>&lt;fieldset&gt;</code> tag groups related form elements, and <code>&lt;legend&gt;</code> 
+        provides a caption for the fieldset.
+    </p>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+        </fieldset>
+    </form>
+    <hr>
+
+    <!-- Output -->
+    <p>
+        <strong>&lt;output&gt; (Displaying Calculation Results):</strong> 
+        The <code>&lt;output&gt;</code> tag is used to display the result of a calculation.
+    </p>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" id="num1" name="num1" value="0"> +
+        <input type="number" id="num2" name="num2" value="0"> =
+        <output name="result">0</output>
+    </form>
+    <hr>
+
+    <!-- Datalist -->
+    <p>
+        <strong>&lt;datalist&gt; (Predefined Input Suggestions):</strong> 
+        The <code>&lt;datalist&gt;</code> tag provides a list of predefined options for an input field.
+    </p>
+    <form>
+        <label for="browser">Choose a browser:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+    </form>
+    <hr>
+
+    <!-- Progress Bar -->
+    <p>
+        <strong>&lt;progress&gt; (Progress Bar):</strong> 
+        The <code>&lt;progress&gt;</code> tag represents the progress of a task.
+    </p>
+    <progress value="70" max="100"></progress>
+    <hr>
+
+    <!-- Meter -->
+    <p>
+        <strong>&lt;meter&gt; (Measurement Indicator):</strong> 
+        The <code>&lt;meter&gt;</code> tag represents a measurement within a known range.
+    </p>
+    <meter value="2" min="0" max="5"></meter>
+    <hr>
+
+    <!-- Keygen (Obsolete) -->
+    <p>
+        <strong>&lt;keygen&gt; (Obsolete Key Pair Generator):</strong> 
+        The <code>&lt;keygen&gt;</code> tag was used for generating key pairs but is now deprecated.
+    </p>
+    <p>Note: This tag is no longer supported in modern browsers.</p>
+    <hr>
+
+    <!-- Menu and Menuitem (Obsolete) -->
+    <p>
+        <strong>&lt;menu&gt; and &lt;menuitem&gt; (Obsolete Menu Elements):</strong> 
+        These tags were used for context menus but are now deprecated.
+    </p>
+    <p>Note: These tags are no longer supported in modern browsers.</p>
+
+</body>
+</html>

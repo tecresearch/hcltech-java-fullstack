@@ -1,0 +1,104 @@
+{
+    "news": [
+      {
+        "id": 1,
+        "title": "City Council Approves New Park Project",
+        "category": "City News",
+        "description": "The city council has approved a new park project that will revitalize the downtown area.",
+        "content": "The city council unanimously voted to approve the creation of a new park, which is set to break ground next month...",
+        "publishedAt": "2024-09-15T08:00:00Z",
+        "imageUrl": "customApi/img/bike.jfif"
+      },
+      {
+        "id": 2,
+        "title": "Local Team Wins Championship",
+        "category": "Sports",
+        "description": "The hometown heroes secured their championship win in a thrilling game last night.",
+        "content": "In a game that had fans on the edge of their seats, the local team won the championship by a single point...",
+        "publishedAt": "2024-09-14T18:30:00Z",
+        "imageUrl": "customApi/img/default.jfif"
+      },
+      {
+        "id": 3,
+        "title": "New Tech Innovation Hub Opens",
+        "category": "Technology",
+        "description": "A new innovation hub for technology startups has opened in the city.",
+        "content": "The new hub offers co-working spaces, mentorship programs, and funding opportunities for early-stage startups...",
+        "publishedAt": "2024-09-14T12:45:00Z",
+        "imageUrl":"customApi/img/default.jfif"
+      },
+      {
+        "id": 4,
+        "title": "City Hosts Annual Food Festival",
+        "category": "City News",
+        "description": "The city's annual food festival drew thousands of visitors over the weekend.",
+        "content": "The food festival featured more than 100 local vendors, live music, and family-friendly activities...",
+        "publishedAt": "2024-09-13T14:00:00Z",
+        "imageUrl": "images/food_festival.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Stock Market Hits Record High",
+        "category": "Business",
+        "description": "The stock market reached a new high today, driven by gains in the tech sector.",
+        "content": "Tech stocks surged to new heights, pushing the overall market to record highs in today’s trading session...",
+        "publishedAt": "2024-09-12T09:15:00Z",
+        "imageUrl": "images/stock_market.jpg"
+      },
+      {
+        "id": 6,
+        "title": "New Art Gallery Exhibit Opens",
+        "category": "Entertainment",
+        "description": "A new exhibit featuring local artists has opened at the downtown art gallery.",
+        "content": "The exhibit highlights the work of emerging artists and includes a mix of paintings, sculptures, and multimedia installations...",
+        "publishedAt": "2024-09-12T11:00:00Z",
+        "imageUrl": "images/art_gallery.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Mayor Announces New Housing Initiative",
+        "category": "Politics",
+        "description": "The mayor announced a new initiative to address affordable housing shortages.",
+        "content": "In a press conference, the mayor outlined plans for new affordable housing developments across the city...",
+        "publishedAt": "2024-09-11T08:30:00Z",
+        "imageUrl": "images/mayor_announcement.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Breakthrough in Cancer Research",
+        "category": "Health",
+        "description": "Scientists have announced a major breakthrough in cancer research.",
+        "content": "Researchers have developed a new treatment that shows promise in early-stage clinical trials...",
+        "publishedAt": "2024-09-10T07:00:00Z",
+        "imageUrl": "images/cancer_research.jpg"
+      },
+      {
+        "id": 9,
+        "title": "New High-Speed Rail Project Begins",
+        "category": "Technology",
+        "description": "Construction on the new high-speed rail line has officially begun.",
+        "content": "The high-speed rail project is expected to connect major cities and reduce travel time significantly...",
+        "publishedAt": "2024-09-09T16:45:00Z",
+        "imageUrl": "images/high_speed_rail.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Local Schools Receive STEM Funding",
+        "category": "Education",
+        "description": "Several local schools have been awarded funding to enhance their STEM programs.",
+        "content": "The new funding will be used to provide students with access to cutting-edge technology and hands-on learning experiences...",
+        "publishedAt": "2024-09-08T10:30:00Z",
+        "imageUrl": "images/schools_stem.jpg"
+      },
+      {
+        "id": 50,
+        "title": "New Community Center Opens Downtown",
+        "category": "City News",
+        "description": "The long-awaited community center has officially opened its doors.",
+        "content": "The new center will serve as a hub for community activities and programs, offering resources for people of all ages...",
+        "publishedAt": "2024-08-20T13:00:00Z",
+        "imageUrl": "images/community_center.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1d2b64, #f8cdda);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            width: 400px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            transform: translateY(0);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-center {
+            margin-bottom: 30px;
+        }
+
+        h1, h4 {
+            text-align: center;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+
+        .box {
+            width: 100%;
+            height: 35px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .box:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        .btn {
+            width: 100%;
+            height: 45px;
+            font-size: 18px;
+            background-color: darkgreen;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: green;
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="text-center">
+            <h1>CV Login</h1>
+            <h4>Mr. Brijesh Nishad</h4>
+        </div>
+        <form>
+            <label class="form-label">Username</label>
+            <input type="text" placeholder="Enter username" class="box" id="username" required value="Brijesh"><br>
+            <label class="form-label">Password</label>
+            <input type="password" placeholder="Enter password" class="box" id="password" required value="Admin"><br>
+            <button type="button" class="btn" onClick="getInfoMe()">Login</button>
+        </form>
+    </div>
+   
+    <script src="login.js"></script>
+</body>
+</html>

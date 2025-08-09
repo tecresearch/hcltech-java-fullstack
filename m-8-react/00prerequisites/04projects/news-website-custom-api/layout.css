@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across elements */
+}
+
+body {
+    background-color: rgb(19, 18, 18); /* Sets background color to black */
+    font-family: Arial, sans-serif; /* Sets default font family */
+}
+
+#root {
+    width: 100vw; /* Full width of the viewport */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange child elements vertically */
+    justify-content: center; /* Center elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+
+nav ul {
+    display: flex; /* Flex layout for the navigation links */
+    justify-content: start; /* Align links to the start (left) */
+    align-items: center; /* Vertically center links */
+    gap: 1rem; /* Space between each link */
+    
+}
+
+a {
+    color: white; /* Sets link color to white */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+a:hover {
+    color: yellow; /* Changes link color to yellow on hover */
+    text-decoration: underline; /* Underlines the link on hover */
+    transition: 0.4s ease-in-out; /* Smooth transition for hover effect */
+}
+
+header {
+    position:sticky;
+    width: 100vw; /* Header width slightly less than full viewport */
+    height: 60px; /* Fixed height for the header */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and navbar */
+    align-items: center; /* Vertically center content */
+    background-color: rgb(185, 18, 18); /* Header background color */
+    padding: 10px 20px; /* Padding inside header */
+}
+
+.MyLogo {
+    color: white; /* Logo text color */
+    font-size: 24px; /* Font size for the logo */
+    font-weight: bold; /* Makes the logo text bold */
+}
+
+.hero {
+    width: 100vw; /* Full width of viewport for hero section */
+    height: 140px; /* Height of hero section */
+    background-image: url(hero.jpg);/* Background image for hero */
+    /* background-repeat: no-repeat; */
+    background-blend-mode: color-burn;
+    opacity: 0.5; /* Semi-transparent effect */
+    border: 1px solid white; /* White border around hero */
+}
+
+#mainContent {
+    display: flex; /* Flex layout for the main content */
+    width: 100vw; /* Full width of viewport */
+    background-color: white; /* White background for main content */
+    padding: 20px; /* Padding inside main content */
+    gap: 20px; /* Space between sidebar and main section */
+}
+
+.sidebar {
+    width: 20%; /* Sidebar takes 20% of the width */
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Space between notice and news sections */
+}
+
+.notice, .news {
+    background-color: #f1f1f1; /* Light background color */
+    padding: 20px; /* Padding inside notice and news */
+    border-left: 2px solid gray; /* Gray border on the left */
+    border-radius: 20px 0 0 0; /* Rounded top-left corner */
+}
+
+.mainSection {
+    width: 75%; /* Main section takes 75% of the width */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #f9f9f9; /* Light background for the main section */
+    padding: 20px; /* Padding inside the main section */
+    border-left: 2px solid gray; /* Left border for visual separation */
+    border-radius: 20px 0 0 0; /* Rounded top-left corner */
+
+}
+
+#footerContent {
+    width: 100vw; /* Full width footer */
+    height: 50px; /* Fixed height for the footer */
+    background-color: rgb(185, 18, 18); /* Footer background color */
+    opacity: 0.7; /* Semi-transparent footer */
+    color: white; /* White text color */
+    display: flex; /* Flex layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    gap: 20px;
+}
+.card {
+    width: 29%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgb(231, 225, 225);
+    border-radius: 5px;
+    box-shadow: 8px 10px 15px rgb(223, 213, 213);
+    background-color: rgba(255, 255, 255, 0.6);
+    
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    justify-content: center;
+    align-items: flex-start; /* Aligns text content to the left */
+    
+    gap: 2px; /* Space between card elements */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+}

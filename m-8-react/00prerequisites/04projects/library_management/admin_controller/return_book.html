@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Return Book</h2>
+    <form id="returnBookForm">
+        <label for="bookTitle">Book Title:</label>
+        <input type="text" id="bookTitle" required>
+
+        <button type="submit">Return Book</button>
+    </form>
+    <script>
+        document.getElementById('returnBookForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const bookTitle = document.getElementById('bookTitle').value;
+
+            alert(`Book "${bookTitle}" has been returned.`);
+            // Here you could add logic to save the return to local storage if needed
+            this.reset();
+          
+        });
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+table.info
+{
+	font-size:12;
+	border:gray 1px solid;
+	background-color: InfoBackground;
+}
+
+table.info td
+{
+	border-bottom: gray 1px solid;
+
+}
+
+td.infoHeader
+{
+	text-align:center;
+	color: Black; 
+	background-color:#cacaca;
+}
+p.success
+{
+	font-size:large;
+	color:Navy;	
+}
+
+p.error
+{
+	font-size:large;
+	color:Red;	
+}
+
+a.navlink
+{
+	font-size:10pt;
+	font-family:Arial, Tahoma	
+}
+
+a.navlink:Hover
+{
+	font-size:10pt;
+	font-family:Arial, Tahoma	
+}
+
+a.navlink:visited
+{
+	font-size:10pt;
+	font-family:Arial, Tahoma		
+}
+
+.DataForm
+{
+	border-top: navy 1px solid;
+	border-right: navy 1px solid;
+	border-bottom: navy 1px solid;
+	border-left: navy 1px solid;
+	width: 820px;
+	overflow: auto;
+	height: 302px
+}
+
+div.childFormHeading
+{
+	background-color: powderblue;
+	border-color: silver;
+	border-collapse: collapse;
+	border: 1px solid silver;
+	font-family: tahoma;
+	font-size: 9pt;
+	text-align: center;
+}
+table.childform td
+{
+	font-family:tahoma;
+	font-size:8pt;
+}
+table.childform 
+{
+ 	border-color:silver;
+	border-collapse:collapse;
+	border: 1px solid silver;
+}
+
+.dataCell 
+{
+	font-family:tahoma;
+	font-size:8pt;
+}
+table.childform tr.evenRow 
+{
+	background-color:whitesmoke;
+}
+table.childform tr.oddRow 
+{
+	background-color:white;
+}
+
+table.childform tr.headingRow 
+{
+	background-color:gainsboro;
+	cursor:pointer;
+	font-family:tahoma;
+	font-size:9pt;	
+}
+
+table.childform tr.footerRow 
+{
+	background-color:gainsboro;
+	cursor:pointer;
+	font-family:tahoma;
+	font-size:9pt;	
+}
+
+table.childform td.headingCell 
+{
+	padding:0px;
+	border: 1px solid gainsboro;
+	font-family:arial;
+	font-size:8pt;	
+}
+
+.fieldheading
+{
+	font-size:medium;
+	color: #000070;
+	background-color: #cccc99;
+}
+
+.invisible
+{
+	background-color: dimgray;
+}
+
+.ActionMenuNormalStyle
+{
+	font-size: 8pt; 
+	font-family:Arial; 
+	color:Black; 
+	cursor: hand; 
+}
+
+.ActionMenuHoverStyle
+{
+	font-size: 8pt; 
+	font-family:Arial; 
+	color:Black; 
+	cursor: hand; 
+}
+
+
+.ActionSubMenuStyle
+{
+	font-size: 8pt; 
+	font-family:Arial; 
+	color:Black; 
+	background-color:#dde7ea;
+	cursor: hand; 
+	border-right: #999999 1px solid; 
+	border-top: #999999 1px solid; 
+	border-left: #999999 1px solid; 
+	border-bottom: #999999 1px solid; 
+	
+}
+
+.ActionSubMenuHoverStyle
+{
+	font-size: 8pt; 
+	font-family:Arial; 
+	color:Black; 
+	background-color:#ffffff;
+	cursor: hand; 
+	border-right: #999999 0px solid; 
+	border-top: #999999 0px solid; 
+	border-left: #999999 0px solid; 
+	border-bottom: #999999 0px solid; 
+	
+}
+
+.emaillink
+{
+	font-size: 9pt;
+	color: #035a8f;
+	font-family: Arial;
+	text-decoration: none;	
+	border: 1px solid #cccccc;
+}
+
+.urllink
+{
+	font-size: 9pt;
+	color: #035a8f;
+	font-family: Arial;
+	text-decoration: none;	
+	border: 1px solid #cccccc;
+}
+
+.tableHeader
+{
+	padding: 1px;
+}
+
+.resizer
+{
+	cursor: e-resize;
+}
+
+.tableData
+{
+	padding: 1px;
+	overflow: auto;
+}
+
+.cell
+{
+	border: 1px solid #000000;
+}
+
+div.InferredField
+{
+	font-family: Arial;
+	font-size: 8pt;
+	vertical-align: top;
+	line-height: 20px;
+}
+
+INPUT.InferredField, TEXTAREA.InferredField
+{
+	border: 1px solid #cccccc;
+	line-height: 16px;
+	font-family: Arial;
+	font-size: 9pt;
+	vertical-align: middle;
+/*	background-color: whitesmoke; */
+}
+
+td.header
+{
+	font-weight: bold;
+	font-size: 7.5pt;
+	background-image: url(Images/grid_header_bg.gif);
+	vertical-align: top;
+	cursor: hand;
+	color: #003366;
+	text-align: left;
+	white-space:nowrap
+}
+
+A.anchor, div.dataviewcaption
+{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #035a8f;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.subtab
+{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #035a8f;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.subtabselected
+{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #ee0000;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.caption
+{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #035a8f;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.deletionlabel
+{
+	font-size: 9pt;
+	font-weight: bold;
+	color: #ff0000;
+	font-family: Arial;
+	text-decoration: none;
+}
+ a.TypeAhead
+ {
+	font-size: 9pt;
+/*	color: #035a8f; */
+	color:Black;
+	font-family: Arial;
+	text-decoration: none;
+	white-space:nowrap	
+ }
+ 
+HyperLink, div.HyperLink, td.HyperLink,A.HyperLink, A.InferredField
+{
+	font-size: 9pt;
+	color: #035a8f;
+	font-family: Arial;
+	text-decoration: none;
+	white-space:nowrap
+}
+
+div.TypeAhead
+{
+	border-right: #b9c9ef 1px solid;
+	padding-right: 5px;
+	border-top: #728eb8 1px solid;
+	padding-left: 5px;
+	background-color:#dde7ea;
+	padding-bottom: 5px;
+	overflow: auto;
+	border-left: #728eb8 1px solid;
+	padding-top: 5px;
+	border-bottom: #b9c9ef 1px solid;
+	text-align: left;
+	white-space:nowrap;
+	width:auto;	
+	font-family: Arial, Tahoma;
+	font-size: 8pt;
+	color:Black;
+}
+
+fieldset.form
+{
+	/*	border-top:solid 2px #dde7ea; 	padding-top:1px; 	border-width:thick; */
+	border: none;
+}
+
+i
+
+input, select, textarea
+{
+	border: 1px solid #cccccc;
+	line-height: 19px;
+	padding-left:2px;
+	background: #ffffff;
+	font-family: Arial;
+	font-size: 9pt;
+	vertical-align: middle;
+    
+}
+.radiobutton, input.checkbox
+{
+	border:none;
+}
+
+
+select.dropdown, select.listbox
+{
+	border: 1px solid #cccccc;
+	line-height: 20px;
+	background: #ffffff;
+	font-family: Arial;
+	font-size: 9pt;
+	vertical-align: middle;
+}
+img
+{
+	border: 0px none;
+}
+
+div.designerlabel
+{
+	border: 1px dotted #ff0000;
+	font-family: Arial;
+	font-size: 8pt;
+	vertical-align: top;
+}
+
+.DataView
+{
+	overflow: auto;
+}
+
+.DataViewNormalRow
+{
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial;
+}
+
+.DataViewAlternateRow
+{
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: Arial;
+}
+
+div.label, span.label
+{
+	font-family: Arial;
+	font-size: 8pt;
+	vertical-align: top;
+/*	line-height: 20px; */
+}
+
+span.ContentsTitle
+{
+	font-weight: bold;
+	font-size: 11pt;
+	color: #003366;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+span.SubContentsTitle
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: #003366;
+	font-family: Arial;
+}
+.textbox
+{
+	  FONT-SIZE: 8.5pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;    
+    BORDER-RIGHT: solid 1 #a9a9a7 ;
+    BORDER-TOP: solid 1 #a9a9a7;
+    MARGIN: 0mm;
+    BORDER-LEFT: solid 1 #a9a9a7;
+    BORDER-BOTTOM: solid 1 #a9a9a7;
+    BACKGROUND-COLOR: #ffffff;
+    
+	
+}
+
+.subHeading
+{
+ font-family:Arial, Verdana;
+ font-size:14px;
+ font-weight:bold
+}

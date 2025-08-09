@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="user_controller/search_books.html" class="nav-link">Search Books</a></li>
+                <li><a href="user_controller/return_book.html" class="nav-link">Return Book</a></li>
+                <li><a href="user_controller/pay_fine.html" class="nav-link">Pay Fine</a></li>
+                <li><a href="user_controller/view_membership.html" class="nav-link">View Membership</a></li>
+                <li><a href="user_controller/update_membership.html" class="nav-link">Update Membership</a></li>
+                <li><a href="user_controller/view_account.html" class="nav-link">View Account Details</a></li>
+                <li><button id="logoutBtn">Logout</button></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <h2>Welcome, User</h2>
+        <p>Your dashboard allows you to manage your library account. Please select an option from the menu.</p>
+    </div>
+
+    <script src="js/logout.js"></script>
+    <script>
+        // Ensure user is logged in
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+        if (!loggedInUser) {
+            // Redirect to login page if no user is logged in
+            window.location.href = "index.html";
+        } else {
+            document.querySelector('h2').textContent = `Welcome, ${loggedInUser.username}`;
+        }
+
+        // Handle logout
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = 'index.html';
+        });
+
+        // Function to load HTML content dynamically
+        // function loadContent(url) {
+        //     fetch(url)
+        //         .then(response => {
+        //             if (!response.ok) {
+        //                 throw new Error('Network response was not ok');
+        //             }
+        //             return response.text();
+        //         })
+        //         .then(data => {
+        //             document.getElementById('mainContent').innerHTML = data;
+        //         })
+        //         .catch(error => {
+        //             console.error('There has been a problem with your fetch operation:', error);
+        //         });
+        // }
+
+        // // Add click event listener to all nav links
+        // document.querySelectorAll('.nav-link').forEach(link => {
+        //     link.addEventListener('click', function(event) {
+        //         event.preventDefault(); // Prevent default anchor click behavior
+        //         const url = this.getAttribute('href'); // Get the link's href attribute
+        //         loadContent(url); // Load the content dynamically
+        //     });
+        // });
+    </script>
+</body>
+</html>

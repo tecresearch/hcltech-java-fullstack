@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tags in HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table Tags with Definitions and Examples</h2>
+
+    <!-- Table -->
+    <p>
+        <strong>&lt;table&gt; (Table Structure):</strong> 
+        The <code>&lt;table&gt;</code> tag is used to define a table.
+    </p>
+    <table>
+        <caption><strong>Student Marks Table</strong></caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>78</td>
+                <td>76</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Students</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Table Explanation -->
+    <h3>Table Tags and Definitions</h3>
+
+    <ul>
+        <li><strong>&lt;table&gt;:</strong> Defines a table.</li>
+        <li><strong>&lt;caption&gt;:</strong> Specifies a title for the table.</li>
+        <li><strong>&lt;thead&gt;:</strong> Groups header content inside a table.</li>
+        <li><strong>&lt;tbody&gt;:</strong> Groups the main body content of a table.</li>
+        <li><strong>&lt;tfoot&gt;:</strong> Defines the footer content of a table.</li>
+        <li><strong>&lt;tr&gt; (Table Row):</strong> Represents a row inside a table.</li>
+        <li><strong>&lt;th&gt; (Table Header):</strong> Defines a header cell.</li>
+        <li><strong>&lt;td&gt; (Table Data):</strong> Defines a data cell.</li>
+    </ul>
+
+    <h3>Column Management in Tables</h3>
+
+    <p><strong>&lt;col&gt; and &lt;colgroup&gt; (Column Formatting):</strong></p>
+    <table>
+        <colgroup>
+            <col style="background-color: lightblue;">
+            <col style="background-color: lightyellow;">
+            <col style="background-color: lightgreen;">
+        </colgroup>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Stock</th>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>$500</td>
+            <td>Available</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>$1200</td>
+            <td>Out of Stock</td>
+        </tr>
+    </table>
+
+    <h3>Grouping Form Elements</h3>
+
+    <p><strong>&lt;fieldset&gt; and &lt;legend&gt; (Grouping Form Elements):</strong></p>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

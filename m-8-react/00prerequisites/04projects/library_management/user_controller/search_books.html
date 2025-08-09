@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .book-list {
+            margin-top: 20px;
+        }
+        .book-item {
+            background: #fff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h2>Search Books</h2>
+    <form id="searchForm">
+        <label for="searchQuery">Search for a book:</label>
+        <input type="text" id="searchQuery" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="searchResults" class="book-list"></div>
+    <h3>All Books</h3>
+    <div id="allBooks" class="book-list"></div>
+    <script>
+        document.getElementById('searchForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const searchQuery = document.getElementById('searchQuery').value.toLowerCase();
+            const books = JSON.parse(localStorage.getItem('books')) || [];
+            const results = books.filter(book => book.title.toLowerCase().includes(searchQuery));
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = '';
+
+            if (results.length > 0) {
+                results.forEach(book => {
+                    const bookItem = document.createElement('div');
+                    bookItem.className = 'book-item';
+                    bookItem.textContent = `Title: ${book.title}, Author: ${book.author}`;
+                    resultsContainer.appendChild(bookItem);
+                });
+            } else {
+                resultsContainer.innerHTML = '<p>No books found.</p>';
+            }
+        });
+
+        function displayAllBooks() {
+            const allBooksContainer = document.getElementById('allBooks');
+            const books = JSON.parse(localStorage.getItem('books')) || [];
+            allBooksContainer.innerHTML = '';
+
+            books.forEach(book => {
+                const bookItem = document.createElement('div');
+                bookItem.className = 'book-item';
+                bookItem.textContent = `Title: ${book.title}, Author: ${book.author}`;
+                allBooksContainer.appendChild(bookItem);
+            });
+        }
+
+        displayAllBooks();
+       
+    </script>
+    <script src="/session/session.js"></script>
+</body>
+</html>
