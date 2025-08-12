@@ -7,7 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 class JwtAuthenticationApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
+	public test
 
 }

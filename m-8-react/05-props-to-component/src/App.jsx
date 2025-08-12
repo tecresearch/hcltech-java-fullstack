@@ -11,9 +11,10 @@ function App() {
   return (
     <>
      <div className='container'>
-      <UserCard name="Bajarne" image={bajarnePic} role="SDE" designation="C++ Developer"/>
-      <UserCard name="Gems Goslim" image={gemsPic} role="SDE" designation="Java  Developer"/>
-      <UserCard name="Brijesh Nishad" image={brijeshPic} role="SDE" designation="Java FullStack Developer"/>
+        {/* component should be render here with : name role designation and image fields*/}
+        <UserCard  name='Bajarne' imageSrc={bajarnePic} role="SDE"  designation="C++ Developer"/>
+        <UserCard  name='Gems Goslim' imageSrc={gemsPic}  role="SDE" designation="Java Developer"/>
+        <UserCard  name='Brijesh' imageSrc={brijeshPic} role="SDE" designation="Java FullStack Developer" />
      </div>
     </>
   )

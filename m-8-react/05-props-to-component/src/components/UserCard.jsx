@@ -1,12 +1,12 @@
 import React from 'react'
 import './UserCard.css'
-const UserCard = (props) => {
+const UserCard = ({name,imageSrc,role,designation}) => {
   return (
     <div className='user-container'>
-       <p>{props.name}</p>
-       <img src={props.image} alt='Nishad'></img>
-       <p>{props.role}</p>
-       <p>{props.designation}</p>
+      <h2>{name}</h2>
+      <img src={imageSrc} alt='Bajarne'/>
+      <h2>{role}</h2>
+      <p>{designation}</p>
     </div>
   )
 }

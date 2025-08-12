@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="user_info")
-public class UserInfo 
+public class User
 {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,5 +46,24 @@ public class UserInfo
 	public void setRoles(String roles) {
 		this.roles = roles;
 	}
-    
+
+	public User(){}
+
+	public User(String name, String email, String password, String roles) {
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.roles = roles;
+	}
+
+	@Override
+	public String toString() {
+		return "User{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", email='" + email + '\'' +
+				", password='" + password + '\'' +
+				", roles='" + roles + '\'' +
+				'}';
+	}
 }

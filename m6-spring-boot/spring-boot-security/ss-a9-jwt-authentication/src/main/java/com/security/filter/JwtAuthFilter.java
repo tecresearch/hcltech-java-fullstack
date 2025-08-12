@@ -1,6 +1,6 @@
 package com.security.filter;
 import com.security.service.JwtService;
-import com.security.service.UserInfoService;
+import com.security.service.impl.UserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,7 +19,7 @@ import java.io.IOException;
 public class JwtAuthFilter extends OncePerRequestFilter
 {
     @Autowired private JwtService jwtService;
-    @Autowired private UserInfoService userDetailsService;
+    @Autowired private UserService userDetailsService;
 
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException 
     {

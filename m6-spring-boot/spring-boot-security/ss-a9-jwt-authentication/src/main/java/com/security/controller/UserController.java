@@ -1,9 +1,12 @@
 package com.security.controller;
 import com.security.entity.AuthRequest;
-import com.security.entity.UserInfo;
+import com.security.entity.User;
 import com.security.service.JwtService;
-import com.security.service.UserInfoService;
+import com.security.service.impl.UserService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -15,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/auth")
 public class UserController 
 {
-    @Autowired private UserInfoService service;
+    @Autowired private UserService service;
     @Autowired private JwtService jwtService;
     @Autowired private AuthenticationManager authenticationManager;
 
@@ -25,15 +28,17 @@ public class UserController
         return "Welcome this endpoint is not secure";
     }
     @PostMapping("/addNewUser")
-    public String addNewUser(@RequestBody UserInfo userInfo) 
+    public String addNewUser(@RequestBody User user)
     {
-        return service.addUser(userInfo);
+        System.out.println("auth: "+user);
+        return service.addUser(user);
     }
     @GetMapping("/user/userProfile")
     @PreAuthorize("hasAuthority('ROLE_USER')")
     public String userProfile() 
     {
-        return "Welcome to User Profile";
+        System.out.println("User profile handler invoked...");
+        return "Welcome to authenticated User Profile";
     }
 
     @GetMapping("/admin/adminProfile")
@@ -41,17 +46,25 @@ public class UserController
     public String adminProfile() 
     {
     	System.out.println("Admin profile handler invoked...");
-        return "Welcome to Admin Profile";
+        return "Welcome to authenticated Admin Profile";
     }
 
     @PostMapping("/login")
     public String authenticateAndGetToken(@RequestBody AuthRequest authRequest) 
     {
-    	System.out.println("Login handler invoked...");
+
+        System.out.println("auth"+authRequest);
+
+    	System.out.println("Login handler invoked... to login and generate jwt token...");
+
+        /**
+         * Here we authenticate the username and password
+         */
         Authentication authentication = authenticationManager
         		.authenticate(new UsernamePasswordAuthenticationToken(authRequest
         				.getUsername(), authRequest.getPassword())
         );
+//        authentication.setAuthenticated(true);
         if(authentication.isAuthenticated()) 
         {
             return jwtService.generateToken(authRequest.getUsername());
@@ -60,5 +73,12 @@ public class UserController
         {
             throw new UsernameNotFoundException("Invalid user request!");
         }
+    }
+
+    @PostMapping("/logout-session")
+    public ResponseEntity<?> logout(HttpServletRequest request, HttpServletResponse response) {
+        // Handle logout logic (if any)
+        request.getSession().invalidate(); // Invalidate the session
+        return ResponseEntity.ok().body("Logout successful");
     }
 }

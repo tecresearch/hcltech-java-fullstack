@@ -1,15 +1,19 @@
-package com.hcl.test;
+package com.hcl.test.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import com.hcl.test.service.MathService;
 
 @SpringBootTest
 class MathServiceTest {
@@ -140,6 +144,47 @@ class MathServiceTest {
 		int result = mathService.addTwoNumber(a, b);
 		assertEquals(Integer.MIN_VALUE, result);
 	}
-	
+
+
+
+		@ParameterizedTest
+		@CsvSource({
+				"1,1",
+				"2, 8",
+				"3, 27"
+		})
+		public void test_GetCube(int number, int expected) {
+			int result=mathService.getCube(number);
+		 	assertEquals(expected,result);
+		}
+
+	static Stream<Arguments> maxArrayProvider() {
+		return Stream.of(
+				Arguments.of(new int[]{1, 2, 3}, 3),
+				Arguments.of(new int[]{5, 4, 2}, 5),
+				Arguments.of(new int[]{-1, -2, -3}, -1),
+				Arguments.of(new int[]{0, 0, 0}, 0)
+		);
+	}
+	@ParameterizedTest
+	@MethodSource("maxArrayProvider")
+	void test_GetMax(int[] input, int expected) {
+		int result = mathService.getMax(input);
+		assertEquals(expected, result);
+	}
+
+	@ParameterizedTest
+	@CsvSource({
+			"50, 2.60",
+			"100, 3.25",
+			"200, 5.26",
+			"1000, 7.75"
+	})
+	public void test_TarifRates(int unit,double expected) {
+
+		System.out.println("test case to write");
+
+
+	}
 
 }

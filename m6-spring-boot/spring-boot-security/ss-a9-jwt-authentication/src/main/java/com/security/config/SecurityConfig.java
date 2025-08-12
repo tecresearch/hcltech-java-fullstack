@@ -1,6 +1,6 @@
 package com.security.config;
 import com.security.filter.JwtAuthFilter;
-import com.security.service.UserInfoService;
+import com.security.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,27 +21,27 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Configuration
 @EnableWebSecurity
 @EnableMethodSecurity
-public class SecurityConfig 
+public class SecurityConfig
 {
     @Autowired private JwtAuthFilter authFilter;
 
     @Bean
-    UserDetailsService userDetailsService() 
+    UserDetailsService userDetailsService()
     {
-        return new UserInfoService(); // Ensure UserInfoService implements UserDetailsService
+        return new UserService(); // Ensure UserInfoService implements UserDetailsService
     }
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception 
+    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
     {
         http.csrf(csrf -> csrf.disable()) // Disable CSRF for stateless APIs
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/auth/welcome", "/auth/addNewUser", "/auth/login").permitAll()
+                .requestMatchers("/auth/welcome", "/auth/addNewUser", "/auth/login","/swagger-ui/**", "/v3/api-docs/**").permitAll()
                 .requestMatchers("/auth/user/**").hasAuthority("ROLE_USER")
                 .requestMatchers("/auth/admin/**").hasAuthority("ROLE_ADMIN")
                 .anyRequest().authenticated() // Protect all other endpoints
             )
             .sessionManagement(sess -> sess
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // No sessions
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             )
             .authenticationProvider(authenticationProvider()) // Custom authentication provider
             .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class); // Add JWT filter
@@ -50,13 +50,13 @@ public class SecurityConfig
     }
 
     @Bean
-    PasswordEncoder passwordEncoder() 
+    PasswordEncoder passwordEncoder()
     {
         return new BCryptPasswordEncoder(); // Password encoding
     }
 
     @Bean
-    AuthenticationProvider authenticationProvider() 
+    AuthenticationProvider authenticationProvider()
     {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailsService());
@@ -64,7 +64,7 @@ public class SecurityConfig
         return authenticationProvider;
     }
     @Bean
-    AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception 
+    AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception
     {
         return config.getAuthenticationManager();
     }

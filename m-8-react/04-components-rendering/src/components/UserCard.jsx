@@ -1,14 +1,17 @@
 import React from 'react'
 import './UserCard.css'
-import brijeshPic from '../assets/brijesh.png'
+
+import brijesh from "../assets/brijesh.png"
+ 
 const UserCard = () => {
   return (
     <div className='user-container'>
-        <p>Brijesh Nishad</p>
-       <img src={brijeshPic} alt='Nishad'></img>
-       <p>Software Development Engineer</p>
-       <p>(Java FullStack Developer)</p>
-   
+        <h2>Brijesh Nishad</h2>
+        <img src={brijesh} />
+        <p>Software Development Engineer</p>
+        <p>(Java FullStack Developer)</p>
+
+
     </div>
   )
 }
