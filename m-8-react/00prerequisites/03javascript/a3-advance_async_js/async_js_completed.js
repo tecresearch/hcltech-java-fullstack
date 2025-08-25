@@ -242,7 +242,7 @@ const checkAges = async () => {
 //6.fetch() API
 // const fetchData = async () => {
 //     try {
-//         const response = await fetch('api.json'); // Fetch data from API(It may be any json data or end-point like https://example.com/api/data)
+//         const response = await fetch('http://localhost:9090/corexfin-bank/admin/bank/v1/enroll/'); // Fetch data from API(It may be any json data or end-point like https://example.com/api/data)
 //         const data = await response.json();  // Convert response to JSON
 
 //         const rootDiv = document.querySelector('.root');  // Select the root div
