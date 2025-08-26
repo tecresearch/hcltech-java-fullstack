@@ -5,6 +5,7 @@ import { Card } from './Card';
 
 function Product() {
   const { productId } = useParams();
+  console.log(productId);
   const product = cardData.find((item) => item.id === parseInt(productId));
 
   return (
