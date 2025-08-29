@@ -1,0 +1,9 @@
+.country-list {
+    max-height: 400px;
+    overflow: scroll;
+    position: relative;
+}
+
+.country-list li {
+    border-bottom: 1px solid #f4f4f4;
+}
