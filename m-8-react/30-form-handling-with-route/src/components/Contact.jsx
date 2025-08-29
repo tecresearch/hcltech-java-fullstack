@@ -1,14 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const Dashboard = () => {
+const Contact = () => {
   return (
     <div>
-      <hr/>
-      <h1>Dashboard</h1>
+      <h1 className='text-3xl'>Contact</h1>
       <Outlet/>
     </div>
   )
 }
 
-export default Dashboard
+export default Contact

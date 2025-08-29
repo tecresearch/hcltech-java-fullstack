@@ -5,42 +5,58 @@ import Contact from './components/Contacts'
 import About from './components/About'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
- const router=createBrowserRouter(
+import NotFound from './components/NotFound'
+import QuickLinks from './components/QuickLinks'
+const router = createBrowserRouter(
   [
     {
-      path:"/",
-      element:<div>
-        <Navbar/>
-        <Home/>
+      path: "/",
+      element: <div>
+        <Navbar />
+        <Home />
+        <QuickLinks />
       </div>
     },
     {
-      path:"/about",
-      element:<div>
-        <Navbar/>
-        <About/>
+      path: "/about",
+      element: <div>
+        <Navbar />
+        <About />
+        <QuickLinks />
       </div>
     },
     {
-      path:"/contact",
-      element:<div>
-        <Navbar/>
-        <Contact/>
+      path: "/contact",
+      element: <div>
+        <Navbar />
+        <Contact />
+        <QuickLinks />
       </div>
     },
     {
-      path:"/dashboard",
-      element:<div>
-        <Navbar/>
-        <Dashboard/>
+      path: "/dashboard",
+      element: <div>
+        <Navbar />
+        <Dashboard />
+        <QuickLinks />
       </div>
+    },
+    {
+      path: "/*",
+      element:
+        <div>
+          <NotFound />
+          <QuickLinks />
+        </div>
+
+
     }
   ]
 )
 const App = () => {
   return (
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   )
 }

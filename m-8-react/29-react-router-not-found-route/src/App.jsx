@@ -5,6 +5,7 @@ import Contact from './components/Contacts'
 import About from './components/About'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
+import NotFound from './components/NotFound'
  const router=createBrowserRouter(
   [
     {
@@ -34,6 +35,10 @@ import Navbar from './components/Navbar'
         <Navbar/>
         <Dashboard/>
       </div>
+    },
+    {
+      path:"/*",
+      element:<NotFound/>
     }
   ]
 )

@@ -5,6 +5,8 @@ import Contact from './components/Contacts'
 import About from './components/About'
 import Dashboard from './components/Dashboard'
 import Navbar from './components/Navbar'
+import StudentList from './components/StudentList'
+import Student from './components/Student'
  const router=createBrowserRouter(
   [
     {
@@ -33,7 +35,17 @@ import Navbar from './components/Navbar'
       element:<div>
         <Navbar/>
         <Dashboard/>
-      </div>
+      </div>,
+      children:[
+        {
+          path:"students",
+          element:<StudentList/>
+        },
+        {
+          path:"student",
+          element:<Student/>
+        }
+      ]
     }
   ]
 )
