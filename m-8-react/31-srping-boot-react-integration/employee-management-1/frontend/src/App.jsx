@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom'
  
 
 import EmployeeHome from './components/EmployeeHome'
+import StateClassComponent from './components/StateClassComponent'
  
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
       <NavBar />
       <Routes>
         
-        <Route path="home" element={<EmployeeHome />}></Route>
+        <Route path="/home" element={<EmployeeHome />}>
+          <Route path="count" element={<StateClassComponent/>}/>
+        </Route>
          
       </Routes>
     </>
