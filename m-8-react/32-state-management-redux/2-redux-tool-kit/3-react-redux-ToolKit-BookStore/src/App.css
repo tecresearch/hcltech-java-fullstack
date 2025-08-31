@@ -1,0 +1,63 @@
+/* Center the .App container */
+.App ,html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgba(245, 245, 245, 0.8); /* Lightly tinted background for contrast */
+  padding: 2rem;
+  /* Apply glassy effect */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Center the heading */
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Style the buttons */
+button {
+  background-color: #007bff;
+  color: #164921; /* Updated to white for better contrast */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7fb5ee;
+}
+
+/* Style the inputs */
+input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Center the container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,28 @@
+.book-list-container {
+    margin: 1rem 0;
+  }
+  
+  .book-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+  }
+  
+  .book-item:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  
+  .book-details {
+    font-size: 1rem;
+  }
+  
