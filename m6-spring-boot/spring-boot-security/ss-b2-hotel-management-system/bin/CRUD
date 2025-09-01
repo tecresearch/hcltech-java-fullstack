@@ -1,0 +1,163 @@
+1. Seed Admin Login
+POST http://localhost:2025/auth/login
+
+{
+  "email": "admin@example.com",
+  "password": "admin123"
+}
+
+2. Admin Register
+POST http://localhost:2025/admin/users
+
+{
+  "username": "admin1",
+  "password": "admin123",
+  "role": "ADMIN",
+  "name": "Admin One",
+  "email": "admin1@example.com",
+  "contactNumber": "0987654321"
+}
+
+3. Admin Login
+POST http://localhost:2025/auth/login
+
+{
+  "email": "admin1@example.com",
+  "password": "admin123"
+}
+
+4. Manager Register
+POST http://localhost:2025/auth/register
+
+{
+  "username": "manager1",
+  "password": "manager123",
+  "role": "MANAGER",
+  "name": "Manager One",
+  "email": "manager1@example.com",
+  "contactNumber": "1234567890"
+}
+
+5. Manager Login
+POST http://localhost:2025/auth/login
+
+{
+  "email": "manager1@example.com",
+  "password": "manager123"
+}
+
+6. User Register
+POST http://localhost:2025/auth/register
+
+{
+  "username": "user2",
+  "password": "user123",
+  "role": "USER",
+  "name": "User Two",
+  "email": "user2@example.com",
+  "contactNumber": "1234567890"
+}
+
+7. User Login
+POST http://localhost:2025/auth/login
+
+{
+  "email": "user2@example.com",
+  "password": "user123"
+}
+
+8. Create Hotel
+POST http://localhost:2025/hotels
+
+{
+  "name": "Grand Hotel",
+  "location": "Downtown",
+  "amenities": "Pool, Gym, Wi-Fi",
+  "rating": 4.5,
+  "managerId": 2
+}
+
+9. Create Room
+POST http://localhost:2025/rooms
+
+{
+  "roomNumber": "101",
+  "type": "Deluxe",
+  "price": 150.0,
+  "availability": "AVAILABLE",
+  "features": "King Bed, Balcony",
+  "hotelId": 1
+}
+
+10. Create Booking
+POST http://localhost:2025/bookings
+
+{
+  "userId": 27,
+  "roomId": 1,
+  "checkInDate": "2025-06-01",
+  "checkOutDate": "2025-06-05",
+  "status": "COMPLETED",
+  "paymentId": 1
+}
+
+11. Cancel Booking
+PUT http://localhost:2025/bookings/cancel/10
+{
+  "userId": 27,
+  "roomId": 5,
+  "checkInDate": "2025-06-01",
+  "checkOutDate": "2025-06-05",
+  "status": "COMPLETED",
+  "paymentId": 4
+}
+
+
+12. Create Payment
+POST http://localhost:2025/payments
+
+{
+  "userId": 3,
+  "amount": 600.0,
+  "status": "COMPLETED",
+  "paymentMethod": "CREDIT_CARD"
+}
+
+13. Create Review
+POST http://localhost:2025/reviews
+
+{
+  "userId": 3,
+  "hotelId": 1,
+  "comment": "Great stay, excellent service!",
+  "rating": 5
+}
+
+====================================================================================================
+
+
+seed admin login http://localhost:2025/auth/login { "email": "admin@example.com", "password": "admin123" }
+
+admin register http://localhost:2025/admin/users { "username": "admin1", "password": "admin123", "role": "ADMIN", "name": "Admin One", "email": "admin1@example.com", "contactNumber": "0987654321" }
+
+admin login http://localhost:2025/auth/login { "email": "admin1@example.com", "password": "admin123" }
+
+seed admin login with ramkrish http://localhost:2025/auth/login { "email": "RamKrish@gmail.com", "password": "ramkrish@00" }
+
+manager register http://localhost:2025/auth/register { "username": "manager1", "password": "manager123", "role": "MANAGER", "name": "Manager One", "email": "manager1@example.com", "contactNumber": "1234567890" }
+
+manager login http://localhost:2025/auth/login { "email": "manager1@example.com", "password": "manager123" }
+
+user register http://localhost:2025/auth/register { "username": "user2", "password": "user123", "role": "USER", "name": "User Two", "email": "user2@example.com", "contactNumber": "1234567890" }
+
+user login http://localhost:2025/auth/login { "email": "user2@example.com", "password": "user123" }
+
+create hotel http://localhost:2025/hotels { "name": "Grand Hotel", "location": "Downtown", "amenities": "Pool, Gym, Wi-Fi", "rating": 4.5, "managerId": 2 }
+
+create room http://localhost:2025/rooms { "roomNumber": "101", "type": "Deluxe", "price": 150.0, "availability": "AVAILABLE", "features": "King Bed, Balcony", "hotelId": 1 }
+
+create booking http://localhost:2025/bookings { "userId": 3, "roomId": 1, "checkInDate": "2025-06-01", "checkOutDate": "2025-06-05", "status": "BOOKED" }
+
+create payment http://localhost:2025/payments { "userId": 3, "amount": 600.0, "status": "COMPLETED", "paymentMethod": "CREDIT_CARD" }
+
+create review http://localhost:2025/reviews { "userId": 3, "hotelId": 1, "comment": "Great stay, excellent service!", "rating": 5 }
