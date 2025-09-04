@@ -1,0 +1,124 @@
+Step-by-Step Guide: Deploy Spring Boot App on Render using Docker & Aiven MySQL
+🐳 1. Prerequisites
+Dockerized Spring Boot App with Dockerfile
+
+docker-compose.yml (optional for local dev)
+
+Aiven Account (https://aiven.io/)
+
+Render Account (https://render.com/)
+
+GitHub repo (your app must be pushed there)
+
+🛠️ 2. Set Up Aiven MySQL Database
+Go to Aiven Console
+
+Create a new MySQL service
+
+Select:
+
+Cloud provider (e.g., AWS)
+
+Region (e.g., aws-us-east-1)
+
+Plan (start with the free/lowest tier)
+
+Wait for provisioning (2–3 minutes)
+
+Click on the service → "Connection Information"
+
+Note the following:
+
+Host
+
+Port
+
+User
+
+Password
+
+Database name
+
+Optional: Enable public access from trusted sources (for Render to connect)
+
+📁 3. Update application.properties
+Replace the current DB config with:
+
+properties
+Copy
+Edit
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://<AIVEN-HOST>:<PORT>/<DATABASE-NAME>?useSSL=true&verifyServerCertificate=false
+spring.datasource.username=<AIVEN-USERNAME>
+spring.datasource.password=<AIVEN-PASSWORD>
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+💡 Tip: You can use application-prod.properties and Spring profiles too.
+
+🧪 4. Test It Locally First
+Use a .env file and run:
+
+bash
+Copy
+Edit
+docker build -t employee-management .
+docker run -p 8080:8080 --env-file .env employee-management
+Or update your application.properties with Aiven credentials and run:
+
+bash
+Copy
+Edit
+mvn spring-boot:run
+☁️ 5. Deploy to Render Using Dockerfile
+Go to Render Dashboard
+
+Click "New Web Service"
+
+Connect your GitHub repo
+
+Choose:
+
+Docker as runtime
+
+Name: employee-management
+
+Branch: main or master
+
+In "Advanced" settings, add environment variables:
+
+ini
+Copy
+Edit
+SPRING_DATASOURCE_URL=jdbc:mysql://<AIVEN-HOST>:<PORT>/<DB>?useSSL=true&verifyServerCertificate=false
+SPRING_DATASOURCE_USERNAME=<AIVEN-USERNAME>
+SPRING_DATASOURCE_PASSWORD=<AIVEN-PASSWORD>
+Click Create Web Service
+
+⏳ 6. Wait for Render to Build & Deploy
+View live logs
+
+Wait until deployment is complete
+
+App will be live on https://your-app-name.onrender.com
+
+✅ 7. Test Everything Works
+Open the Render URL → should connect to Aiven DB
+
+If it fails, check:
+
+Aiven's public access
+
+Database IP restrictions
+
+Environment variable values
+
+SSL errors (may need useSSL=true&verifyServerCertificate=false)
+
+🎯 Deployment Summary
+Step	Tool	Purpose
+1	Aiven	Hosted MySQL DB
+2	Docker	Containerize Spring Boot
+3	Render	Cloud deployment
+4	GitHub	Source for Render
+5	ENV vars	Secure DB configs
+

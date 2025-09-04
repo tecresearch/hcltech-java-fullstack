@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ai
+      MYSQL_USER: tecresearch
+      MYSQL_PASSWORD: Tca@admin
+    ports:
+      - "3307:3306"
+    networks:
+      - springboot-network
+
+  springboot-app:
+    image: ai:latest
+    container_name: springboot-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/ai?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: tecresearch
+      SPRING_DATASOURCE_PASSWORD: Tca@admin
+    depends_on:
+      - mysql
+    networks:
+      - springboot-network
+
+networks:
+  springboot-network:
+    driver: bridge
